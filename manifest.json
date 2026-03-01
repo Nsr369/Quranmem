@@ -1,0 +1,23 @@
+{
+    "name": "Quran Memorizer PWA",
+    "short_name": "QuranMem",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#0d1b2a",
+    "theme_color": "#0d1b2a",
+    "orientation": "portrait-primary",
+    "description": "Learn, memorize, recite, and self-test Juz 30 of the Quran offline.",
+    "icons": [
+        {
+            "src": "icons/icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "icons/icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        }
+    ]
+}

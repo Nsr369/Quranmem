@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Mem - Juz 30</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0d1b2a">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">QuranMem</div>
+        <div class="nav-actions">
+            <button id="nav-surahs-btn" class="nav-btn active">Surahs</button>
+            <button id="nav-dashboard-btn" class="nav-btn">Progress</button>
+            <button id="settings-btn" class="icon-btn" aria-label="Settings">⚙️</button>
+        </div>
+    </nav>
+
+    <main id="app-content">
+        <!-- Surah List Screen -->
+        <section id="surah-list-screen" class="screen active">
+            <header class="screen-header">
+                <h1>Juz 30 (Amma)</h1>
+                <p>Select a Surah to begin learning</p>
+            </header>
+            <div id="surah-grid" class="grid-container">
+                <!-- Surah cards will be populated by JS -->
+            </div>
+        </section>
+
+        <!-- Ayah Player Screen -->
+        <section id="ayah-player-screen" class="screen hidden">
+            <header class="screen-header slim">
+                <button id="back-btn" class="icon-btn">← Back</button>
+                <div class="header-titles">
+                    <h2 id="current-surah-title">Surah Name</h2>
+                    <p id="current-surah-info">Ayah count</p>
+                </div>
+            </header>
+
+            <div class="ayah-display-container" id="surah-display-container">
+                <div id="surah-text" class="arabic-text" dir="rtl"
+                    style="display: flex; flex-wrap: wrap; justify-content: center; column-gap: 8px; row-gap: 16px;">
+                    <!-- Full Surah Arabic Words populated by JS -->
+                </div>
+            </div>
+
+            <div id="recitation-feedback" class="feedback-banner hidden">
+                <!-- Feedback text and icons -->
+            </div>
+
+            <div class="player-controls">
+                <div class="control-row">
+                    <button id="play-pause-btn" class="ctrl-btn main-play-btn" aria-label="Play/Pause">▶</button>
+                </div>
+                <div class="action-row">
+                    <button id="recite-btn" class="action-btn recite-mode-btn">🎤 Recite</button>
+                    <button id="test-mode-btn" class="action-btn test-mode-btn">🧪 Test Mode</button>
+                </div>
+            </div>
+            <audio id="quran-audio" preload="none"></audio>
+        </section>
+
+        <!-- Progress Dashboard -->
+        <section id="progress-dashboard" class="screen hidden">
+            <header class="screen-header">
+                <h2>Your Progress</h2>
+            </header>
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <h3>Ayahs Memorized</h3>
+                    <p id="stat-memorized">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Average Accuracy</h3>
+                    <p id="stat-accuracy">0%</p>
+                </div>
+            </div>
+            <div class="recent-activity">
+                <h3>Recent Tests</h3>
+                <ul id="recent-tests-list">
+                    <!-- Populated by JS -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/data/juz30.js" defer></script>
+    <script src="js/storage.js" defer></script>
+    <script src="js/audio.js" defer></script>
+    <script src="js/speech.js" defer></script>
+    <script src="js/app.js" defer></script>
+
+    <!-- PWA Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(reg => console.log('SW registered!', reg.scope))
+                    .catch(err => console.error('SW registration failed', err));
+            });
+        }
+    </script>
+</body>
+
+</html>
