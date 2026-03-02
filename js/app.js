@@ -25,29 +25,31 @@ class QuranMemApp {
             this.updateDashboard();
             this.showScreen('progress-dashboard');
         });
-        document.getElementById('back-btn').addEventListener('click', () => {
-            this.audioController.updatePlayState(false);
-            this.audioController.audioElement.pause();
-            this.showScreen('surah-list-screen');
+        document.getElementById('prev-surah-btn').addEventListener('click', () => {
+            if (!this.currentSurah) return;
+            const currentIndex = this.data.surahs.findIndex(s => s.id === this.currentSurah.id);
+            if (currentIndex > 0) {
+                this.audioController.updatePlayState(false);
+                this.audioController.audioElement.pause();
+                this.openSurah(this.data.surahs[currentIndex - 1]);
+            }
         });
 
-        // Auto-play next Ayah
-        window.addEventListener('ayah-ended', () => {
-            // Clear current highlight
-            this.highlightWords(-1);
-
-            // Auto-advance
-            if (this.currentAyahIndex < this.currentSurah.ayahs.length - 1) {
-                this.currentAyahIndex++;
-                this.loadCurrentAyahAudio();
-
-                setTimeout(() => {
-                    this.audioController.togglePlay();
-                }, 500); // 0.5 second gap
-            } else {
-                // finished surah
-                this.audioController.audioElement.src = '';
+        document.getElementById('next-surah-btn').addEventListener('click', () => {
+            if (!this.currentSurah) return;
+            const currentIndex = this.data.surahs.findIndex(s => s.id === this.currentSurah.id);
+            if (currentIndex < this.data.surahs.length - 1) {
+                this.audioController.updatePlayState(false);
+                this.audioController.audioElement.pause();
+                this.openSurah(this.data.surahs[currentIndex + 1]);
             }
+        });
+
+        // Surah playback completion
+        window.addEventListener('surah-ended', () => {
+            this.highlightWords(-1, -1);
+            this.audioController.audioElement.src = '';
+            this.audioController.updatePlayState(false);
         });
 
         // Recitation logic
@@ -59,9 +61,35 @@ class QuranMemApp {
             testModeBtn.addEventListener('click', () => this.cycleTestMode());
         }
 
-        // Audio word highlight callback
-        this.audioController.setHighlightCallback((wordIndex) => {
-            this.highlightWords(wordIndex);
+        // PWA Install Logic
+        this.deferredPrompt = null;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            // Prevent the mini-infobar from appearing on mobile
+            e.preventDefault();
+            this.deferredPrompt = e;
+            const installBtn = document.getElementById('install-pwa-btn');
+            if (installBtn) {
+                installBtn.style.display = 'block';
+                installBtn.classList.remove('hidden');
+            }
+        });
+
+        const installBtn = document.getElementById('install-pwa-btn');
+        if (installBtn) {
+            installBtn.addEventListener('click', async () => {
+                if (this.deferredPrompt) {
+                    this.deferredPrompt.prompt();
+                    const { outcome } = await this.deferredPrompt.userChoice;
+                    if (outcome === 'accepted') {
+                        installBtn.style.display = 'none';
+                    }
+                    this.deferredPrompt = null;
+                }
+            });
+        }
+        // Audio word highlight callback passes the specific IDs now
+        this.audioController.setHighlightCallback((globalIdx, ayahIdx, wordIdx) => {
+            this.highlightWords(ayahIdx, wordIdx);
         });
     }
 
@@ -139,10 +167,16 @@ class QuranMemApp {
             surahTitleEl.innerHTML = `${surah.name} <span style="font-size: 0.8em;">🏆</span>`;
         }
 
+        // Toggle Prev/Next visibility based on Juz 30 boundaries
+        const currentIndex = this.data.surahs.findIndex(s => s.id === surah.id);
+        document.getElementById('prev-surah-btn').style.visibility = currentIndex > 0 ? 'visible' : 'hidden';
+        document.getElementById('next-surah-btn').style.visibility = currentIndex < this.data.surahs.length - 1 ? 'visible' : 'hidden';
+
         const textContainer = document.getElementById('surah-text');
         textContainer.innerHTML = '';
 
         this.surahWordsTarget = [];
+        let flatWords = []; // Feed for AudioController
 
         surah.ayahs.forEach((ayah, aIdx) => {
             ayah.words.forEach((wordObj, wIdx) => {
@@ -160,6 +194,12 @@ class QuranMemApp {
                 textContainer.appendChild(span);
 
                 this.surahWordsTarget.push({ text: wordObj.text, span: span });
+                flatWords.push({
+                    ayahIdx: aIdx,
+                    wordIdx: wIdx,
+                    startMs: wordObj.startMs,
+                    endMs: wordObj.endMs
+                });
             });
 
             // Ayah End Marker
@@ -173,8 +213,9 @@ class QuranMemApp {
             this.surahWordsTarget.push({ text: null, span: marker }); // push marker just to reveal it later
         });
 
-        this.currentAyahIndex = 0;
-        this.loadCurrentAyahAudio();
+        // Load the single entire Surah audio file and hand off the flat array of all word timings
+        this.audioController.loadSurah(surah.audioUrl, flatWords);
+
         this.clearFeedback();
 
         if (this.speechController) {
@@ -182,17 +223,12 @@ class QuranMemApp {
         }
     }
 
-    loadCurrentAyahAudio() {
-        const ayah = this.currentSurah.ayahs[this.currentAyahIndex];
-        this.audioController.loadAyah(ayah.audioUrl, ayah.words);
-    }
-
-    highlightWords(localActiveIndex) {
+    highlightWords(ayahIdx, wordIdx) {
         // Clear all active highlights
         document.querySelectorAll('.ayah-word.highlight').forEach(w => w.classList.remove('highlight'));
 
-        if (localActiveIndex !== -1) {
-            const activeSpan = document.getElementById(`word-${this.currentAyahIndex}-${localActiveIndex}`);
+        if (ayahIdx !== -1 && wordIdx !== -1) {
+            const activeSpan = document.getElementById(`word-${ayahIdx}-${wordIdx}`);
             if (activeSpan) {
                 activeSpan.classList.add('highlight');
                 // Auto scroll smoothly to word
