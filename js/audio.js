@@ -2,11 +2,14 @@ class AudioController {
     constructor() {
         this.audioElement = document.getElementById('quran-audio');
         this.playPauseBtn = document.getElementById('play-pause-btn');
-        this.currentWords = [];
+        this.allWords = [];
         this.highlightCallback = null;
         this.isPlaying = false;
 
-        this.audioElement.addEventListener('timeupdate', () => this.handleTimeUpdate());
+        // Track which Ayah we are currently in based on time
+        this.ayahChangeCallback = null;
+        this.animationFrameId = null;
+
         this.audioElement.addEventListener('ended', () => this.handleEnded());
         this.audioElement.addEventListener('pause', () => this.updatePlayState(false));
         this.audioElement.addEventListener('play', () => this.updatePlayState(true));
@@ -14,15 +17,21 @@ class AudioController {
         this.playPauseBtn.addEventListener('click', () => this.togglePlay());
     }
 
-    loadAyah(audioUrl, wordsData) {
+    loadSurah(audioUrl, flatWordsData) {
         this.audioElement.src = audioUrl;
-        this.currentWords = wordsData || [];
+        this.allWords = flatWordsData || [];
+        this.audioElement.currentTime = 0;
+
         // Reset highlights
-        if (this.highlightCallback) this.highlightCallback(-1);
+        if (this.highlightCallback) this.highlightCallback(-1, -1); // global/local reset
     }
 
     setHighlightCallback(cb) {
         this.highlightCallback = cb;
+    }
+
+    setAyahChangeCallback(cb) {
+        this.ayahChangeCallback = cb;
     }
 
     togglePlay() {
@@ -40,40 +49,71 @@ class AudioController {
         if (isPlaying) {
             this.playPauseBtn.innerHTML = '⏸';
             this.playPauseBtn.classList.add('playing');
+            this.startTrackingTimer();
         } else {
             this.playPauseBtn.innerHTML = '▶';
             this.playPauseBtn.classList.remove('playing');
+            this.stopTrackingTimer();
+        }
+    }
+
+    startTrackingTimer() {
+        if (this.animationFrameId) return;
+        const tick = () => {
+            this.handleTimeUpdate();
+            if (this.isPlaying) {
+                this.animationFrameId = requestAnimationFrame(tick);
+            }
+        };
+        this.animationFrameId = requestAnimationFrame(tick);
+    }
+
+    stopTrackingTimer() {
+        if (this.animationFrameId) {
+            cancelAnimationFrame(this.animationFrameId);
+            this.animationFrameId = null;
         }
     }
 
     handleTimeUpdate() {
-        if (!this.highlightCallback || this.currentWords.length === 0) return;
+        if (!this.highlightCallback || this.allWords.length === 0) return;
 
         const currentTimeMs = this.audioElement.currentTime * 1000;
 
         // Find which word is currently playing based on timestamps
         let activeWordIndex = -1;
-        for (let i = 0; i < this.currentWords.length; i++) {
-            const word = this.currentWords[i];
-            if (currentTimeMs >= word.startMs && currentTimeMs <= word.endMs) {
+        let activeAyahIndex = 0;
+        let localWordIndex = 0;
+
+        for (let i = 0; i < this.allWords.length; i++) {
+            const word = this.allWords[i];
+
+            // Allow a tiny 50ms tolerance for smoother highlighting
+            if (currentTimeMs >= (word.startMs - 50) && currentTimeMs <= word.endMs) {
                 activeWordIndex = i;
+                activeAyahIndex = word.ayahIdx;
+                localWordIndex = word.wordIdx;
                 break;
             } else if (currentTimeMs > word.endMs) {
-                // Track the latest word passed
+                // Keep tracking the latest word passed so it stays highlighted during brief silences
                 activeWordIndex = i;
+                activeAyahIndex = word.ayahIdx;
+                localWordIndex = word.wordIdx;
             }
         }
 
-        this.highlightCallback(activeWordIndex);
+        if (activeWordIndex !== -1) {
+            this.highlightCallback(activeWordIndex, activeAyahIndex, localWordIndex);
+            if (this.ayahChangeCallback) {
+                this.ayahChangeCallback(activeAyahIndex);
+            }
+        }
     }
 
     handleEnded() {
         this.updatePlayState(false);
-        // Highlight everything slightly or dim if we reached the end
-        if (this.highlightCallback) this.highlightCallback(this.currentWords.length);
-
-        // Dispatch custom event to auto-play next Ayah in app.js
-        window.dispatchEvent(new CustomEvent('ayah-ended'));
+        // Dispatch custom event if needed
+        window.dispatchEvent(new CustomEvent('surah-ended'));
     }
 }
 
