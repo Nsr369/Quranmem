@@ -31,7 +31,17 @@ body {
     color: var(--text-primary);
     font-family: var(--font-sans);
     line-height: 1.5;
-    overflow-x: hidden;
+    overflow: hidden;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+#app-content {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 
 /* Navbar */
@@ -93,8 +103,11 @@ body {
 /* Screens */
 .screen {
     display: none;
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
     animation: fadeIn 0.4s ease-out;
+    height: 100%;
+    overflow-y: auto;
+    /* Screens scroll independently of the body */
 }
 
 .screen.active {
@@ -187,17 +200,51 @@ body {
     color: var(--accent-color);
 }
 
+/* Ayah Player Screen - Fixed structural layout */
+#ayah-player-screen.active {
+    display: flex;
+}
+
+#ayah-player-screen {
+    display: none;
+    /* overrides .screen until active */
+    flex-direction: column;
+    overflow: hidden;
+    /* Prevent the entire screen from scrolling */
+    padding: 1rem;
+    /* Slightly tighter padding for mobile */
+}
+
 /* Ayah Display */
 .ayah-display-container {
     background: var(--surface-color);
     border-radius: 16px;
     padding: 2rem;
-    min-height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin-bottom: 1.5rem;
     border: 1px solid var(--glass-border);
+    flex: 1;
+    /* Take up all available remaining vertical space */
+    overflow-y: auto;
+    /* Make ONLY the text scrollable */
+    scroll-behavior: smooth;
+    /* Custom scrollbar for sleeker look */
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--bg-color);
+}
+
+.ayah-display-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.ayah-display-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.ayah-display-container::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 10px;
 }
 
 .arabic-text {
@@ -206,6 +253,9 @@ body {
     line-height: 2.2;
     text-align: center;
     margin-bottom: 1rem;
+    margin-top: auto;
+    /* Push content to middle if short */
+    margin-bottom: auto;
 }
 
 .ayah-word {
@@ -252,10 +302,12 @@ body {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--glass-border);
     border-radius: 16px;
-    padding: 1.5rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
+    flex-shrink: 0;
+    /* Ensures it never gets squished */
 }
 
 .control-row {
