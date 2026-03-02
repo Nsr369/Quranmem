@@ -31,6 +31,10 @@
             <header class="screen-header">
                 <h1>Juz 30 (Amma)</h1>
                 <p>Select a Surah to begin learning</p>
+                <button id="install-pwa-btn" class="action-btn hidden"
+                    style="margin-top: 1rem; margin-inline: auto; padding: 0.6rem 1.5rem; font-size: 0.95rem; display: none;">
+                    📲 Install App
+                </button>
             </header>
             <div id="surah-grid" class="grid-container">
                 <!-- Surah cards will be populated by JS -->
@@ -39,12 +43,14 @@
 
         <!-- Ayah Player Screen -->
         <section id="ayah-player-screen" class="screen hidden">
-            <header class="screen-header slim">
-                <button id="back-btn" class="icon-btn">← Back</button>
-                <div class="header-titles">
+            <header class="screen-header slim" style="justify-content: space-between;">
+                <button id="prev-surah-btn" class="icon-btn" style="padding: 10px;"
+                    aria-label="Previous Surah">❮</button>
+                <div class="header-titles" style="flex: 1; text-align: center;">
                     <h2 id="current-surah-title">Surah Name</h2>
                     <p id="current-surah-info">Ayah count</p>
                 </div>
+                <button id="next-surah-btn" class="icon-btn" style="padding: 10px;" aria-label="Next Surah">❯</button>
             </header>
 
             <div class="ayah-display-container" id="surah-display-container">
