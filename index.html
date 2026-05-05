@@ -48,7 +48,13 @@
                     aria-label="Previous Surah">❮</button>
                 <div class="header-titles" style="flex: 1; text-align: center;">
                     <h2 id="current-surah-title">Surah Name</h2>
-                    <p id="current-surah-info">Ayah count</p>
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 15px; margin-top: 5px;">
+                        <span id="current-surah-info" style="color: var(--text-sec); font-size: 0.9rem;">Ayah count</span>
+                        <div class="font-controls" style="display: flex; gap: 10px; border-left: 1px solid var(--glass-border); padding-left: 15px;">
+                            <button id="font-dec-btn" class="icon-btn" aria-label="Decrease Font" style="font-size: 0.9rem; padding: 2px 5px;">A-</button>
+                            <button id="font-inc-btn" class="icon-btn" aria-label="Increase Font" style="font-size: 1.1rem; padding: 2px 5px;">A+</button>
+                        </div>
+                    </div>
                 </div>
                 <button id="next-surah-btn" class="icon-btn" style="padding: 10px;" aria-label="Next Surah">❯</button>
             </header>
@@ -68,9 +74,10 @@
                 <div class="control-row">
                     <button id="play-pause-btn" class="ctrl-btn main-play-btn" aria-label="Play/Pause">▶</button>
                 </div>
-                <div class="action-row">
+                <div class="action-row" style="flex-wrap: wrap;">
                     <button id="recite-btn" class="action-btn recite-mode-btn">🎤 Recite</button>
                     <button id="test-mode-btn" class="action-btn test-mode-btn">🧪 Test Mode</button>
+                    <button id="toggle-translation-btn" class="action-btn">🌐 Translate</button>
                 </div>
             </div>
             <audio id="quran-audio" preload="none"></audio>
