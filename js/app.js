@@ -61,6 +61,31 @@ class QuranMemApp {
             testModeBtn.addEventListener('click', () => this.cycleTestMode());
         }
 
+        const toggleTransBtn = document.getElementById('toggle-translation-btn');
+        if (toggleTransBtn) {
+            toggleTransBtn.addEventListener('click', () => {
+                document.getElementById('surah-display-container').classList.toggle('show-translations');
+            });
+        }
+
+        // Font Size Controls
+        this.fontSize = 3.0; // Starting font size in rem
+        const surahTextEl = document.getElementById('surah-text');
+        
+        document.getElementById('font-dec-btn')?.addEventListener('click', () => {
+            if (this.fontSize > 1.5) {
+                this.fontSize -= 0.25;
+                surahTextEl.style.fontSize = `${this.fontSize}rem`;
+            }
+        });
+        
+        document.getElementById('font-inc-btn')?.addEventListener('click', () => {
+            if (this.fontSize < 6.0) {
+                this.fontSize += 0.25;
+                surahTextEl.style.fontSize = `${this.fontSize}rem`;
+            }
+        });
+
         // PWA Install Logic
         this.deferredPrompt = null;
         window.addEventListener('beforeinstallprompt', (e) => {
@@ -180,9 +205,20 @@ class QuranMemApp {
 
         surah.ayahs.forEach((ayah, aIdx) => {
             ayah.words.forEach((wordObj, wIdx) => {
+                const wordGroup = document.createElement('div');
+                wordGroup.className = 'word-group';
+
                 const span = document.createElement('span');
                 span.className = 'ayah-word';
                 span.id = `word-${aIdx}-${wIdx}`;
+                span.dataset.start = wordObj.startMs;
+                span.dataset.end = wordObj.endMs;
+                
+                if (wordObj.textTajweed) {
+                    span.innerHTML = wordObj.textTajweed;
+                } else {
+                    span.textContent = wordObj.text;
+                }
 
                 if (this.testMode === 1 && (aIdx > 0 || wIdx > 0)) {
                     span.classList.add('word-hidden');
@@ -190,8 +226,26 @@ class QuranMemApp {
                     span.classList.add('word-hidden');
                 }
 
-                span.textContent = wordObj.text;
-                textContainer.appendChild(span);
+                wordGroup.appendChild(span);
+
+                const transContainer = document.createElement('div');
+                transContainer.className = 'translation-container';
+                transContainer.dir = 'ltr'; // Ensure English/Malayalam flows LTR
+
+                if (wordObj.translation) {
+                    const enSpan = document.createElement('span');
+                    enSpan.className = 'word-translation-en';
+                    enSpan.textContent = wordObj.translation;
+                    transContainer.appendChild(enSpan);
+                }
+
+                const mlSpan = document.createElement('span');
+                mlSpan.className = 'word-translation-ml';
+                mlSpan.textContent = wordObj.translation_ml || '...';
+                transContainer.appendChild(mlSpan);
+
+                wordGroup.appendChild(transContainer);
+                textContainer.appendChild(wordGroup);
 
                 this.surahWordsTarget.push({ text: wordObj.text, span: span });
                 flatWords.push({
@@ -203,14 +257,39 @@ class QuranMemApp {
             });
 
             // Ayah End Marker
+            const markerGroup = document.createElement('div');
+            markerGroup.className = 'word-group';
+            markerGroup.style.justifyContent = 'center';
+            
             const marker = document.createElement('span');
             marker.className = 'ayah-end-marker';
             marker.textContent = ` ﴿${ayah.number}﴾ `;
             marker.style.color = 'var(--text-sec)';
-            marker.style.margin = '0 8px';
+            marker.style.fontSize = '0.7em';
             if (this.testMode === 2 || this.testMode === 3) marker.classList.add('word-hidden');
-            textContainer.appendChild(marker);
+            
+            markerGroup.appendChild(marker);
+            textContainer.appendChild(markerGroup);
             this.surahWordsTarget.push({ text: null, span: marker }); // push marker just to reveal it later
+
+            // Full Ayah Translation
+            const ayahTransBlock = document.createElement('div');
+            ayahTransBlock.className = 'ayah-translation-block';
+            ayahTransBlock.dir = 'ltr';
+
+            if (ayah.translation) {
+                const enAyahTrans = document.createElement('p');
+                enAyahTrans.className = 'ayah-translation-en';
+                enAyahTrans.textContent = ayah.translation;
+                ayahTransBlock.appendChild(enAyahTrans);
+            }
+            
+            const mlAyahTrans = document.createElement('p');
+            mlAyahTrans.className = 'ayah-translation-ml';
+            mlAyahTrans.textContent = ayah.translation_ml || '...';
+            ayahTransBlock.appendChild(mlAyahTrans);
+
+            textContainer.appendChild(ayahTransBlock);
         });
 
         // Load the single entire Surah audio file and hand off the flat array of all word timings
