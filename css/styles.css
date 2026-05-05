@@ -260,9 +260,68 @@ body {
 
 .ayah-word {
     display: inline-block;
-    margin: 0 0.3rem;
     cursor: pointer;
     transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.word-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+
+.translation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+    display: none;
+}
+
+.show-translations .translation-container {
+    display: flex;
+}
+
+.word-translation-en {
+    font-size: 1rem;
+    color: var(--text-sec);
+    font-family: var(--font-sans);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.word-translation-ml {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    font-family: var(--font-sans);
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.ayah-translation-block {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px dashed var(--glass-border);
+    display: none;
+}
+
+.show-translations .ayah-translation-block {
+    display: block;
+}
+
+.ayah-translation-en {
+    font-size: 1.1rem;
+    color: var(--text-sec);
+    margin-bottom: 0.5rem;
+}
+
+.ayah-translation-ml {
+    font-size: 1.05rem;
+    color: var(--accent-color);
 }
 
 .ayah-word.highlight {
@@ -480,3 +539,21 @@ body {
     text-shadow: none;
     border-bottom: 2px dashed rgba(255, 255, 255, 0.2);
 }
+
+/* ------------------------------------- */
+/* TAJWEED COLORING                      */
+/* ------------------------------------- */
+rule {
+    display: inline;
+}
+
+rule.ghunnah { color: #FF7E1E; }
+rule.ikhafa { color: #9400D3; }
+rule.ikhafa_shafawi { color: #D500B5; }
+rule.idgham_shafawi { color: #58B800; }
+rule.idgham_ghunnah, rule.idgham_wo_ghunnah, rule.idgham_mutajanisayn { color: #169200; }
+rule.iqlab { color: #26BFFD; }
+rule.qalaqah { color: #DD0008; }
+rule.madda_normal, rule.madda_permissible { color: #537CE5; }
+rule.madda_necessary, rule.madda_obligatory_mottasel, rule.madda_obligatory_monfasel { color: #000EAA; }
+rule.laam_shamsiyah, rule.ham_wasl, rule.slnt, rule[class^="custom"] { color: #888888; }
