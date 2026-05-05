@@ -12,6 +12,7 @@ const outputJsPath = path.join(__dirname, 'js', 'data', 'juz30.js');
 const fetchJson = (url) => {
     return new Promise((resolve, reject) => {
         https.get(url, (res) => {
+            res.setEncoding('utf8');
             let data = '';
             res.on('data', chunk => data += chunk);
             res.on('end', () => {
@@ -39,7 +40,7 @@ const compileJuz30 = async () => {
             const chapter = chapterRes.chapter;
 
             // 2. Fetch Verses Text + Words
-            const versesRes = await fetchJson(`https://api.quran.com/api/v4/verses/by_chapter/${surahNum}?words=true&word_fields=text_uthmani,translation&language=en&per_page=100`);
+            const versesRes = await fetchJson(`https://api.quran.com/api/v4/verses/by_chapter/${surahNum}?words=true&word_fields=text_uthmani,text_uthmani_tajweed,translation&language=en&per_page=100`);
             const verses = versesRes.verses;
 
             // 3. Fetch Audio Timestamps (Reciter 7 = Mishari)
@@ -112,6 +113,7 @@ const compileJuz30 = async () => {
                     // Add the padding offset to every single word
                     ayahObj.words.push({
                         text: wordObj.text_uthmani,
+                        textTajweed: wordObj.text_uthmani_tajweed,
                         translation: wordObj.translation.text,
                         startMs: mapping ? mapping[1] + bismillahOffsetMs : 0,
                         endMs: mapping ? mapping[2] + bismillahOffsetMs : 0
