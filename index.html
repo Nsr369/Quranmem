@@ -4,27 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quran Mem - Juz 30</title>
+    <title>QuranMem - Juz 30</title>
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#0d1b2a">
+    <meta name="theme-color" content="#faf6f0">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="icons/icon-192x192.png">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/hifz-extras.css">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">QuranMem</div>
-        <div class="nav-actions">
-            <button id="nav-surahs-btn" class="nav-btn active">Surahs</button>
-            <button id="nav-dashboard-btn" class="nav-btn">Progress</button>
-            <button id="settings-btn" class="icon-btn" aria-label="Settings">⚙️</button>
-        </div>
-    </nav>
-
     <main id="app-content">
         <!-- Surah List Screen -->
         <section id="surah-list-screen" class="screen active">
@@ -42,26 +35,27 @@
         </section>
 
         <!-- Ayah Player Screen -->
-        <section id="ayah-player-screen" class="screen hidden">
-            <header class="screen-header slim" style="justify-content: space-between;">
-                <button id="prev-surah-btn" class="icon-btn" style="padding: 10px;"
-                    aria-label="Previous Surah">❮</button>
-                <div class="header-titles" style="flex: 1; text-align: center;">
-                    <h2 id="current-surah-title">Surah Name</h2>
-                    <div style="display: flex; justify-content: center; align-items: center; gap: 15px; margin-top: 5px;">
-                        <span id="current-surah-info" style="color: var(--text-sec); font-size: 0.9rem;">Ayah count</span>
-                        <div class="font-controls" style="display: flex; gap: 10px; border-left: 1px solid var(--glass-border); padding-left: 15px;">
-                            <button id="font-dec-btn" class="icon-btn" aria-label="Decrease Font" style="font-size: 0.9rem; padding: 2px 5px;">A-</button>
-                            <button id="font-inc-btn" class="icon-btn" aria-label="Increase Font" style="font-size: 1.1rem; padding: 2px 5px;">A+</button>
-                        </div>
-                    </div>
+        <section id="ayah-player-screen" class="screen">
+
+            <header class="quran-header">
+                <button id="back-to-surahs-btn" class="header-back-btn" aria-label="Back to Surahs">❮</button>
+                <div class="header-metadata">
+                    <button id="header-juz-btn" class="header-btn">Juz 30</button>
+                    <span id="header-page">582</span>
+                    <button id="header-surah-btn" class="header-btn">An-Naba</button>
                 </div>
-                <button id="next-surah-btn" class="icon-btn" style="padding: 10px;" aria-label="Next Surah">❯</button>
+                <div class="header-actions">
+                    <button id="font-dec-btn" class="font-btn" aria-label="Decrease Font">A-</button>
+                    <button id="font-inc-btn" class="font-btn" aria-label="Increase Font">A+</button>
+                </div>
             </header>
 
+            <div class="surah-title-banner">
+                <h2 id="current-surah-title" class="calligraphy-title">سُورَةُ النَّبَإِ</h2>
+            </div>
+
             <div class="ayah-display-container" id="surah-display-container">
-                <div id="surah-text" class="arabic-text" dir="rtl"
-                    style="display: flex; flex-wrap: wrap; justify-content: center; column-gap: 8px; row-gap: 16px;">
+                <div id="surah-text" class="arabic-text" dir="rtl">
                     <!-- Full Surah Arabic Words populated by JS -->
                 </div>
             </div>
@@ -70,45 +64,144 @@
                 <!-- Feedback text and icons -->
             </div>
 
-            <div class="player-controls">
-                <div class="control-row">
-                    <button id="play-pause-btn" class="ctrl-btn main-play-btn" aria-label="Play/Pause">▶</button>
-                </div>
-                <div class="action-row" style="flex-wrap: wrap;">
-                    <button id="recite-btn" class="action-btn recite-mode-btn">🎤 Recite</button>
-                    <button id="test-mode-btn" class="action-btn test-mode-btn">🧪 Test Mode</button>
-                    <button id="toggle-translation-btn" class="action-btn">🌐 Translate</button>
-                </div>
-            </div>
             <audio id="quran-audio" preload="none"></audio>
+            
+            <div class="bottom-toolbar">
+                <button id="tb-play-btn" class="toolbar-item" aria-label="Play">
+                    <div class="tb-icon-circle play-icon-circle">
+                        <!-- Play Icon SVG -->
+                        <svg class="tb-svg" id="tb-play-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                    <span class="tb-label" id="tb-play-label">Play</span>
+                </button>
+                <button id="tb-bookmarks-btn" class="toolbar-item" aria-label="Bookmark Ayah">
+                    <svg class="tb-svg" id="tb-bookmark-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <span class="tb-label">Bookmark</span>
+                </button>
+                <button id="tb-autoscroll-btn" class="toolbar-item active" aria-label="Auto Scroll">
+                    <svg class="tb-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
+                    <span class="tb-label">Auto Scroll</span>
+                </button>
+                <button id="tb-progress-btn" class="toolbar-item" aria-label="Progress">
+                    <svg class="tb-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+                    </svg>
+                    <span class="tb-label">Progress</span>
+                </button>
+                <button id="tb-translation-btn" class="toolbar-item" aria-label="Translation">
+                    <svg class="tb-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 5h8M12 10h8M6 15h14M6 20h14"/>
+                        <text x="3" y="11" font-family="var(--font-arabic)" font-size="10" font-weight="bold" fill="currentColor">ع</text>
+                    </svg>
+                    <span class="tb-label">Translation</span>
+                </button>
+                <button id="tb-hifz-btn" class="toolbar-item" aria-label="Hifz">
+                    <div class="hifz-badge" id="tb-hifz-badge">
+                        <span class="hifz-badge-text">حفظ<br/>القرآن</span>
+                        <div class="hifz-check-circle">
+                            <svg class="hifz-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                    </div>
+                    <span class="tb-label" id="tb-hifz-label">Hifz</span>
+                </button>
+                <button id="tb-more-btn" class="toolbar-item" aria-label="More">
+                    <svg class="tb-svg" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="2"/><circle cx="5" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>
+                    <span class="tb-label">More</span>
+                </button>
+            </div>
         </section>
 
         <!-- Progress Dashboard -->
-        <section id="progress-dashboard" class="screen hidden">
-            <header class="screen-header">
-                <h2>Your Progress</h2>
-            </header>
-            <div class="dashboard-stats">
-                <div class="stat-card">
-                    <h3>Ayahs Memorized</h3>
-                    <p id="stat-memorized">0</p>
+        <section id="progress-dashboard" class="screen">
+            <header class="screen-header slim">
+                <button id="back-from-progress-btn" class="header-back-btn" aria-label="Back">❮</button>
+                <div class="header-titles">
+                    <h2>Your Progress</h2>
                 </div>
-                <div class="stat-card">
-                    <h3>Average Accuracy</h3>
-                    <p id="stat-accuracy">0%</p>
+            </header>
+
+            <!-- Hero stats row -->
+            <div class="progress-hero">
+                <div class="progress-ring-wrap">
+                    <svg class="progress-ring" viewBox="0 0 100 100">
+                        <circle class="progress-ring-track" cx="50" cy="50" r="42"/>
+                        <circle class="progress-ring-fill" id="progress-ring-fill" cx="50" cy="50" r="42"
+                            stroke-dasharray="263.9" stroke-dashoffset="263.9"/>
+                    </svg>
+                    <div class="progress-ring-label">
+                        <span id="progress-ring-pct">0%</span>
+                        <span class="progress-ring-sub">memorized</span>
+                    </div>
+                </div>
+                <div class="progress-side-stats">
+                    <div class="pstat-card">
+                        <span class="pstat-icon">📖</span>
+                        <div>
+                            <div class="pstat-value" id="stat-memorized">0</div>
+                            <div class="pstat-label">Ayahs</div>
+                        </div>
+                    </div>
+                    <div class="pstat-card">
+                        <span class="pstat-icon">🎯</span>
+                        <div>
+                            <div class="pstat-value" id="stat-accuracy">—</div>
+                            <div class="pstat-label">Best Score</div>
+                        </div>
+                    </div>
+                    <div class="pstat-card">
+                        <span class="pstat-icon">🕌</span>
+                        <div>
+                            <div class="pstat-value" id="stat-surahs">0</div>
+                            <div class="pstat-label">Surahs Done</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="recent-activity">
-                <h3>Recent Tests</h3>
-                <ul id="recent-tests-list">
-                    <!-- Populated by JS -->
-                </ul>
+
+            <!-- Per-surah progress list -->
+            <div class="progress-surah-list" id="progress-surah-list">
+                <!-- Populated by JS -->
             </div>
         </section>
     </main>
 
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="modal hidden">
+        <div class="modal-content">
+            <header class="modal-header">
+                <h2>Settings</h2>
+                <button id="close-settings-btn" class="close-btn">&times;</button>
+            </header>
+            <div class="modal-body">
+                <div class="setting-group">
+                    <label for="reciter-select">Reciter Voice</label>
+                    <select id="reciter-select" class="form-select">
+                        <option value="7">Mishari Al-Afasy</option>
+                        <option value="2">Sheikh Abdul Basit Abdul Samad</option>
+                    </select>
+                </div>
+                <div class="setting-group" style="margin-top: 1.25rem;">
+                    <label for="test-mode-select">Memorization Mode</label>
+                    <select id="test-mode-select" class="form-select">
+                        <option value="0">Show All Words (Normal)</option>
+                        <option value="1">Show First Word Only (Partial Help)</option>
+                        <option value="2">Hide All Words (Blind Test)</option>
+                    </select>
+                </div>
+                <div class="setting-group" style="margin-top: 1.25rem;">
+                    <label>Translation Language</label>
+                    <div class="lang-toggle" id="lang-toggle">
+                        <button class="lang-btn active" id="lang-en-btn" data-lang="en">English (EN)</button>
+                        <button class="lang-btn" id="lang-ml-btn" data-lang="ml">Malayalam (ML)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="js/data/juz30.js" defer></script>
+    <script src="js/data/abdul_basit_timings.js" defer></script>
     <script src="js/storage.js" defer></script>
     <script src="js/audio.js" defer></script>
     <script src="js/speech.js" defer></script>

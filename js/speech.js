@@ -84,6 +84,15 @@ class SpeechController {
     clearTranscript() {
         this.persistentTranscript = '';
     }
+
+    skipWord(wordText) {
+        if (this.recognition) {
+            this.persistentTranscript = (this.persistentTranscript + ' ' + wordText).trim() + ' ';
+            if (this.isRecording) {
+                this.recognition.stop();
+            }
+        }
+    }
 }
 
 window.SpeechController = SpeechController;

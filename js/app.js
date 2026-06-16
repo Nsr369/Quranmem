@@ -1,3 +1,19 @@
+const SURAH_PAGES = {
+    78: 582, 79: 583, 80: 585, 81: 586, 82: 587, 83: 587, 84: 589, 85: 590,
+    86: 591, 87: 591, 88: 592, 89: 593, 90: 594, 91: 595, 92: 595, 93: 596,
+    94: 596, 95: 597, 96: 597, 97: 598, 98: 598, 99: 599, 100: 599, 101: 600,
+    102: 600, 103: 601, 104: 601, 105: 601, 106: 602, 107: 602, 108: 602,
+    109: 603, 110: 603, 111: 603, 112: 604, 113: 604, 114: 604
+};
+
+function toArabicNumerals(num) {
+    const arabicDigits = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
+    return num.toString().split('').map(digit => {
+        const parsed = parseInt(digit, 10);
+        return isNaN(parsed) ? digit : arabicDigits[parsed];
+    }).join('');
+}
+
 class QuranMemApp {
     constructor() {
         this.data = window.quranData;
@@ -7,25 +23,43 @@ class QuranMemApp {
         this.currentSurah = null;
         this.currentAyahIndex = 0;
         this.testMode = 0; // 0: Normal, 1: Partial, 2: Blind, 3: Random
+        this.selectedReciter = localStorage.getItem('quranmem-reciter') || '7'; // Default: Mishari (7)
+        this.autoScrollEnabled = true;
+        this.translationMode = false;
+        this.transLang = localStorage.getItem('quranmem-translang') || 'en'; // 'en' or 'ml'
 
         this.initUI();
         this.renderSurahList();
     }
 
     initUI() {
-        // Navigation binds
-        document.getElementById('nav-surahs-btn').addEventListener('click', () => {
+        // Back to surahs list
+        document.getElementById('back-to-surahs-btn')?.addEventListener('click', () => {
             this.audioController.updatePlayState(false);
             this.audioController.audioElement.pause();
-            this.showScreen('surah-list-screen')
+            this.showScreen('surah-list-screen');
         });
-        document.getElementById('nav-dashboard-btn').addEventListener('click', () => {
+        document.getElementById('header-juz-btn')?.addEventListener('click', () => {
             this.audioController.updatePlayState(false);
             this.audioController.audioElement.pause();
-            this.updateDashboard();
-            this.showScreen('progress-dashboard');
+            this.showScreen('surah-list-screen');
         });
-        document.getElementById('prev-surah-btn').addEventListener('click', () => {
+        document.getElementById('header-surah-btn')?.addEventListener('click', () => {
+            this.audioController.updatePlayState(false);
+            this.audioController.audioElement.pause();
+            this.showScreen('surah-list-screen');
+        });
+
+        // Back from progress to surah player (or list)
+        document.getElementById('back-from-progress-btn')?.addEventListener('click', () => {
+            if (this.currentSurah) {
+                this.showScreen('ayah-player-screen');
+            } else {
+                this.showScreen('surah-list-screen');
+            }
+        });
+
+        document.getElementById('prev-surah-btn')?.addEventListener('click', () => {
             if (!this.currentSurah) return;
             const currentIndex = this.data.surahs.findIndex(s => s.id === this.currentSurah.id);
             if (currentIndex > 0) {
@@ -35,7 +69,7 @@ class QuranMemApp {
             }
         });
 
-        document.getElementById('next-surah-btn').addEventListener('click', () => {
+        document.getElementById('next-surah-btn')?.addEventListener('click', () => {
             if (!this.currentSurah) return;
             const currentIndex = this.data.surahs.findIndex(s => s.id === this.currentSurah.id);
             if (currentIndex < this.data.surahs.length - 1) {
@@ -52,37 +86,152 @@ class QuranMemApp {
             this.audioController.updatePlayState(false);
         });
 
-        // Recitation logic
-        const reciteBtn = document.getElementById('recite-btn');
-        reciteBtn.addEventListener('click', () => this.toggleRecitation(reciteBtn));
+        // Toolbar: Bookmarks (saves current Surah + Ayah index)
+        const bookmarksBtn = document.getElementById('tb-bookmarks-btn');
+        bookmarksBtn?.addEventListener('click', () => {
+            if (!this.currentSurah) return;
+            const bookmarkKey = `bookmark-${this.currentSurah.id}`;
+            const existing = JSON.parse(localStorage.getItem(bookmarkKey) || 'null');
+            const bookmarkSvg = document.getElementById('tb-bookmark-svg');
 
-        const testModeBtn = document.getElementById('test-mode-btn');
-        if (testModeBtn) {
-            testModeBtn.addEventListener('click', () => this.cycleTestMode());
+            if (existing) {
+                // Remove bookmark
+                localStorage.removeItem(bookmarkKey);
+                bookmarksBtn.classList.remove('active');
+                bookmarkSvg?.setAttribute('fill', 'none');
+                bookmarkSvg?.setAttribute('stroke', 'currentColor');
+                // Remove visual ayah bookmark markers
+                document.querySelectorAll('.ayah-bookmarked').forEach(el => el.classList.remove('ayah-bookmarked'));
+            } else {
+                // Save bookmark at current ayah position
+                const bookmarkData = {
+                    surahId: this.currentSurah.id,
+                    ayahIndex: this.currentAyahIndex
+                };
+                localStorage.setItem(bookmarkKey, JSON.stringify(bookmarkData));
+                bookmarksBtn.classList.add('active');
+                bookmarkSvg?.setAttribute('fill', 'var(--accent-color)');
+                bookmarkSvg?.setAttribute('stroke', 'var(--accent-color)');
+                // Highlight the bookmarked ayah row/position
+                this._markBookmarkedAyah(this.currentAyahIndex);
+            }
+        });
+
+        // Toolbar: Auto Scroll
+        const autoscrollBtn = document.getElementById('tb-autoscroll-btn');
+        autoscrollBtn?.addEventListener('click', () => {
+            this.autoScrollEnabled = !this.autoScrollEnabled;
+            autoscrollBtn.classList.toggle('active', this.autoScrollEnabled);
+        });
+
+        // Toolbar: Progress
+        document.getElementById('tb-progress-btn')?.addEventListener('click', () => {
+            this.audioController.updatePlayState(false);
+            this.audioController.audioElement.pause();
+            this.updateDashboard();
+            this.showScreen('progress-dashboard');
+        });
+
+        // Toolbar: Translation - toggles between Arabic-only and side-by-side translation view
+        const toggleTransBtn = document.getElementById('tb-translation-btn');
+        toggleTransBtn?.addEventListener('click', () => {
+            this.translationMode = !this.translationMode;
+            toggleTransBtn.classList.toggle('active', this.translationMode);
+            this.renderSurah();
+        });
+
+        // Toolbar: Hifz — toggle recording OR show mode picker
+        const hifzBtn = document.getElementById('tb-hifz-btn');
+        if (hifzBtn) {
+            hifzBtn.addEventListener('click', () => {
+                if (this.speechController.isRecording) {
+                    // Already recording — stop
+                    this.stopRecitationCommand();
+                    return;
+                }
+                if (this.translationMode) {
+                    this.translationMode = false;
+                    document.getElementById('tb-translation-btn')?.classList.remove('active');
+                }
+                this.showHifzModal();
+            });
         }
 
-        const toggleTransBtn = document.getElementById('toggle-translation-btn');
-        if (toggleTransBtn) {
-            toggleTransBtn.addEventListener('click', () => {
-                document.getElementById('surah-display-container').classList.toggle('show-translations');
+        // Language toggle (EN / ML)
+        const langEnBtn = document.getElementById('lang-en-btn');
+        const langMlBtn = document.getElementById('lang-ml-btn');
+
+        // Apply saved preference immediately
+        langEnBtn?.classList.toggle('active', this.transLang === 'en');
+        langMlBtn?.classList.toggle('active', this.transLang === 'ml');
+
+        const setLang = (lang) => {
+            this.transLang = lang;
+            localStorage.setItem('quranmem-translang', lang);
+            langEnBtn?.classList.toggle('active', lang === 'en');
+            langMlBtn?.classList.toggle('active', lang === 'ml');
+            // Re-render if a surah is open
+            if (this.currentSurah) this.renderSurah();
+        };
+        langEnBtn?.addEventListener('click', () => setLang('en'));
+        langMlBtn?.addEventListener('click', () => setLang('ml'));
+
+        // Settings Modal: Memorization Mode select dropdown
+        const testModeSelect = document.getElementById('test-mode-select');
+        if (testModeSelect) {
+            testModeSelect.addEventListener('change', (e) => {
+                this.testMode = parseInt(e.target.value, 10);
+                this.renderSurah();
             });
         }
 
         // Font Size Controls
-        this.fontSize = 3.0; // Starting font size in rem
+        this.fontSize = 32; // Starting font size in pixels (equivalent to 2rem)
         const surahTextEl = document.getElementById('surah-text');
-        
-        document.getElementById('font-dec-btn')?.addEventListener('click', () => {
-            if (this.fontSize > 1.5) {
-                this.fontSize -= 0.25;
-                surahTextEl.style.fontSize = `${this.fontSize}rem`;
+
+        // Skip word when touching screen in Hifz mode
+        surahTextEl?.addEventListener('click', (e) => {
+            if (this.speechController && this.speechController.isRecording) {
+                // Ignore clicks on ayah end markers or target indicators
+                if (e.target.closest('.ayah-marker-group') || e.target.classList.contains('ayah-end-marker')) {
+                    return;
+                }
+                const nextUnmatched = this.surahWordsTarget.find(w => 
+                    w.text !== null && w.span && !w.span.classList.contains('correct')
+                );
+                if (nextUnmatched) {
+                    this.speechController.skipWord(nextUnmatched.text);
+                    this.processRecitation(this.speechController.persistentTranscript);
+                }
             }
         });
-        
+
+        const updateFontSize = () => {
+            if (surahTextEl) {
+                surahTextEl.style.fontSize = `${this.fontSize}px`;
+                const lh = Math.round(this.fontSize * 3.125);
+                surahTextEl.style.setProperty('--line-height-px', `${lh}px`);
+                // Clear old inline styles that are now handled via CSS variables
+                surahTextEl.style.lineHeight = '';
+                surahTextEl.style.backgroundSize = '';
+                surahTextEl.style.backgroundImage = '';
+            }
+        };
+
+        // Initialize on load to ensure alignment is correct from start
+        updateFontSize();
+
+        document.getElementById('font-dec-btn')?.addEventListener('click', () => {
+            if (this.fontSize > 24) {
+                this.fontSize -= 4;
+                updateFontSize();
+            }
+        });
+
         document.getElementById('font-inc-btn')?.addEventListener('click', () => {
-            if (this.fontSize < 6.0) {
-                this.fontSize += 0.25;
-                surahTextEl.style.fontSize = `${this.fontSize}rem`;
+            if (this.fontSize < 44) {
+                this.fontSize += 4;
+                updateFontSize();
             }
         });
 
@@ -116,15 +265,74 @@ class QuranMemApp {
         this.audioController.setHighlightCallback((globalIdx, ayahIdx, wordIdx) => {
             this.highlightWords(ayahIdx, wordIdx);
         });
+
+        // Settings Modal UI bindings
+        const settingsModal = document.getElementById('settings-modal');
+        const settingsBtn = document.getElementById('settings-btn');
+        const closeSettingsBtn = document.getElementById('close-settings-btn');
+        const reciterSelect = document.getElementById('reciter-select');
+
+        // Bind 'More' button to settings modal as well
+        document.getElementById('tb-more-btn')?.addEventListener('click', () => {
+            if (reciterSelect) reciterSelect.value = this.selectedReciter;
+            if (testModeSelect) testModeSelect.value = this.testMode.toString();
+            document.getElementById('lang-en-btn')?.classList.toggle('active', this.transLang === 'en');
+            document.getElementById('lang-ml-btn')?.classList.toggle('active', this.transLang === 'ml');
+            settingsModal?.classList.add('active');
+            settingsModal?.classList.remove('hidden');
+        });
+
+        if (settingsBtn && settingsModal) {
+            settingsBtn.addEventListener('click', () => {
+                if (reciterSelect) reciterSelect.value = this.selectedReciter;
+                if (testModeSelect) testModeSelect.value = this.testMode.toString();
+                settingsModal.classList.add('active');
+                settingsModal.classList.remove('hidden');
+            });
+        }
+
+        if (closeSettingsBtn && settingsModal) {
+            closeSettingsBtn.addEventListener('click', () => {
+                settingsModal.classList.remove('active');
+                settingsModal.classList.add('hidden');
+            });
+        }
+
+        if (settingsModal) {
+            // Close when clicking outside of modal content
+            settingsModal.addEventListener('click', (e) => {
+                if (e.target === settingsModal) {
+                    settingsModal.classList.remove('active');
+                    settingsModal.classList.add('hidden');
+                }
+            });
+        }
+
+        if (reciterSelect) {
+            reciterSelect.addEventListener('change', (e) => {
+                const newValue = e.target.value;
+                this.selectedReciter = newValue;
+                localStorage.setItem('quranmem-reciter', newValue);
+
+                // If currently playing/viewing a surah, reload it with the new reciter timings
+                if (this.currentSurah) {
+                    this.audioController.updatePlayState(false);
+                    this.audioController.audioElement.pause();
+                    this.renderSurah();
+                }
+
+                // Hide modal
+                if (settingsModal) {
+                    settingsModal.classList.remove('active');
+                    settingsModal.classList.add('hidden');
+                }
+            });
+        }
     }
 
     showScreen(screenId) {
         document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-        document.getElementById(screenId).classList.add('active');
-
-        document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
-        const navBtn = document.getElementById(`nav-${screenId.split('-')[0]}-btn`);
-        if (navBtn) navBtn.classList.add('active');
+        document.getElementById(screenId)?.classList.add('active');
     }
 
     async renderSurahList() {
@@ -161,160 +369,609 @@ class QuranMemApp {
         this.currentSurah = surah;
         this.currentAyahIndex = 0;
         this.testMode = 0;
-        document.getElementById('test-mode-btn').innerHTML = '🧪 Test Mode';
+
+        const testModeSelect = document.getElementById('test-mode-select');
+        if (testModeSelect) testModeSelect.value = "0";
+
+        const labelEl = document.getElementById('tb-hifz-label');
+        if (labelEl) labelEl.textContent = 'Hifz';
+
+        const hifzBtn = document.getElementById('tb-hifz-btn');
+        if (hifzBtn) hifzBtn.classList.remove('active');
+
         this.renderSurah();
         this.showScreen('ayah-player-screen');
+
+        // Restore bookmark state
+        const bookmarkKey = `bookmark-${surah.id}`;
+        const bookmarkData = JSON.parse(localStorage.getItem(bookmarkKey) || 'null');
+        const bookmarksBtn = document.getElementById('tb-bookmarks-btn');
+        const bookmarkSvg = document.getElementById('tb-bookmark-svg');
+        if (bookmarkData) {
+            bookmarksBtn?.classList.add('active');
+            bookmarkSvg?.setAttribute('fill', 'var(--accent-color)');
+            bookmarkSvg?.setAttribute('stroke', 'var(--accent-color)');
+            // Scroll to bookmarked ayah after a short delay to let DOM settle
+            setTimeout(() => this._scrollToBookmark(bookmarkData.ayahIndex), 400);
+        } else {
+            bookmarksBtn?.classList.remove('active');
+            bookmarkSvg?.setAttribute('fill', 'none');
+            bookmarkSvg?.setAttribute('stroke', 'currentColor');
+        }
     }
 
-    cycleTestMode() {
-        this.testMode = (this.testMode + 1) % 4;
-        const modes = ["🧪 Normal", "🧪 Partial Help", "🧪 Blind", "🧪 Random Ayah"];
-        document.getElementById('test-mode-btn').innerHTML = modes[this.testMode];
+    _markBookmarkedAyah(ayahIndex) {
+        // Remove previous marks
+        document.querySelectorAll('.ayah-bookmarked').forEach(el => el.classList.remove('ayah-bookmarked'));
+        // Mark the row/marker for this ayah
+        const markerEl = document.querySelector(`#surah-text .word-group:has(.ayah-end-marker)`);
+        // Try to mark via trans-row or the first word of the ayah
+        const firstWord = document.getElementById(`word-${ayahIndex}-0`) ||
+            document.getElementById(`tr-word-${ayahIndex}-0`);
+        if (firstWord) {
+            const rowOrGroup = firstWord.closest('.trans-row') || firstWord.closest('.word-group');
+            if (rowOrGroup) rowOrGroup.classList.add('ayah-bookmarked');
+        }
+    }
 
-        if (this.testMode === 3) {
-            // Treat mode 3 as blind for the whole surah since we display it all now
-            this.testMode = 2;
+    _scrollToBookmark(ayahIndex) {
+        const firstWord = document.getElementById(`word-${ayahIndex}-0`) ||
+            document.getElementById(`tr-word-${ayahIndex}-0`);
+        if (firstWord) {
+            firstWord.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            // Briefly highlight the bookmarked position
+            firstWord.style.outline = '2px solid var(--accent-color)';
+            firstWord.style.borderRadius = '4px';
+            setTimeout(() => { firstWord.style.outline = ''; firstWord.style.borderRadius = ''; }, 2000);
+        }
+    }
+
+    showHifzModal() {
+        document.getElementById('hifz-modal')?.remove();
+
+        const overlay = document.createElement('div');
+        overlay.id = 'hifz-modal';
+        overlay.className = 'hifz-modal-overlay';
+        overlay.innerHTML = `
+            <div class="hifz-modal-sheet">
+                <div class="hifz-modal-handle"></div>
+                <h3 class="hifz-modal-title">حفظ — Hifz Mode</h3>
+                <p class="hifz-modal-sub">Choose text visibility, then start reciting</p>
+                <div class="hifz-modal-options">
+                    <button class="hifz-opt-btn ${this.testMode === 0 ? 'hifz-opt-active' : ''}" data-mode="0">
+                        <span class="hifz-opt-icon">👁</span>
+                        <span class="hifz-opt-label">Normal</span>
+                        <span class="hifz-opt-desc">Show all words while reciting</span>
+                    </button>
+                    <button class="hifz-opt-btn ${this.testMode === 1 ? 'hifz-opt-active' : ''}" data-mode="1">
+                        <span class="hifz-opt-icon">🤲</span>
+                        <span class="hifz-opt-label">Help</span>
+                        <span class="hifz-opt-desc">Show only first word of each Ayah</span>
+                    </button>
+                    <button class="hifz-opt-btn ${this.testMode === 2 ? 'hifz-opt-active' : ''}" data-mode="2">
+                        <span class="hifz-opt-icon">🔒</span>
+                        <span class="hifz-opt-label">Blind</span>
+                        <span class="hifz-opt-desc">All characters replaced — pure memory</span>
+                    </button>
+                </div>
+                <button class="hifz-start-btn" id="hifz-start-recite-btn">🎤 Start Reciting</button>
+                <button class="hifz-modal-close">Cancel</button>
+            </div>
+        `;
+
+        // Mode buttons — just select mode, don't start yet
+        overlay.querySelectorAll('.hifz-opt-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                overlay.querySelectorAll('.hifz-opt-btn').forEach(b => b.classList.remove('hifz-opt-active'));
+                btn.classList.add('hifz-opt-active');
+                this.testMode = parseInt(btn.dataset.mode, 10);
+            });
+        });
+
+        // Start Reciting button — apply mode then start microphone
+        overlay.querySelector('#hifz-start-recite-btn').addEventListener('click', () => {
+            overlay.remove();
+            const hifzBtn = document.getElementById('tb-hifz-btn');
+            this._setTestMode(this.testMode);
+            // Start after render settles
+            setTimeout(() => this.startRecitationCommand(hifzBtn || document.createElement('button')), 100);
+        });
+
+        overlay.querySelector('.hifz-modal-close').addEventListener('click', () => overlay.remove());
+        overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
+
+        document.body.appendChild(overlay);
+        requestAnimationFrame(() => overlay.classList.add('visible'));
+    }
+
+    _setTestMode(mode) {
+        this.testMode = mode;
+        const modes = ['Normal', 'Help', 'Blind'];
+        const badges = ['حفظ<br/>القرآن', 'مساعدة', 'غيب'];
+
+        const badgeTextEl = document.querySelector('#tb-hifz-badge .hifz-badge-text');
+        if (badgeTextEl) badgeTextEl.innerHTML = badges[mode] || badges[0];
+
+        const labelEl = document.getElementById('tb-hifz-label');
+        if (labelEl) labelEl.textContent = mode === 0 ? 'Hifz' : `Hifz: ${modes[mode]}`;
+
+        const hifzBtn = document.getElementById('tb-hifz-btn');
+        if (hifzBtn) hifzBtn.classList.toggle('active', mode > 0);
+
+        const testModeSelect = document.getElementById('test-mode-select');
+        if (testModeSelect) testModeSelect.value = mode.toString();
+
+        // Always render Arabic view for Hifz
+        if (this.translationMode) {
+            this.translationMode = false;
+            document.getElementById('tb-translation-btn')?.classList.remove('active');
         }
         this.renderSurah();
     }
 
+    // Replace each Arabic character with _ (for blind mode)
+    _makeBlindText(arabicText) {
+        if (!arabicText) return '';
+        // Replace each char (including diacritics) with _ keeping spaces
+        return arabicText.replace(/[^\s]/g, '_');
+    }
+
+    // Open an inline meaning editor inside the left translation column
+    _openMeaningEditor(leftCol, meaningDiv, meaningKey) {
+        // Remove existing editor if open
+        leftCol.querySelector('.meaning-editor')?.remove();
+
+        const existing = localStorage.getItem(meaningKey) || '';
+        const editor = document.createElement('div');
+        editor.className = 'meaning-editor';
+        editor.innerHTML = `
+            <textarea class="meaning-textarea" placeholder="Write your own note or meaning here..." rows="2">${existing}</textarea>
+            <div class="meaning-editor-actions">
+                <button class="meaning-save-btn">Save</button>
+                <button class="meaning-delete-btn">Delete</button>
+                <button class="meaning-cancel-btn">Cancel</button>
+            </div>
+        `;
+
+        const textarea = editor.querySelector('.meaning-textarea');
+
+        editor.querySelector('.meaning-save-btn').addEventListener('click', () => {
+            const val = textarea.value.trim();
+            if (val) {
+                localStorage.setItem(meaningKey, val);
+                meaningDiv.innerHTML = `<span class="meaning-label">📝 My Note:</span> <span class="meaning-text">${val}</span>`;
+                meaningDiv.classList.remove('hidden');
+            } else {
+                localStorage.removeItem(meaningKey);
+                meaningDiv.innerHTML = '';
+                meaningDiv.classList.add('hidden');
+            }
+            editor.remove();
+        });
+
+        editor.querySelector('.meaning-delete-btn').addEventListener('click', () => {
+            localStorage.removeItem(meaningKey);
+            meaningDiv.innerHTML = '';
+            meaningDiv.classList.add('hidden');
+            editor.remove();
+        });
+
+        editor.querySelector('.meaning-cancel-btn').addEventListener('click', () => editor.remove());
+
+        leftCol.appendChild(editor);
+        textarea.focus();
+    }
+
+    cycleTestMode() {
+        // Kept for compatibility but now shows modal instead
+        this.showHifzModal();
+    }
+
+
+    getSurahWithTimings(surah) {
+        if (!surah) return null;
+
+        // Deep clone to prevent mutating global cache
+        const clonedSurah = JSON.parse(JSON.stringify(surah));
+
+        if (this.selectedReciter === '2' && window.abdulBasitTimings && window.abdulBasitTimings[clonedSurah.id]) {
+            const abTimings = window.abdulBasitTimings[clonedSurah.id];
+
+            // Override URLs and offsets
+            clonedSurah.audioUrl = abTimings.audioUrl;
+            clonedSurah.bismillahOffsetMs = abTimings.bismillahOffsetMs;
+
+            // Override Ayah and Word timestamps
+            clonedSurah.ayahs.forEach(clonedAyah => {
+                const abAyah = abTimings.ayahs.find(a => a.number === clonedAyah.number);
+                if (abAyah) {
+                    clonedAyah.timestampFrom = abAyah.timestampFrom;
+                    clonedAyah.timestampTo = abAyah.timestampTo;
+
+                    clonedAyah.words.forEach((clonedWord, wIdx) => {
+                        const abWordTiming = abAyah.words[wIdx];
+                        if (abWordTiming) {
+                            clonedWord.startMs = abWordTiming[0];
+                            clonedWord.endMs = abWordTiming[1];
+                        }
+                    });
+                }
+            });
+        }
+
+        return clonedSurah;
+    }
+
     async renderSurah() {
-        const surah = this.currentSurah;
+        const surah = this.getSurahWithTimings(this.currentSurah);
+        if (!surah) return;
+
+        // Dynamic Header metadata updates
+        const juzBtn = document.getElementById('header-juz-btn');
+        if (juzBtn) juzBtn.textContent = `Juz 30`;
+        const pageNum = SURAH_PAGES[surah.id] || 582;
+        document.getElementById('header-page').textContent = pageNum;
+        const surahBtn = document.getElementById('header-surah-btn');
+        if (surahBtn) surahBtn.textContent = surah.name;
 
         const surahTitleEl = document.getElementById('current-surah-title');
-        surahTitleEl.textContent = surah.name;
-        document.getElementById('current-surah-info').textContent = `${surah.ayahCount} Ayahs ${this.testMode > 0 ? '(Test)' : ''}`;
+        const calligraphyTitle = `سُورَةُ ${surah.arabicName}`;
+        surahTitleEl.textContent = calligraphyTitle;
 
         // Check if memorized
         const id = `surah_${surah.id}_full`;
         const progress = await window.qDataStorage.getProgress(id);
         if (progress && progress.status === 'memorized') {
-            surahTitleEl.innerHTML = `${surah.name} <span style="font-size: 0.8em;">🏆</span>`;
+            surahTitleEl.innerHTML = `${calligraphyTitle} <span style="font-size: 0.8em;">🏆</span>`;
         }
 
         // Toggle Prev/Next visibility based on Juz 30 boundaries
         const currentIndex = this.data.surahs.findIndex(s => s.id === surah.id);
-        document.getElementById('prev-surah-btn').style.visibility = currentIndex > 0 ? 'visible' : 'hidden';
-        document.getElementById('next-surah-btn').style.visibility = currentIndex < this.data.surahs.length - 1 ? 'visible' : 'hidden';
+        const prevBtn = document.getElementById('prev-surah-btn');
+        if (prevBtn) prevBtn.style.visibility = currentIndex > 0 ? 'visible' : 'hidden';
+        const nextBtn = document.getElementById('next-surah-btn');
+        if (nextBtn) nextBtn.style.visibility = currentIndex < this.data.surahs.length - 1 ? 'visible' : 'hidden';
 
         const textContainer = document.getElementById('surah-text');
         textContainer.innerHTML = '';
+        const displayContainer = document.getElementById('surah-display-container');
 
-        this.surahWordsTarget = [];
-        let flatWords = []; // Feed for AudioController
+        // Show/hide surah title banner based on mode
+        const titleBanner = document.querySelector('.surah-title-banner');
+        if (titleBanner) titleBanner.style.display = this.translationMode ? 'none' : '';
 
-        surah.ayahs.forEach((ayah, aIdx) => {
-            ayah.words.forEach((wordObj, wIdx) => {
-                const wordGroup = document.createElement('div');
-                wordGroup.className = 'word-group';
+        if (this.translationMode) {
+            // ---- TRANSLATION TABLE MODE ----
+            displayContainer.classList.add('translation-mode');
+            displayContainer.classList.remove('arabic-mode');
+            textContainer.classList.remove('arabic-text');
+            textContainer.className = 'translation-table';
+            textContainer.removeAttribute('dir');
 
-                const span = document.createElement('span');
-                span.className = 'ayah-word';
-                span.id = `word-${aIdx}-${wIdx}`;
-                span.dataset.start = wordObj.startMs;
-                span.dataset.end = wordObj.endMs;
-                
-                if (wordObj.textTajweed) {
-                    span.innerHTML = wordObj.textTajweed;
-                } else {
-                    span.textContent = wordObj.text;
-                }
 
-                if (this.testMode === 1 && (aIdx > 0 || wIdx > 0)) {
-                    span.classList.add('word-hidden');
-                } else if (this.testMode === 2 || this.testMode === 3) {
-                    span.classList.add('word-hidden');
-                }
-
-                wordGroup.appendChild(span);
-
-                const transContainer = document.createElement('div');
-                transContainer.className = 'translation-container';
-                transContainer.dir = 'ltr'; // Ensure English/Malayalam flows LTR
-
-                if (wordObj.translation) {
-                    const enSpan = document.createElement('span');
-                    enSpan.className = 'word-translation-en';
-                    enSpan.textContent = wordObj.translation;
-                    transContainer.appendChild(enSpan);
-                }
-
-                const mlSpan = document.createElement('span');
-                mlSpan.className = 'word-translation-ml';
-                mlSpan.textContent = wordObj.translation_ml || '...';
-                transContainer.appendChild(mlSpan);
-
-                wordGroup.appendChild(transContainer);
-                textContainer.appendChild(wordGroup);
-
-                this.surahWordsTarget.push({ text: wordObj.text, span: span });
-                flatWords.push({
-                    ayahIdx: aIdx,
-                    wordIdx: wIdx,
-                    startMs: wordObj.startMs,
-                    endMs: wordObj.endMs
+            this.surahWordsTarget = [];
+            let flatWords = [];
+            surah.ayahs.forEach((ayah, aIdx) => {
+                // Build flat word list for audio controller
+                ayah.words.forEach((wordObj, wIdx) => {
+                    this.surahWordsTarget.push({ text: wordObj.text, span: null });
+                    flatWords.push({ ayahIdx: aIdx, wordIdx: wIdx, startMs: wordObj.startMs, endMs: wordObj.endMs });
                 });
+                this.surahWordsTarget.push({ text: null, span: null }); // marker slot
+
+                // Build the Ayah Arabic text HTML (all words + marker)
+                const arabicWordsHtml = ayah.words.map((wordObj, wIdx) => {
+                    const wordHtml = wordObj.textTajweed || wordObj.text;
+                    return `<span class="ayah-word tr-ayah-word" id="tr-word-${aIdx}-${wIdx}" data-start="${wordObj.startMs}" data-end="${wordObj.endMs}">${wordHtml}</span>`;
+                }).join(' ');
+                const markerHtml = `<span class="ayah-end-marker">${toArabicNumerals(ayah.number)}</span>`;
+
+                // Row
+                const row = document.createElement('div');
+                row.className = 'trans-row';
+                row.id = `trans-row-${aIdx}`;
+
+                const leftCol = document.createElement('div');
+                leftCol.className = 'trans-left';
+                leftCol.dir = 'ltr';
+                // Pick text based on selected language
+                const ayahTransText = this.transLang === 'ml'
+                    ? (ayah.translation_ml || ayah.translation || '')
+                    : (ayah.translation || ayah.translation_ml || '');
+
+                // Ayah number
+                const ayahNumSpan = document.createElement('span');
+                ayahNumSpan.className = 'trans-ayah-num';
+                ayahNumSpan.textContent = ayah.number + '.';
+                leftCol.appendChild(ayahNumSpan);
+
+                // Translation text
+                const transTextSpan = document.createElement('span');
+                transTextSpan.className = 'trans-text-body';
+                transTextSpan.textContent = ' ' + ayahTransText;
+                leftCol.appendChild(transTextSpan);
+
+                // User custom meaning (if saved)
+                const meaningKey = `meaning-${surah.id}-${ayah.number}`;
+                const savedMeaning = localStorage.getItem(meaningKey);
+                const meaningDiv = document.createElement('div');
+                meaningDiv.className = 'user-meaning' + (savedMeaning ? '' : ' hidden');
+                meaningDiv.dataset.ayah = ayah.number;
+                if (savedMeaning) {
+                    meaningDiv.innerHTML = `<span class="meaning-label">📝 My Note:</span> <span class="meaning-text">${savedMeaning}</span>`;
+                }
+                leftCol.appendChild(meaningDiv);
+
+                // Action row: bookmark + edit icons
+                const actionRow = document.createElement('div');
+                actionRow.className = 'trans-action-row';
+
+                // Bookmark icon for this Ayah
+                const bmKey = `bookmark-${surah.id}`;
+                const bmData = JSON.parse(localStorage.getItem(bmKey) || 'null');
+                const isThisAyahBm = bmData && bmData.ayahIndex === aIdx;
+                const bmBtn = document.createElement('button');
+                bmBtn.className = 'trans-icon-btn bm-btn' + (isThisAyahBm ? ' bm-active' : '');
+                bmBtn.innerHTML = isThisAyahBm ? '🔖' : '🔖';
+                bmBtn.title = isThisAyahBm ? 'Remove Bookmark' : 'Bookmark this Ayah';
+                bmBtn.setAttribute('aria-label', 'Bookmark Ayah ' + ayah.number);
+                const capturedAIdxBm = aIdx;
+                const capturedSurahId = surah.id;
+                bmBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const currentBm = JSON.parse(localStorage.getItem(`bookmark-${capturedSurahId}`) || 'null');
+                    if (currentBm && currentBm.ayahIndex === capturedAIdxBm) {
+                        // Remove
+                        localStorage.removeItem(`bookmark-${capturedSurahId}`);
+                        bmBtn.classList.remove('bm-active');
+                        bmBtn.title = 'Bookmark this Ayah';
+                        // Update toolbar bookmark icon
+                        const toolbarBm = document.getElementById('tb-bookmarks-btn');
+                        const toolbarBmSvg = document.getElementById('tb-bookmark-svg');
+                        toolbarBm?.classList.remove('active');
+                        toolbarBmSvg?.setAttribute('fill', 'none');
+                        toolbarBmSvg?.setAttribute('stroke', 'currentColor');
+                        row.classList.remove('row-bookmarked');
+                    } else {
+                        // Save this Ayah
+                        const newBm = { surahId: capturedSurahId, ayahIndex: capturedAIdxBm };
+                        localStorage.setItem(`bookmark-${capturedSurahId}`, JSON.stringify(newBm));
+                        // Clear other row bookmark highlights
+                        document.querySelectorAll('.trans-row.row-bookmarked').forEach(r => r.classList.remove('row-bookmarked'));
+                        document.querySelectorAll('.trans-icon-btn.bm-active').forEach(b => {
+                            b.classList.remove('bm-active');
+                            b.title = 'Bookmark this Ayah';
+                        });
+                        bmBtn.classList.add('bm-active');
+                        bmBtn.title = 'Remove Bookmark';
+                        row.classList.add('row-bookmarked');
+                        // Update toolbar
+                        const toolbarBm = document.getElementById('tb-bookmarks-btn');
+                        const toolbarBmSvg = document.getElementById('tb-bookmark-svg');
+                        toolbarBm?.classList.add('active');
+                        toolbarBmSvg?.setAttribute('fill', 'var(--accent-color)');
+                        toolbarBmSvg?.setAttribute('stroke', 'var(--accent-color)');
+                    }
+                });
+                actionRow.appendChild(bmBtn);
+
+                // Edit / add meaning button
+                const editBtn = document.createElement('button');
+                editBtn.className = 'trans-icon-btn edit-btn';
+                editBtn.textContent = '✏️';
+                editBtn.title = 'Add your own meaning';
+                const capturedMKey = meaningKey;
+                editBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this._openMeaningEditor(leftCol, meaningDiv, capturedMKey);
+                });
+                actionRow.appendChild(editBtn);
+                leftCol.appendChild(actionRow);
+
+                // Apply bookmarked style if this row is bookmarked
+                if (isThisAyahBm) row.classList.add('row-bookmarked');
+
+                const rightCol = document.createElement('div');
+                rightCol.className = 'trans-right';
+                rightCol.dir = 'rtl';
+                rightCol.innerHTML = arabicWordsHtml + ' ' + markerHtml;
+
+                row.appendChild(leftCol);
+                row.appendChild(rightCol);
+
+                // NO audio click on translation rows (audio is from Arabic view)
+                textContainer.appendChild(row);
             });
 
-            // Ayah End Marker
-            const markerGroup = document.createElement('div');
-            markerGroup.className = 'word-group';
-            markerGroup.style.justifyContent = 'center';
-            
-            const marker = document.createElement('span');
-            marker.className = 'ayah-end-marker';
-            marker.textContent = ` ﴿${ayah.number}﴾ `;
-            marker.style.color = 'var(--text-sec)';
-            marker.style.fontSize = '0.7em';
-            if (this.testMode === 2 || this.testMode === 3) marker.classList.add('word-hidden');
-            
-            markerGroup.appendChild(marker);
-            textContainer.appendChild(markerGroup);
-            this.surahWordsTarget.push({ text: null, span: marker }); // push marker just to reveal it later
+            this.audioController.loadSurah(surah.audioUrl, flatWords);
 
-            // Full Ayah Translation
-            const ayahTransBlock = document.createElement('div');
-            ayahTransBlock.className = 'ayah-translation-block';
-            ayahTransBlock.dir = 'ltr';
+        } else {
+            // ---- ARABIC BOOK MODE ----
+            displayContainer.classList.remove('translation-mode');
+            displayContainer.classList.add('arabic-mode');
+            textContainer.className = 'arabic-text';
+            textContainer.setAttribute('dir', 'rtl');
 
-            if (ayah.translation) {
-                const enAyahTrans = document.createElement('p');
-                enAyahTrans.className = 'ayah-translation-en';
-                enAyahTrans.textContent = ayah.translation;
-                ayahTransBlock.appendChild(enAyahTrans);
-            }
-            
-            const mlAyahTrans = document.createElement('p');
-            mlAyahTrans.className = 'ayah-translation-ml';
-            mlAyahTrans.textContent = ayah.translation_ml || '...';
-            ayahTransBlock.appendChild(mlAyahTrans);
+            // Centered Bismillah
+            const bismillahContainer = document.createElement('div');
+            bismillahContainer.className = 'bismillah-container';
+            bismillahContainer.innerHTML = '<span class="bismillah-text">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>';
+            textContainer.appendChild(bismillahContainer);
 
-            textContainer.appendChild(ayahTransBlock);
-        });
+            this.surahWordsTarget = [];
+            let flatWords = [];
 
-        // Load the single entire Surah audio file and hand off the flat array of all word timings
-        this.audioController.loadSurah(surah.audioUrl, flatWords);
+            surah.ayahs.forEach((ayah, aIdx) => {
+                ayah.words.forEach((wordObj, wIdx) => {
+                    const wordGroup = document.createElement('div');
+                    wordGroup.className = 'word-group';
+
+                    const span = document.createElement('span');
+                    span.className = 'ayah-word';
+                    span.id = `word-${aIdx}-${wIdx}`;
+                    span.dataset.start = wordObj.startMs;
+                    span.dataset.end = wordObj.endMs;
+
+                    if (wordObj.textTajweed) {
+                        if (this.testMode === 2) {
+                            const blindText = this._makeBlindText(wordObj.text);
+                            span.textContent = blindText;
+                            span.classList.add('blind-mode');
+                            // Store original so we can reveal on correct match
+                            span.dataset.origText = wordObj.text;
+                            span.dataset.origTajweed = wordObj.textTajweed || '';
+                        } else {
+                            span.innerHTML = wordObj.textTajweed;
+                        }
+                    } else {
+                        if (this.testMode === 2) {
+                            span.textContent = this._makeBlindText(wordObj.text);
+                            span.classList.add('blind-mode');
+                            span.dataset.origText = wordObj.text;
+                        } else {
+                            span.textContent = wordObj.text;
+                        }
+                    }
+
+                    if (this.testMode === 1 && (aIdx > 0 || wIdx > 0)) {
+                        span.classList.add('word-hidden');
+                    }
+
+                    wordGroup.appendChild(span);
+
+                    const transContainer = document.createElement('div');
+                    transContainer.className = 'translation-container';
+                    transContainer.dir = 'ltr';
+
+                    // Show only the selected language's translation
+                    const wordTransText = this.transLang === 'ml'
+                        ? (wordObj.translation_ml || wordObj.translation || '')
+                        : (wordObj.translation || wordObj.translation_ml || '');
+                    if (wordTransText) {
+                        const transSpan = document.createElement('span');
+                        transSpan.className = this.transLang === 'ml' ? 'word-translation-ml' : 'word-translation-en';
+                        transSpan.textContent = wordTransText;
+                        transContainer.appendChild(transSpan);
+                    }
+
+                    wordGroup.appendChild(transContainer);
+                    textContainer.appendChild(wordGroup);
+
+                    this.surahWordsTarget.push({ text: wordObj.text, span: span });
+                    flatWords.push({ ayahIdx: aIdx, wordIdx: wIdx, startMs: wordObj.startMs, endMs: wordObj.endMs });
+                });
+
+                // Ayah End Marker — inline circle after last word of ayah
+                const markerGroup = document.createElement('div');
+                markerGroup.className = 'word-group ayah-marker-group';
+
+                const marker = document.createElement('span');
+                marker.className = 'ayah-end-marker';
+                marker.textContent = toArabicNumerals(ayah.number);
+                marker.title = `Play Ayah ${ayah.number}`;
+                if (this.testMode === 2 || this.testMode === 3) marker.classList.add('word-hidden');
+
+                markerGroup.appendChild(marker);
+                textContainer.appendChild(markerGroup);
+                this.surahWordsTarget.push({ text: null, span: marker });
+
+                // Click marker to seek to this Ayah
+                const capturedAIdx = aIdx;
+                markerGroup.addEventListener('click', () => {
+                    const playingAyah = this.audioController.getCurrentAyahIdx();
+                    const isPlaying = !this.audioController.audioElement.paused;
+                    if (isPlaying && playingAyah === capturedAIdx) {
+                        this.audioController.audioElement.pause();
+                    } else {
+                        this.audioController.seekToAyah(capturedAIdx);
+                    }
+                });
+
+                // Full Ayah Translation block (shown when show-translations mode was active — now unused in main flow)
+                const ayahTransBlock = document.createElement('div');
+                ayahTransBlock.className = 'ayah-translation-block';
+                ayahTransBlock.dir = 'ltr';
+
+                const fullAyahText = this.transLang === 'ml'
+                    ? (ayah.translation_ml || ayah.translation || '')
+                    : (ayah.translation || ayah.translation_ml || '');
+                const ayahTransP = document.createElement('p');
+                ayahTransP.className = this.transLang === 'ml' ? 'ayah-translation-ml' : 'ayah-translation-en';
+                ayahTransP.textContent = fullAyahText;
+                ayahTransBlock.appendChild(ayahTransP);
+
+                textContainer.appendChild(ayahTransBlock);
+            });
+
+            this.audioController.loadSurah(surah.audioUrl, flatWords);
+        }
 
         this.clearFeedback();
 
         if (this.speechController) {
             this.speechController.clearTranscript();
         }
+
+        // Update bookmarks state in toolbar
+        const bookmarkKey2 = `bookmark-${surah.id}`;
+        const bookmarkData2 = JSON.parse(localStorage.getItem(bookmarkKey2) || 'null');
+        const bookmarkSvg = document.getElementById('tb-bookmark-svg');
+        const bookmarksBtn = document.getElementById('tb-bookmarks-btn');
+        if (bookmarkData2) {
+            bookmarksBtn?.classList.add('active');
+            bookmarkSvg?.setAttribute('fill', 'var(--accent-color)');
+            bookmarkSvg?.setAttribute('stroke', 'var(--accent-color)');
+        } else {
+            bookmarksBtn?.classList.remove('active');
+            bookmarkSvg?.setAttribute('fill', 'none');
+            bookmarkSvg?.setAttribute('stroke', 'currentColor');
+        }
     }
 
+
     highlightWords(ayahIdx, wordIdx) {
+        // Track current ayah for bookmark saving
+        if (ayahIdx >= 0) this.currentAyahIndex = ayahIdx;
+
         // Clear all active highlights
         document.querySelectorAll('.ayah-word.highlight').forEach(w => w.classList.remove('highlight'));
+        document.querySelectorAll('.trans-row.active-row').forEach(r => r.classList.remove('active-row'));
+        document.querySelectorAll('.ayah-end-marker.playing').forEach(m => m.classList.remove('playing'));
 
         if (ayahIdx !== -1 && wordIdx !== -1) {
-            const activeSpan = document.getElementById(`word-${ayahIdx}-${wordIdx}`);
-            if (activeSpan) {
-                activeSpan.classList.add('highlight');
-                // Auto scroll smoothly to word
-                activeSpan.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            if (this.translationMode) {
+                // Highlight the word in the translation table
+                const trWord = document.getElementById(`tr-word-${ayahIdx}-${wordIdx}`);
+                if (trWord) {
+                    trWord.classList.add('highlight');
+                    if (this.autoScrollEnabled) {
+                        trWord.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                }
+                // Also highlight the whole row
+                const activeRow = document.getElementById(`trans-row-${ayahIdx}`);
+                if (activeRow) activeRow.classList.add('active-row');
+            } else {
+                const activeSpan = document.getElementById(`word-${ayahIdx}-${wordIdx}`);
+                if (activeSpan) {
+                    activeSpan.classList.add('highlight');
+                    if (this.autoScrollEnabled) {
+                        activeSpan.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                }
+                // Mark the ayah-end-marker for the current ayah as playing (green circle)
+                // Find it: the marker comes after all words of this ayah in surahWordsTarget
+                // We find it by looking at the span with class ayah-end-marker in the marker group
+                const markerGroups = document.querySelectorAll('.ayah-marker-group');
+                const targetMarkerGroup = markerGroups[ayahIdx];
+                if (targetMarkerGroup) {
+                    const markerEl = targetMarkerGroup.querySelector('.ayah-end-marker');
+                    if (markerEl) markerEl.classList.add('playing');
+                }
             }
         }
     }
+
 
     // --- Recitation & Testing ---
 
@@ -332,13 +989,25 @@ class QuranMemApp {
             this.audioController.togglePlay();
         }
 
+        this.latestAccuracy = 0;
         btn.classList.add('reciting');
-        btn.innerHTML = '🛑 Stop';
+        if (btn.id === 'tb-hifz-btn') {
+            const label = document.getElementById('tb-hifz-label');
+            if (label) label.textContent = 'Stop';
+        } else {
+            btn.innerHTML = '🛑 Stop';
+        }
 
-        // Hide all words unconditionally so Recitation is always a memory test
-        this.surahWordsTarget.forEach(w => {
-            w.span.classList.add('word-hidden');
+        // Apply word visibility based on testMode:
+        // Mode 0 (Normal) — show all words
+        // Mode 1 (Help)   — show first word of each ayah, hide rest
+        // Mode 2 (Blind)  — all words already shown as underscores from render; clear correct/incorrect state only
+        this.surahWordsTarget.forEach((w, i) => {
+            if (!w.span) return;
             w.span.classList.remove('correct', 'missed', 'incorrect', 'highlight');
+            // In blind mode the text content is already _ chars; no extra CSS hiding needed
+            // In help mode, word-hidden is already set from renderSurah
+            // In normal mode, nothing is hidden
         });
 
         // If resuming, instantly re-process to restore previous correct matches
@@ -346,18 +1015,30 @@ class QuranMemApp {
             this.processRecitation(this.speechController.persistentTranscript);
         }
 
-        this.showFeedback('Listening... Start reciting!', 'recording');
+        this.showFeedback('🎤 Listening... Start reciting!', 'recording');
 
         this.speechController.startRecording(
             (transcript) => this.processRecitation(transcript),
             (err) => {
                 this.showFeedback(`Error: ${err}`, 'recording');
                 btn.classList.remove('reciting');
-                btn.innerHTML = '🎤 Recite';
+                if (btn.id === 'tb-hifz-btn') {
+                    const label = document.getElementById('tb-hifz-label');
+                    if (label) label.textContent = 'Hifz';
+                } else {
+                    btn.innerHTML = '🎤 Recite';
+                }
+                this.latestAccuracy = undefined;
+                this._setTestMode(0);
             },
             () => {
                 btn.classList.remove('reciting');
-                btn.innerHTML = '🎤 Recite';
+                if (btn.id === 'tb-hifz-btn') {
+                    const label = document.getElementById('tb-hifz-label');
+                    if (label) label.textContent = 'Hifz';
+                } else {
+                    btn.innerHTML = '🎤 Recite';
+                }
                 this.finalizeRecitation();
             }
         );
@@ -365,9 +1046,16 @@ class QuranMemApp {
 
     stopRecitationCommand() {
         this.speechController.stopRecording();
-        const btn = document.getElementById('recite-btn');
-        btn.classList.remove('reciting');
-        btn.innerHTML = '🎤 Recite';
+        const btn = document.getElementById('tb-hifz-btn') || document.getElementById('recite-btn');
+        if (btn) {
+            btn.classList.remove('reciting');
+            if (btn.id === 'tb-hifz-btn') {
+                const label = document.getElementById('tb-hifz-label');
+                if (label) label.textContent = 'Hifz';
+            } else {
+                btn.innerHTML = '🎤 Recite';
+            }
+        }
         this.finalizeRecitation();
     }
 
@@ -378,10 +1066,14 @@ class QuranMemApp {
 
         // Reset all words visually since we re-calculate from the start of the transcript on every interim result
         this.surahWordsTarget.forEach((w, i) => {
+            if (!w.span) return;
             w.span.classList.remove('correct', 'missed', 'incorrect', 'highlight');
 
-            if (this.testMode === 2 || this.testMode === 3) {
-                w.span.classList.add('word-hidden');
+            if (this.testMode === 2) {
+                // Restore underscore display
+                const orig = w.span.dataset.origText;
+                if (orig) w.span.textContent = this._makeBlindText(orig);
+                w.span.classList.add('blind-mode');
             } else if (this.testMode === 1 && i > 0) {
                 w.span.classList.add('word-hidden');
             }
@@ -405,11 +1097,21 @@ class QuranMemApp {
             const targetText = this.normalizeArabic(checkTarget.text);
 
             if (spokenWord === targetText || this.isCloseMatch(spokenWord, targetText)) {
-                // Match found in exact sequence!
-                checkTarget.span.classList.remove('word-hidden');
+                // Match! Reveal the word
+                checkTarget.span.classList.remove('word-hidden', 'blind-mode');
+                checkTarget.span.classList.add('correct');
+                // In blind mode: restore the actual Arabic text
+                if (this.testMode === 2) {
+                    const tajweed = checkTarget.span.dataset.origTajweed;
+                    const origText = checkTarget.span.dataset.origText;
+                    if (tajweed) {
+                        checkTarget.span.innerHTML = tajweed;
+                    } else if (origText) {
+                        checkTarget.span.textContent = origText;
+                    }
+                }
                 checkTarget.span.classList.add('correct');
                 checkTarget.span.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
                 targetIdx++;
                 correctCount++;
             }
@@ -443,7 +1145,8 @@ class QuranMemApp {
             status: this.latestAccuracy > 80 ? 'memorized' : 'learning',
             accuracy: this.latestAccuracy
         });
-        this.latestAccuracy = 0;
+        this.latestAccuracy = undefined;
+        this._setTestMode(0);
     }
 
     normalizeArabic(str) {
@@ -515,62 +1218,76 @@ class QuranMemApp {
     async updateDashboard() {
         try {
             const allProgress = await window.qDataStorage.getAllProgress() || [];
-            document.getElementById('stat-memorized').textContent = allProgress.length;
-            document.getElementById('stat-accuracy').textContent = allProgress.length > 0 ? "85%" : "0%";
 
-            const list = document.getElementById('recent-tests-list');
-            list.innerHTML = '';
-
-            if (allProgress.length === 0) {
-                list.innerHTML = '<li>No activity yet.</li>';
-                return;
-            }
-
-            // Sort by latest
-            allProgress.sort((a, b) => new Date(b.date) - new Date(a.date));
-
+            // Build surahId -> progress map
+            const progressMap = {};
+            let bestAccuracy = 0;
             allProgress.forEach(p => {
-                const surah = this.data.surahs.find(s => s.id === p.surahId);
-                const surahName = surah ? surah.name : `Surah ${p.surahId}`;
+                progressMap[p.surahId] = p;
+                if (p.accuracy && p.accuracy > bestAccuracy) bestAccuracy = p.accuracy;
+            });
 
-                const li = document.createElement('li');
-                li.style.padding = '0.75rem 0';
-                li.style.borderBottom = '1px solid var(--glass-border)';
-                li.style.color = 'var(--text-sec)';
-                li.style.display = 'flex';
-                li.style.justifyContent = 'space-between';
-                li.style.alignItems = 'center';
+            const totalAyahs = this.data.surahs.reduce((s, sr) => s + sr.ayahCount, 0);
+            const memorizedAyahs = allProgress.reduce((s, p) => {
+                if (p.status !== 'memorized') return s;
+                const surah = this.data.surahs.find(sr => sr.id === p.surahId);
+                return s + (surah ? surah.ayahCount : 0);
+            }, 0);
+            const memorizedSurahs = allProgress.filter(p => p.status === 'memorized').length;
+            const pct = totalAyahs > 0 ? Math.round((memorizedAyahs / totalAyahs) * 100) : 0;
 
-                const date = new Date(p.date).toLocaleDateString();
+            // Circular ring (circumference = 2πr = 263.9 for r=42)
+            const circ = 263.9;
+            const offset = circ - (pct / 100) * circ;
+            const ring = document.getElementById('progress-ring-fill');
+            if (ring) ring.style.strokeDashoffset = offset;
+            const ringPct = document.getElementById('progress-ring-pct');
+            if (ringPct) ringPct.textContent = pct + '%';
 
-                const infoDiv = document.createElement('div');
-                infoDiv.innerHTML = `<strong style="color:var(--text-primary)">${p.surahId}. ${surahName}</strong> <br/> <small>Status: ${p.status} on ${date}</small>`;
+            // Stat cards
+            const memEl = document.getElementById('stat-memorized');
+            if (memEl) memEl.textContent = memorizedAyahs;
+            const accEl = document.getElementById('stat-accuracy');
+            if (accEl) accEl.textContent = bestAccuracy > 0 ? bestAccuracy + '%' : '—';
+            const surahsEl = document.getElementById('stat-surahs');
+            if (surahsEl) surahsEl.textContent = memorizedSurahs;
 
-                const removeBtn = document.createElement('button');
-                removeBtn.textContent = '❌';
-                removeBtn.style.background = 'none';
-                removeBtn.style.border = 'none';
-                removeBtn.style.cursor = 'pointer';
-                removeBtn.style.fontSize = '1.2rem';
-                removeBtn.title = 'Remove Memorization';
+            // Per-surah list
+            const listEl = document.getElementById('progress-surah-list');
+            if (!listEl) return;
+            listEl.innerHTML = '';
 
-                removeBtn.onclick = async () => {
-                    if (confirm(`Remove memory record for ${surahName}?`)) {
-                        await window.qDataStorage.deleteProgress(p.id);
-                        await this.updateDashboard(); // Re-render this list
-                        this.renderSurahList(); // Refresh main list to remove trophy
-                    }
-                };
+            this.data.surahs.forEach(surah => {
+                const p = progressMap[surah.id];
+                const done = p && p.status === 'memorized';
+                const surahPct = done ? 100 : 0;
 
-                li.appendChild(infoDiv);
-                li.appendChild(removeBtn);
-                list.appendChild(li);
+                const row = document.createElement('div');
+                row.className = 'psurah-row';
+                row.innerHTML = `
+                    <div class="psurah-header">
+                        <span class="psurah-name">${surah.id}. ${surah.name} <span style="font-family:var(--font-arabic);font-weight:400;font-size:0.95em">${surah.arabicName || ''}</span></span>
+                        <span class="psurah-pct">${done ? '✅ Done' : surah.ayahCount + ' ayahs'}</span>
+                    </div>
+                    <div class="psurah-bar-bg">
+                        <div class="psurah-bar-fill ${done ? 'complete' : ''}" style="width:${surahPct}%"></div>
+                    </div>
+                `;
+
+                // Tap row to jump to that surah
+                row.style.cursor = 'pointer';
+                row.addEventListener('click', () => {
+                    this.openSurah(surah);
+                });
+
+                listEl.appendChild(row);
             });
 
         } catch (e) {
-            console.error("Dashboard DB error", e);
+            console.error('Dashboard DB error', e);
         }
     }
+
 }
 
 document.addEventListener('DOMContentLoaded', () => {

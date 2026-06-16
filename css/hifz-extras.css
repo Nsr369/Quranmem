@@ -1,0 +1,320 @@
+
+/* ======================================
+   HIFZ MODAL — compact bottom sheet
+   ====================================== */
+
+.hifz-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.48);
+    z-index: 2000;
+    display: flex;
+    align-items: flex-end;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.hifz-modal-overlay.visible {
+    opacity: 1;
+}
+
+.hifz-modal-sheet {
+    background: #fff;
+    width: 100%;
+    border-radius: 18px 18px 0 0;
+    padding: 12px 16px 24px;
+    transform: translateY(100%);
+    transition: transform 0.25s cubic-bezier(0.34, 1.2, 0.64, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hifz-modal-overlay.visible .hifz-modal-sheet {
+    transform: translateY(0);
+}
+
+.hifz-modal-handle {
+    width: 36px;
+    height: 3px;
+    background: #ddd;
+    border-radius: 2px;
+    margin: 0 auto 6px;
+}
+
+.hifz-modal-title {
+    font-family: var(--font-arabic), var(--font-sans);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-align: center;
+    margin: 0;
+}
+
+.hifz-modal-sub {
+    font-size: 12px;
+    color: var(--text-sec);
+    text-align: center;
+    margin: -3px 0 2px;
+}
+
+/* Horizontal pill row for options */
+.hifz-modal-options {
+    display: flex;
+    gap: 8px;
+}
+
+.hifz-opt-btn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    padding: 10px 6px;
+    border: 2px solid var(--glass-border);
+    border-radius: 10px;
+    background: var(--bg-color);
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.hifz-opt-btn:hover {
+    border-color: var(--primary-color);
+    background: #f0faf0;
+}
+
+.hifz-opt-btn.hifz-opt-active {
+    border-color: var(--primary-color);
+    background: #e8f5e9;
+}
+
+.hifz-opt-icon {
+    font-size: 20px;
+}
+
+.hifz-opt-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.hifz-opt-desc {
+    display: none; /* hidden in compact mode */
+}
+
+.hifz-modal-close {
+    margin-top: 2px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #f5f5f5;
+    color: var(--text-sec);
+    font-size: 14px;
+    cursor: pointer;
+    font-family: var(--font-sans);
+    transition: background 0.2s;
+}
+
+.hifz-modal-close:hover {
+    background: #e5e5e5;
+}
+
+/* Start Reciting CTA button */
+.hifz-start-btn {
+    padding: 11px;
+    border: none;
+    border-radius: 10px;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--font-sans);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.hifz-start-btn:hover {
+    background: #1b5e20;
+    transform: scale(1.01);
+}
+
+.hifz-start-btn:active {
+    transform: scale(0.98);
+}
+
+
+/* ======================================
+   BLIND MODE — underscores
+   ====================================== */
+
+.blind-mode {
+    color: var(--text-primary) !important;
+    letter-spacing: 6px;
+    font-family: monospace;
+    opacity: 0.55;
+}
+
+/* ======================================
+   TRANSLATION ROW — action buttons
+   ====================================== */
+
+.trans-left {
+    position: relative;
+}
+
+.trans-action-row {
+    display: flex;
+    gap: 6px;
+    margin-top: 6px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.trans-row:hover .trans-action-row,
+.trans-row.row-bookmarked .trans-action-row {
+    opacity: 1;
+}
+
+.trans-icon-btn {
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 3px 6px;
+    cursor: pointer;
+    color: var(--text-sec);
+    transition: background 0.15s, border-color 0.15s;
+    line-height: 1;
+}
+
+.trans-icon-btn:hover {
+    background: rgba(0,0,0,0.06);
+    border-color: var(--glass-border);
+}
+
+.bm-btn.bm-active {
+    color: var(--accent-color);
+}
+
+/* Bookmarked row indicator */
+.trans-row.row-bookmarked {
+    background-color: rgba(216, 67, 21, 0.06) !important;
+    border-left: 3px solid var(--accent-color) !important;
+}
+
+/* ======================================
+   TRANSLATION TEXT BODY
+   ====================================== */
+
+.trans-text-body {
+    color: var(--text-primary);
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+/* ======================================
+   USER MEANING (custom notes)
+   ====================================== */
+
+.user-meaning {
+    margin-top: 6px;
+    padding: 6px 10px;
+    background: rgba(255, 193, 7, 0.1);
+    border-left: 3px solid #f59e0b;
+    border-radius: 0 6px 6px 0;
+    font-size: 14px;
+    color: var(--text-primary);
+    line-height: 1.5;
+}
+
+.user-meaning.hidden {
+    display: none;
+}
+
+.meaning-label {
+    font-weight: 600;
+    color: #b45309;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.meaning-text {
+    color: var(--text-primary);
+}
+
+/* ======================================
+   MEANING EDITOR (inline textarea)
+   ====================================== */
+
+.meaning-editor {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.meaning-textarea {
+    width: 100%;
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    color: var(--text-primary);
+    background: #fff;
+    resize: vertical;
+    outline: none;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+.meaning-textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.15);
+}
+
+.meaning-editor-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.meaning-save-btn,
+.meaning-delete-btn,
+.meaning-cancel-btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.meaning-save-btn {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.meaning-save-btn:hover {
+    background: #1b5e20;
+}
+
+.meaning-delete-btn {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.meaning-delete-btn:hover {
+    background: #fecaca;
+}
+
+.meaning-cancel-btn {
+    background: #f3f4f6;
+    color: var(--text-sec);
+}
+
+.meaning-cancel-btn:hover {
+    background: #e5e7eb;
+}

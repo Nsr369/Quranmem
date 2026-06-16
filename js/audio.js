@@ -1,7 +1,7 @@
 class AudioController {
     constructor() {
         this.audioElement = document.getElementById('quran-audio');
-        this.playPauseBtn = document.getElementById('play-pause-btn');
+        this.playPauseBtn = document.getElementById('tb-play-btn');
         this.allWords = [];
         this.highlightCallback = null;
         this.isPlaying = false;
@@ -44,14 +44,48 @@ class AudioController {
         }
     }
 
+    // Seek to the start of an Ayah by its index (0-based)
+    seekToAyah(ayahIdx) {
+        if (!this.audioElement.src || this.allWords.length === 0) return;
+
+        // Find the first word of this ayah
+        const firstWordOfAyah = this.allWords.find(w => w.ayahIdx === ayahIdx);
+        if (!firstWordOfAyah) return;
+
+        const seekToMs = firstWordOfAyah.startMs;
+        this.audioElement.currentTime = seekToMs / 1000;
+
+        // Start playing if paused
+        if (this.audioElement.paused) {
+            this.audioElement.play().catch(e => console.error("Playback failed", e));
+        }
+    }
+
+    // Get the ayah index currently playing (based on current time)
+    getCurrentAyahIdx() {
+        if (this.allWords.length === 0) return -1;
+        const currentTimeMs = this.audioElement.currentTime * 1000;
+        let lastAyah = -1;
+        for (const w of this.allWords) {
+            if (currentTimeMs >= w.startMs - 200) lastAyah = w.ayahIdx;
+            else break;
+        }
+        return lastAyah;
+    }
+
     updatePlayState(isPlaying) {
         this.isPlaying = isPlaying;
+        const playLabel = document.getElementById('tb-play-label');
+        const playSvg = document.getElementById('tb-play-svg');
+        
         if (isPlaying) {
-            this.playPauseBtn.innerHTML = '⏸';
+            if (playLabel) playLabel.textContent = 'Pause';
+            if (playSvg) playSvg.innerHTML = '<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>'; // Pause SVG path
             this.playPauseBtn.classList.add('playing');
             this.startTrackingTimer();
         } else {
-            this.playPauseBtn.innerHTML = '▶';
+            if (playLabel) playLabel.textContent = 'Play';
+            if (playSvg) playSvg.innerHTML = '<path d="M8 5v14l11-7z"/>'; // Play SVG path
             this.playPauseBtn.classList.remove('playing');
             this.stopTrackingTimer();
         }

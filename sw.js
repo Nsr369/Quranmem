@@ -1,4 +1,4 @@
-const CACHE_NAME = 'quranmem-v1';
+const CACHE_NAME = 'quranmem-v2';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -8,6 +8,7 @@ const ASSETS_TO_CACHE = [
   './js/audio.js',
   './js/speech.js',
   './js/data/juz30.js',
+  './js/data/abdul_basit_timings.js',
   './manifest.json',
   'https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&display=swap'
 ];

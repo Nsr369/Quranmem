@@ -33,7 +33,7 @@ const quranData = {
                             "translation_ml": "are they asking one another"
                         }
                     ],
-                    "translation_ml": "About what are they asking one another"
+                    "translation_ml": "എന്തിനെപ്പറ്റിയാണ് അവര്‍ പരസ്പരം ചോദിച്ചു കൊണ്ടിരിക്കുന്നത്‌?"
                 },
                 {
                     "number": 2,
@@ -67,7 +67,7 @@ const quranData = {
                             "translation_ml": "the Great"
                         }
                     ],
-                    "translation_ml": "About the News the Great"
+                    "translation_ml": "ആ മഹത്തായ വൃത്താന്തത്തെപ്പറ്റി."
                 },
                 {
                     "number": 3,
@@ -109,7 +109,7 @@ const quranData = {
                             "translation_ml": "(in) disagreement"
                         }
                     ],
-                    "translation_ml": "(About) which they (are) concerning it (in) disagreement"
+                    "translation_ml": "അവര്‍ ഏതൊരു കാര്യത്തില്‍ അഭിപ്രായവ്യത്യാസത്തിലായി ക്കൊണ്ടിരിക്കുന്നുവോ അതിനെപ്പറ്റി."
                 },
                 {
                     "number": 4,
@@ -135,7 +135,7 @@ const quranData = {
                             "translation_ml": "(soon) they will know"
                         }
                     ],
-                    "translation_ml": "Nay (soon) they will know"
+                    "translation_ml": "നിസ്സംശയം; അവര്‍ വഴിയെ അറിഞ്ഞു കൊള്ളും."
                 },
                 {
                     "number": 5,
@@ -169,7 +169,7 @@ const quranData = {
                             "translation_ml": "(soon) they will know"
                         }
                     ],
-                    "translation_ml": "Then Nay (soon) they will know"
+                    "translation_ml": "വീണ്ടും നിസ്സംശയം; അവര്‍ വഴിയെ അറിഞ്ഞു കൊള്ളും."
                 },
                 {
                     "number": 6,
@@ -211,7 +211,7 @@ const quranData = {
                             "translation_ml": "a resting place"
                         }
                     ],
-                    "translation_ml": "Have not We made the earth a resting place"
+                    "translation_ml": "ഭൂമിയെ നാം ഒരു വിരിപ്പാക്കിയില്ലേ?"
                 },
                 {
                     "number": 7,
@@ -237,7 +237,7 @@ const quranData = {
                             "translation_ml": "(as) pegs"
                         }
                     ],
-                    "translation_ml": "And the mountains (as) pegs"
+                    "translation_ml": "പര്‍വ്വതങ്ങളെ ആണികളാക്കുകയും (ചെയ്തില്ലേ?)"
                 },
                 {
                     "number": 8,
@@ -263,7 +263,7 @@ const quranData = {
                             "translation_ml": "(in) pairs"
                         }
                     ],
-                    "translation_ml": "And We created you (in) pairs"
+                    "translation_ml": "നിങ്ങളെ നാം ഇണകളായി സൃഷ്ടിക്കുകയും ചെയ്തിരിക്കുന്നു."
                 },
                 {
                     "number": 9,
@@ -297,7 +297,7 @@ const quranData = {
                             "translation_ml": "(for) rest"
                         }
                     ],
-                    "translation_ml": "And We made your sleep (for) rest"
+                    "translation_ml": "നിങ്ങളുടെ ഉറക്കത്തെ നാം വിശ്രമമാക്കുകയും ചെയ്തിരിക്കുന്നു."
                 },
                 {
                     "number": 10,
@@ -331,7 +331,7 @@ const quranData = {
                             "translation_ml": "(as) covering"
                         }
                     ],
-                    "translation_ml": "And We made the night (as) covering"
+                    "translation_ml": "രാത്രിയെ നാം ഒരു വസ്ത്രമാക്കുകയും,"
                 },
                 {
                     "number": 11,
@@ -365,7 +365,7 @@ const quranData = {
                             "translation_ml": "(for) livelihood"
                         }
                     ],
-                    "translation_ml": "And We made the day (for) livelihood"
+                    "translation_ml": "പകലിനെ നാം ജീവസന്ധാരണവേളയാക്കുകയും ചെയ്തിരിക്കുന്നു."
                 },
                 {
                     "number": 12,
@@ -407,7 +407,7 @@ const quranData = {
                             "translation_ml": "strong"
                         }
                     ],
-                    "translation_ml": "And We constructed over you seven strong"
+                    "translation_ml": "നിങ്ങള്‍ക്ക് മീതെ ബലിഷ്ഠമായ ഏഴു ആകാശങ്ങള്‍ നാം നിര്‍മിക്കുകയും"
                 },
                 {
                     "number": 13,
@@ -441,7 +441,7 @@ const quranData = {
                             "translation_ml": "burning"
                         }
                     ],
-                    "translation_ml": "And We placed a lamp burning"
+                    "translation_ml": "കത്തിജ്വലിക്കുന്ന ഒരു വിളക്ക് നാം ഉണ്ടാക്കുകയും ചെയ്തിരിക്കുന്നു."
                 },
                 {
                     "number": 14,
@@ -491,7 +491,7 @@ const quranData = {
                             "translation_ml": "pouring abundantly"
                         }
                     ],
-                    "translation_ml": "And We sent down from the rain clouds water pouring abundantly"
+                    "translation_ml": "കാര്‍മേഘങ്ങളില്‍ നിന്ന് കുത്തി ഒഴുകുന്ന വെള്ളം നാം ഇറക്കുകയും ചെയ്തു."
                 },
                 {
                     "number": 15,
@@ -533,7 +533,7 @@ const quranData = {
                             "translation_ml": "and vegetation"
                         }
                     ],
-                    "translation_ml": "That We may bring forth thereby grain and vegetation"
+                    "translation_ml": "അതു മുഖേന ധാന്യവും സസ്യവും നാം പുറത്തു കൊണ്ടു വരാന്‍ വേണ്ടി."
                 },
                 {
                     "number": 16,
@@ -559,7 +559,7 @@ const quranData = {
                             "translation_ml": "(of) thick foliage"
                         }
                     ],
-                    "translation_ml": "And gardens (of) thick foliage"
+                    "translation_ml": "ഇടതൂര്‍ന്ന തോട്ടങ്ങളും"
                 },
                 {
                     "number": 17,
@@ -609,7 +609,7 @@ const quranData = {
                             "translation_ml": "an appointed time"
                         }
                     ],
-                    "translation_ml": "Indeed (the) Day (of) the Judgment is an appointed time"
+                    "translation_ml": "തീര്‍ച്ചയായും തീരുമാനത്തിന്‍റെ ദിവസം സമയം നിര്‍ണയിക്കപ്പെട്ടതായിരിക്കുന്നു."
                 },
                 {
                     "number": 18,
@@ -667,7 +667,7 @@ const quranData = {
                             "translation_ml": "(in) crowds"
                         }
                     ],
-                    "translation_ml": "(The) Day (in which) shall be blown in the trumpet and you will come forth (in) crowds"
+                    "translation_ml": "അതായത് കാഹളത്തില്‍ ഊതപ്പെടുകയും, നിങ്ങള്‍ കൂട്ടംകൂട്ടമായി വന്നെത്തുകയും ചെയ്യുന്ന ദിവസം."
                 },
                 {
                     "number": 19,
@@ -709,7 +709,7 @@ const quranData = {
                             "translation_ml": "gateways"
                         }
                     ],
-                    "translation_ml": "And is opened the heaven and becomes gateways"
+                    "translation_ml": "ആകാശം തുറക്കപ്പെടുകയും എന്നിട്ടത് പല കവാടങ്ങളായി തീരുകയും ചെയ്യും."
                 },
                 {
                     "number": 20,
@@ -751,7 +751,7 @@ const quranData = {
                             "translation_ml": "a mirage"
                         }
                     ],
-                    "translation_ml": "And are moved the mountains and become a mirage"
+                    "translation_ml": "പര്‍വ്വതങ്ങള്‍ സഞ്ചരിപ്പിക്കപ്പെടുകയും അങ്ങനെ അവ മരീചിക പോലെ ആയിത്തീരുകയും ചെയ്യും."
                 },
                 {
                     "number": 21,
@@ -793,7 +793,7 @@ const quranData = {
                             "translation_ml": "lying in wait"
                         }
                     ],
-                    "translation_ml": "Indeed Hell is lying in wait"
+                    "translation_ml": "തീര്‍ച്ചയായും നരകം കാത്തിരിക്കുന്ന സ്ഥലമാകുന്നു."
                 },
                 {
                     "number": 22,
@@ -819,7 +819,7 @@ const quranData = {
                             "translation_ml": "a place of return"
                         }
                     ],
-                    "translation_ml": "For the transgressors a place of return"
+                    "translation_ml": "അതിക്രമകാരികള്‍ക്ക് മടങ്ങിച്ചെല്ലാനുള്ള സ്ഥലം."
                 },
                 {
                     "number": 23,
@@ -853,7 +853,7 @@ const quranData = {
                             "translation_ml": "(for) ages"
                         }
                     ],
-                    "translation_ml": "(They will) be remaining therein (for) ages"
+                    "translation_ml": "അവര്‍ അതില്‍ യുഗങ്ങളോളം താമസിക്കുന്നവരായിരിക്കും."
                 },
                 {
                     "number": 24,
@@ -911,7 +911,7 @@ const quranData = {
                             "translation_ml": "any drink"
                         }
                     ],
-                    "translation_ml": "Not they will taste therein coolness and not any drink"
+                    "translation_ml": "കുളിര്‍മയോ കുടിനീരോ അവര്‍ അവിടെ ആസ്വദിക്കുകയില്ല."
                 },
                 {
                     "number": 25,
@@ -945,7 +945,7 @@ const quranData = {
                             "translation_ml": "and purulence"
                         }
                     ],
-                    "translation_ml": "Except scalding water and purulence"
+                    "translation_ml": "കൊടുംചൂടുള്ള വെള്ളവും കൊടും തണുപ്പുള്ള വെള്ളവുമല്ലാതെ"
                 },
                 {
                     "number": 26,
@@ -971,7 +971,7 @@ const quranData = {
                             "translation_ml": "appropriate"
                         }
                     ],
-                    "translation_ml": "A recompense appropriate"
+                    "translation_ml": "അനുയോജ്യമായ പ്രതിഫലമത്രെ അത്‌."
                 },
                 {
                     "number": 27,
@@ -1021,7 +1021,7 @@ const quranData = {
                             "translation_ml": "an account"
                         }
                     ],
-                    "translation_ml": "Indeed, they were not expecting an account"
+                    "translation_ml": "തീര്‍ച്ചയായും അവര്‍ വിചാരണ പ്രതീക്ഷിക്കുന്നില്ലായിരുന്നു."
                 },
                 {
                     "number": 28,
@@ -1055,7 +1055,7 @@ const quranData = {
                             "translation_ml": "(with) denial"
                         }
                     ],
-                    "translation_ml": "And they denied Our Signs (with) denial"
+                    "translation_ml": "നമ്മുടെ ദൃഷ്ടാന്തങ്ങളെ അവര്‍ തീര്‍ത്തും നിഷേധിച്ചു തള്ളുകയും ചെയ്തു."
                 },
                 {
                     "number": 29,
@@ -1097,7 +1097,7 @@ const quranData = {
                             "translation_ml": "(in) a Book"
                         }
                     ],
-                    "translation_ml": "And every thing We have enumerated it (in) a Book"
+                    "translation_ml": "ഏതു കാര്യവും നാം എഴുതി തിട്ടപ്പെടുത്തിയിരിക്കുന്നു."
                 },
                 {
                     "number": 30,
@@ -1147,7 +1147,7 @@ const quranData = {
                             "translation_ml": "(in) punishment"
                         }
                     ],
-                    "translation_ml": "So taste and never We will increase you except (in) punishment"
+                    "translation_ml": "അതിനാല്‍ നിങ്ങള്‍ (ശിക്ഷ) ആസ്വദിച്ചു കൊള്ളുക. തീര്‍ച്ചയായും നാം നിങ്ങള്‍ക്കു ശിക്ഷയല്ലാതൊന്നും വര്‍ദ്ധിപ്പിച്ചു തരികയില്ല."
                 },
                 {
                     "number": 31,
@@ -1181,7 +1181,7 @@ const quranData = {
                             "translation_ml": "(is) success"
                         }
                     ],
-                    "translation_ml": "Indeed for the righteous (is) success"
+                    "translation_ml": "തീര്‍ച്ചയായും സൂക്ഷ്മത പാലിച്ചവര്‍ക്ക് വിജയമുണ്ട്‌."
                 },
                 {
                     "number": 32,
@@ -1207,7 +1207,7 @@ const quranData = {
                             "translation_ml": "and grapevines"
                         }
                     ],
-                    "translation_ml": "Gardens and grapevines"
+                    "translation_ml": "അതായത് (സ്വര്‍ഗത്തിലെ) തോട്ടങ്ങളും മുന്തിരികളും,"
                 },
                 {
                     "number": 33,
@@ -1233,7 +1233,7 @@ const quranData = {
                             "translation_ml": "well-matched"
                         }
                     ],
-                    "translation_ml": "And splendid companions well-matched"
+                    "translation_ml": "തുടുത്ത മാര്‍വിടമുള്ള സമപ്രായക്കാരായ തരുണികളും."
                 },
                 {
                     "number": 34,
@@ -1259,7 +1259,7 @@ const quranData = {
                             "translation_ml": "full"
                         }
                     ],
-                    "translation_ml": "And a cup full"
+                    "translation_ml": "നിറഞ്ഞ പാനപാത്രങ്ങളും."
                 },
                 {
                     "number": 35,
@@ -1317,7 +1317,7 @@ const quranData = {
                             "translation_ml": "any falsehood"
                         }
                     ],
-                    "translation_ml": "Not they will hear therein any vain talk and not any falsehood"
+                    "translation_ml": "അവിടെ അനാവശ്യമായ ഒരു വാക്കോ ഒരു വ്യാജവാര്‍ത്തയോ അവര്‍ കേള്‍ക്കുകയില്ല."
                 },
                 {
                     "number": 36,
@@ -1367,7 +1367,7 @@ const quranData = {
                             "translation_ml": "(according to) account"
                         }
                     ],
-                    "translation_ml": "(As) a reward from your Lord a gift (according to) account"
+                    "translation_ml": "(അത്‌) നിന്‍റെ രക്ഷിതാവിങ്കല്‍ നിന്നുള്ള ഒരു പ്രതിഫലവും, കണക്കൊത്ത ഒരു സമ്മാനവുമാകുന്നു."
                 },
                 {
                     "number": 37,
@@ -1457,7 +1457,7 @@ const quranData = {
                             "translation_ml": "(to) address"
                         }
                     ],
-                    "translation_ml": "Lord (of) the heavens and the earth and whatever (is) between both of them the Most Gracious not they have power from Him (to) address"
+                    "translation_ml": "ആകാശങ്ങളുടെയും ഭൂമിയുടെയും അവക്കിടയിലുള്ളതിന്‍റെയും രക്ഷിതാവും പരമകാരുണികനുമായുള്ളവന്‍റെ (സമ്മാനം.) അവനുമായി സംഭാഷണത്തില്‍ ഏര്‍പെടാന്‍ അവര്‍ക്കു സാധിക്കുകയില്ല."
                 },
                 {
                     "number": 38,
@@ -1579,7 +1579,7 @@ const quranData = {
                             "translation_ml": "(what is) correct"
                         }
                     ],
-                    "translation_ml": "(The) Day will stand the Spirit and the Angels (in) rows not they will speak except (one) who  permits [for] him the Most Gracious and he (will) say (what is) correct"
+                    "translation_ml": "റൂഹും മലക്കുകളും അണിയായി നില്‍ക്കുന്ന ദിവസം. പരമകാരുണികനായ അല്ലാഹു അനുവാദം നല്‍കിയിട്ടുള്ളവനും സത്യം പറഞ്ഞിട്ടുള്ളവനുമല്ലാതെ അന്ന് സംസാരിക്കുകയില്ല."
                 },
                 {
                     "number": 39,
@@ -1661,7 +1661,7 @@ const quranData = {
                             "translation_ml": "a return"
                         }
                     ],
-                    "translation_ml": "That (is) the Day the True So whoever wills let him take towards his Lord a return"
+                    "translation_ml": "അതത്രെ യഥാര്‍ത്ഥമായ ദിവസം. അതിനാല്‍ വല്ലവനും ഉദ്ദേശിക്കുന്ന പക്ഷം തന്‍റെ രക്ഷിതാവിങ്കലേക്കുള്ള മടക്കത്തിന്‍റെ മാര്‍ഗം അവന്‍ സ്വീകരിക്കട്ടെ."
                 },
                 {
                     "number": 40,
@@ -1791,7 +1791,7 @@ const quranData = {
                             "translation_ml": "dust"
                         }
                     ],
-                    "translation_ml": "Indeed We [We] have warned you (of) a punishment near (the) Day will see the man what have sent forth his hands and will say the disbeliever O I wish I were dust"
+                    "translation_ml": "ആസന്നമായ ഒരു ശിക്ഷയെ പറ്റി തീര്‍ച്ചയായും നിങ്ങള്‍ക്കു നാം മുന്നറിയിപ്പ് നല്‍കിയിരിക്കുന്നു. മനുഷ്യന്‍ തന്‍റെ കൈകള്‍ മുന്‍കൂട്ടി ചെയ്തു വെച്ചത് നോക്കിക്കാണുകയും, അയ്യോ ഞാന്‍ മണ്ണായിരുന്നെങ്കില്‍ എത്ര നന്നായിരുന്നേനെ എന്ന് സത്യനിഷേധി പറയുകയും ചെയ്യുന്ന ദിവസം."
                 }
             ]
         },
@@ -1828,7 +1828,7 @@ const quranData = {
                             "translation_ml": "violently"
                         }
                     ],
-                    "translation_ml": "By those who extract violently"
+                    "translation_ml": "(അവിശ്വാസികളിലേക്ക്‌) ഇറങ്ങിച്ചെന്ന് (അവരുടെ ആത്മാവുകളെ) ഊരിയെടുക്കുന്നവ തന്നെയാണ സത്യം."
                 },
                 {
                     "number": 2,
@@ -1854,7 +1854,7 @@ const quranData = {
                             "translation_ml": "gently"
                         }
                     ],
-                    "translation_ml": "And those who draw out gently"
+                    "translation_ml": "(സത്യവിശ്വാസികളുടെ ആത്മാവുകളെ) സൌമ്യതയോടെ പുറത്തെടുക്കുന്നവ തന്നെയാണ, സത്യം."
                 },
                 {
                     "number": 3,
@@ -1880,7 +1880,7 @@ const quranData = {
                             "translation_ml": "swimming"
                         }
                     ],
-                    "translation_ml": "And those who glide swimming"
+                    "translation_ml": "ഊക്കോടെ ഒഴുകി വരുന്നവ തന്നെയാണ, സത്യം."
                 },
                 {
                     "number": 4,
@@ -1906,7 +1906,7 @@ const quranData = {
                             "translation_ml": "(in) a race"
                         }
                     ],
-                    "translation_ml": "And those who race each other (in) a race"
+                    "translation_ml": "എന്നിട്ടു മുന്നോട്ടു കുതിച്ചു പോകുന്നവ തന്നെയാണ, സത്യം."
                 },
                 {
                     "number": 5,
@@ -1932,7 +1932,7 @@ const quranData = {
                             "translation_ml": "(the) matter"
                         }
                     ],
-                    "translation_ml": "And those who arrange (the) matter"
+                    "translation_ml": "കാര്യം നിയന്ത്രിക്കുന്നവയും തന്നെയാണ, സത്യം."
                 },
                 {
                     "number": 6,
@@ -1966,7 +1966,7 @@ const quranData = {
                             "translation_ml": "the quaking one"
                         }
                     ],
-                    "translation_ml": "(The) Day will quake the quaking one"
+                    "translation_ml": "ആ നടുക്കുന്ന സംഭവം നടുക്കമുണ്ടാക്കുന്ന ദിവസം."
                 },
                 {
                     "number": 7,
@@ -1992,7 +1992,7 @@ const quranData = {
                             "translation_ml": "the subsequent"
                         }
                     ],
-                    "translation_ml": "Follows it the subsequent"
+                    "translation_ml": "അതിനെ തുടര്‍ന്ന് അതിന്‍റെ പിന്നാലെ മറ്റൊന്നും"
                 },
                 {
                     "number": 8,
@@ -2026,7 +2026,7 @@ const quranData = {
                             "translation_ml": "will palpitate"
                         }
                     ],
-                    "translation_ml": "Hearts that Day will palpitate"
+                    "translation_ml": "ചില ഹൃദയങ്ങള്‍ അന്നു വിറച്ചു കൊണ്ടിരിക്കും."
                 },
                 {
                     "number": 9,
@@ -2052,7 +2052,7 @@ const quranData = {
                             "translation_ml": "humbled"
                         }
                     ],
-                    "translation_ml": "Their eyes humbled"
+                    "translation_ml": "അവയുടെ കണ്ണുകള്‍ അന്ന് കീഴ്പോട്ടു താഴ്ന്നിരിക്കും."
                 },
                 {
                     "number": 10,
@@ -2102,7 +2102,7 @@ const quranData = {
                             "translation_ml": "the former state"
                         }
                     ],
-                    "translation_ml": "They say Will we indeed be returned to the former state"
+                    "translation_ml": "അവര്‍ പറയും: തീര്‍ച്ചയായും നാം (നമ്മുടെ) മുന്‍സ്ഥിതിയിലേക്ക് മടക്കപ്പെടുന്നവരാണോ?"
                 },
                 {
                     "number": 11,
@@ -2144,7 +2144,7 @@ const quranData = {
                             "translation_ml": "decayed"
                         }
                     ],
-                    "translation_ml": "What! When we are bones decayed"
+                    "translation_ml": "നാം ജീര്‍ണിച്ച എല്ലുകളായി കഴിഞ്ഞാലും (നമുക്ക് മടക്കമോ?)"
                 },
                 {
                     "number": 12,
@@ -2194,7 +2194,7 @@ const quranData = {
                             "translation_ml": "losing"
                         }
                     ],
-                    "translation_ml": "They say This then (would be) a return losing"
+                    "translation_ml": "അവര്‍ പറയുകയാണ്‌: അങ്ങനെയാണെങ്കില്‍ നഷ്ടകരമായ ഒരു തിരിച്ചുവരവായിരിക്കും അത്‌."
                 },
                 {
                     "number": 13,
@@ -2236,7 +2236,7 @@ const quranData = {
                             "translation_ml": "single"
                         }
                     ],
-                    "translation_ml": "Then only it (will be) a shout single"
+                    "translation_ml": "അത് ഒരേയൊരു ഘോരശബ്ദം മാത്രമായിരിക്കും."
                 },
                 {
                     "number": 14,
@@ -2270,7 +2270,7 @@ const quranData = {
                             "translation_ml": "(will be) awakened"
                         }
                     ],
-                    "translation_ml": "And behold They (will be) awakened"
+                    "translation_ml": "അപ്പോഴതാ അവര്‍ ഭൂമുഖത്തെത്തിക്കഴിഞ്ഞു."
                 },
                 {
                     "number": 15,
@@ -2312,7 +2312,7 @@ const quranData = {
                             "translation_ml": "(of) Musa"
                         }
                     ],
-                    "translation_ml": "Has (there) come to you (the) story (of) Musa"
+                    "translation_ml": "മൂസാനബിയുടെ വര്‍ത്തമാനം നിനക്ക് വന്നെത്തിയോ?"
                 },
                 {
                     "number": 16,
@@ -2370,7 +2370,7 @@ const quranData = {
                             "translation_ml": "(of) Tuwa"
                         }
                     ],
-                    "translation_ml": "When called him his Lord in the valley the sacred (of) Tuwa"
+                    "translation_ml": "ത്വുവാ എന്ന പരിശുദ്ധ താഴ്‌വരയില്‍ വെച്ച് അദ്ദേഹത്തിന്‍റെ രക്ഷിതാവ് അദ്ദേഹത്തെ വിളിച്ച് ഇപ്രകാരം പറഞ്ഞ സന്ദര്‍ഭം:"
                 },
                 {
                     "number": 17,
@@ -2420,7 +2420,7 @@ const quranData = {
                             "translation_ml": "(has) transgressed"
                         }
                     ],
-                    "translation_ml": "Go to Firaun Indeed, he (has) transgressed"
+                    "translation_ml": "നീ ഫിര്‍ഔന്‍റെ അടുത്തേക്കു പോകുക. തീര്‍ച്ചയായും അവന്‍ അതിരുകവിഞ്ഞിരിക്കുന്നു."
                 },
                 {
                     "number": 18,
@@ -2478,7 +2478,7 @@ const quranData = {
                             "translation_ml": "purify yourself"
                         }
                     ],
-                    "translation_ml": "And say Would [for] you [to] [that] purify yourself"
+                    "translation_ml": "എന്നിട്ട് ചോദിക്കുക: നീ പരിശുദ്ധി പ്രാപിക്കാന്‍ തയ്യാറുണ്ടോ?"
                 },
                 {
                     "number": 19,
@@ -2520,7 +2520,7 @@ const quranData = {
                             "translation_ml": "so you would fear"
                         }
                     ],
-                    "translation_ml": "And I will guide you to your Lord so you would fear"
+                    "translation_ml": "നിന്‍റെ രക്ഷിതാവിങ്കലേക്ക് നിനക്ക് ഞാന്‍ വഴി കാണിച്ചുതരാം. എന്നിട്ട് നീ ഭയപ്പെടാനും (തയ്യാറുണ്ടോ?)"
                 },
                 {
                     "number": 20,
@@ -2554,7 +2554,7 @@ const quranData = {
                             "translation_ml": "the great"
                         }
                     ],
-                    "translation_ml": "Then he showed him the sign the great"
+                    "translation_ml": "അങ്ങനെ അദ്ദേഹം (മൂസാ) അവന്ന് ആ മഹത്തായ ദൃഷ്ടാന്തം കാണിച്ചുകൊടുത്തു."
                 },
                 {
                     "number": 21,
@@ -2580,7 +2580,7 @@ const quranData = {
                             "translation_ml": "and disobeyed"
                         }
                     ],
-                    "translation_ml": "But he denied and disobeyed"
+                    "translation_ml": "അപ്പോള്‍ അവന്‍ നിഷേധിച്ചു തള്ളുകയും ധിക്കരിക്കുകയും ചെയ്തു."
                 },
                 {
                     "number": 22,
@@ -2614,7 +2614,7 @@ const quranData = {
                             "translation_ml": "striving"
                         }
                     ],
-                    "translation_ml": "Then he turned his back striving"
+                    "translation_ml": "പിന്നെ, അവന്‍ എതിര്‍ ശ്രമങ്ങള്‍ നടത്തുവാനായി പിന്തിരിഞ്ഞു പോയി."
                 },
                 {
                     "number": 23,
@@ -2640,7 +2640,7 @@ const quranData = {
                             "translation_ml": "and called out"
                         }
                     ],
-                    "translation_ml": "And he gathered and called out"
+                    "translation_ml": "അങ്ങനെ അവന്‍ (തന്‍റെ ആള്‍ക്കാരെ) ശേഖരിച്ചു. എന്നിട്ടു വിളംബരം ചെയ്തു."
                 },
                 {
                     "number": 24,
@@ -2682,7 +2682,7 @@ const quranData = {
                             "translation_ml": "the Most High"
                         }
                     ],
-                    "translation_ml": "Then he said I am your Lord the Most High"
+                    "translation_ml": "ഞാന്‍ നിങ്ങളുടെ അത്യുന്നതനായ രക്ഷിതാവാകുന്നു എന്ന് അവന്‍ പറഞ്ഞു."
                 },
                 {
                     "number": 25,
@@ -2732,7 +2732,7 @@ const quranData = {
                             "translation_ml": "and the first"
                         }
                     ],
-                    "translation_ml": "So seized him Allah (with) an exemplary punishment (for) the last and the first"
+                    "translation_ml": "അപ്പോള്‍ പരലോകത്തിലെയും ഇഹലോകത്തിലെയും ശിക്ഷയ്ക്കായി അല്ലാഹു അവനെ പിടികൂടി."
                 },
                 {
                     "number": 26,
@@ -2790,7 +2790,7 @@ const quranData = {
                             "translation_ml": "fears"
                         }
                     ],
-                    "translation_ml": "Indeed in that surely (is) a lesson for whoever fears"
+                    "translation_ml": "തീര്‍ച്ചയായും അതില്‍ ഭയപ്പെടുന്നവര്‍ക്ക് ഒരു ഗുണപാഠമുണ്ട്‌."
                 },
                 {
                     "number": 27,
@@ -2848,7 +2848,7 @@ const quranData = {
                             "translation_ml": "He constructed it"
                         }
                     ],
-                    "translation_ml": "Are you a more difficult creation or the heaven He constructed it"
+                    "translation_ml": "നിങ്ങളാണോ സൃഷ്ടിക്കപ്പെടാന്‍ കൂടുതല്‍ പ്രയാസമുള്ളവര്‍. അതല്ല; ആകാശമാണോ? അതിനെ അവന്‍ നിര്‍മിച്ചിരിക്കുന്നു."
                 },
                 {
                     "number": 28,
@@ -2882,7 +2882,7 @@ const quranData = {
                             "translation_ml": "and proportioned it"
                         }
                     ],
-                    "translation_ml": "He raised its ceiling and proportioned it"
+                    "translation_ml": "അതിന്‍റെ വിതാനം അവന്‍ ഉയര്‍ത്തുകയും, അതിനെ അവന്‍ വ്യവസ്ഥപ്പെടുത്തുകയും ചെയ്തിരിക്കുന്നു."
                 },
                 {
                     "number": 29,
@@ -2924,7 +2924,7 @@ const quranData = {
                             "translation_ml": "its brightness"
                         }
                     ],
-                    "translation_ml": "And He darkened its night and brought out its brightness"
+                    "translation_ml": "അതിലെ രാത്രിയെ അവന്‍ ഇരുട്ടാക്കുകയും, അതിലെ പകലിനെ അവന്‍ പ്രത്യക്ഷപ്പെടുത്തുകയും ചെയ്തിരിക്കുന്നു."
                 },
                 {
                     "number": 30,
@@ -2966,7 +2966,7 @@ const quranData = {
                             "translation_ml": "He spread it"
                         }
                     ],
-                    "translation_ml": "And the earth after that He spread it"
+                    "translation_ml": "അതിനു ശേഷം ഭൂമിയെ അവന്‍ വികസിപ്പിച്ചിരിക്കുന്നു."
                 },
                 {
                     "number": 31,
@@ -3008,7 +3008,7 @@ const quranData = {
                             "translation_ml": "and its pasture"
                         }
                     ],
-                    "translation_ml": "He brought forth from it its water and its pasture"
+                    "translation_ml": "അതില്‍ നിന്ന് അതിലെ വെള്ളവും സസ്യജാലങ്ങളും അവന്‍ പുറത്തു കൊണ്ടുവരികയും ചെയ്തിരിക്കുന്നു."
                 },
                 {
                     "number": 32,
@@ -3034,7 +3034,7 @@ const quranData = {
                             "translation_ml": "He made them firm"
                         }
                     ],
-                    "translation_ml": "And the mountains He made them firm"
+                    "translation_ml": "പര്‍വ്വതങ്ങളെ അവന്‍ ഉറപ്പിച്ചു നിര്‍ത്തുകയും ചെയ്തിരിക്കുന്നു."
                 },
                 {
                     "number": 33,
@@ -3068,7 +3068,7 @@ const quranData = {
                             "translation_ml": "and for your cattle"
                         }
                     ],
-                    "translation_ml": "(As) a provision for you and for your cattle"
+                    "translation_ml": "നിങ്ങള്‍ക്കും നിങ്ങളുടെ കന്നുകാലികള്‍ക്കും ഉപയോഗത്തിനായിട്ട്‌"
                 },
                 {
                     "number": 34,
@@ -3110,7 +3110,7 @@ const quranData = {
                             "translation_ml": "the great"
                         }
                     ],
-                    "translation_ml": "But when comes the Overwhelming Calamity the great"
+                    "translation_ml": "എന്നാല്‍ ആ മഹാ വിപത്ത് വരുന്ന സന്ദര്‍ഭം."
                 },
                 {
                     "number": 35,
@@ -3160,7 +3160,7 @@ const quranData = {
                             "translation_ml": "he strove (for)"
                         }
                     ],
-                    "translation_ml": "(The) Day will remember man what he strove (for)"
+                    "translation_ml": "അതായതു മനുഷ്യന്‍ താന്‍ അദ്ധ്വാനിച്ചു വെച്ചതിനെപ്പറ്റി ഓര്‍മിക്കുന്ന ദിവസം."
                 },
                 {
                     "number": 36,
@@ -3202,7 +3202,7 @@ const quranData = {
                             "translation_ml": "sees"
                         }
                     ],
-                    "translation_ml": "And will be made manifest the Hellfire to (him) who sees"
+                    "translation_ml": "കാണുന്നവര്‍ക്ക് വേണ്ടി നരകം വെളിവാക്കപ്പെടുന്ന ദിവസം."
                 },
                 {
                     "number": 37,
@@ -3236,7 +3236,7 @@ const quranData = {
                             "translation_ml": "transgressed"
                         }
                     ],
-                    "translation_ml": "Then as for (him) who transgressed"
+                    "translation_ml": "(അന്ന്‌) ആര്‍ അതിരുകവിയുകയും"
                 },
                 {
                     "number": 38,
@@ -3270,7 +3270,7 @@ const quranData = {
                             "translation_ml": "(of) the world"
                         }
                     ],
-                    "translation_ml": "And preferred the life (of) the world"
+                    "translation_ml": "ഇഹലോകജീവിതത്തിനു കൂടുതല്‍ പ്രാധാന്യം നല്‍കുകയും ചെയ്തുവോ"
                 },
                 {
                     "number": 39,
@@ -3312,7 +3312,7 @@ const quranData = {
                             "translation_ml": "(is) the refuge"
                         }
                     ],
-                    "translation_ml": "Then indeed the Hellfire it (is) the refuge"
+                    "translation_ml": "(അവന്ന്‌) കത്തിജ്വലിക്കുന്ന നരകം തന്നെയാണ് സങ്കേതം."
                 },
                 {
                     "number": 40,
@@ -3394,7 +3394,7 @@ const quranData = {
                             "translation_ml": "the vain desires"
                         }
                     ],
-                    "translation_ml": "But as for (him) who feared standing (before) his Lord and restrained his soul from the vain desires"
+                    "translation_ml": "അപ്പോള്‍ ഏതൊരാള്‍ തന്‍റെ രക്ഷിതാവിന്‍റെ സ്ഥാനത്തെ ഭയപ്പെടുകയും മനസ്സിനെ തന്നിഷ്ടത്തില്‍ നിന്ന് വിലക്കിനിര്‍ത്തുകയും ചെയ്തുവോ"
                 },
                 {
                     "number": 41,
@@ -3436,7 +3436,7 @@ const quranData = {
                             "translation_ml": "the refuge"
                         }
                     ],
-                    "translation_ml": "Then indeed Paradise  it (is) the refuge"
+                    "translation_ml": "(അവന്ന്‌) സ്വര്‍ഗം തന്നെയാണ് സങ്കേതം."
                 },
                 {
                     "number": 42,
@@ -3486,7 +3486,7 @@ const quranData = {
                             "translation_ml": "(is) its arrival"
                         }
                     ],
-                    "translation_ml": "They ask you about the Hour when (is) its arrival"
+                    "translation_ml": "ആ അന്ത്യസമയത്തെപ്പറ്റി, അതെപ്പോഴാണ് സംഭവിക്കുക എന്ന് അവര്‍ നിന്നോട് ചോദിക്കുന്നു."
                 },
                 {
                     "number": 43,
@@ -3528,7 +3528,7 @@ const quranData = {
                             "translation_ml": "(to) mention it"
                         }
                     ],
-                    "translation_ml": "In what (are) you [of] (to) mention it"
+                    "translation_ml": "നിനക്ക് അതിനെപ്പറ്റി എന്ത് പറയാനാണുള്ളത്‌?"
                 },
                 {
                     "number": 44,
@@ -3562,7 +3562,7 @@ const quranData = {
                             "translation_ml": "(is) its finality"
                         }
                     ],
-                    "translation_ml": "To your Lord (is) its finality"
+                    "translation_ml": "നിന്‍റെ രക്ഷിതാവിങ്കലേക്കാണ് അതിന്‍റെ കലാശം."
                 },
                 {
                     "number": 45,
@@ -3612,7 +3612,7 @@ const quranData = {
                             "translation_ml": "fears it"
                         }
                     ],
-                    "translation_ml": "Only you (are) a warner (for him) who fears it"
+                    "translation_ml": "അതിനെ ഭയപ്പെടുന്നവര്‍ക്ക് ഒരു താക്കീതുകാരന്‍ മാത്രമാണ് നീ."
                 },
                 {
                     "number": 46,
@@ -3694,7 +3694,7 @@ const quranData = {
                             "translation_ml": "a morning thereof"
                         }
                     ],
-                    "translation_ml": "As though they (the) Day they see it not they had remained except an evening or a morning thereof"
+                    "translation_ml": "അതിനെ അവര്‍ കാണുന്ന ദിവസം ഒരു വൈകുന്നേരമോ ഒരു പ്രഭാതത്തിലോ അല്ലാതെ അവര്‍ (ഇവിടെ) കഴിച്ചുകൂട്ടിയിട്ടില്ലാത്ത പോലെയായിരിക്കും (അവര്‍ക്ക് തോന്നുക.)"
                 }
             ]
         },
@@ -3731,7 +3731,7 @@ const quranData = {
                             "translation_ml": "and turned away"
                         }
                     ],
-                    "translation_ml": "He frowned and turned away"
+                    "translation_ml": "അദ്ദേഹം മുഖം ചുളിച്ചു തിരിഞ്ഞുകളഞ്ഞു."
                 },
                 {
                     "number": 2,
@@ -3765,7 +3765,7 @@ const quranData = {
                             "translation_ml": "the blind man"
                         }
                     ],
-                    "translation_ml": "Because came to him the blind man"
+                    "translation_ml": "അദ്ദേഹത്തിന്‍റെ (നബിയുടെ) അടുത്ത് ആ അന്ധന്‍ വന്നതിനാല്‍."
                 },
                 {
                     "number": 3,
@@ -3807,7 +3807,7 @@ const quranData = {
                             "translation_ml": "purify himself"
                         }
                     ],
-                    "translation_ml": "But what would make you know that he might purify himself"
+                    "translation_ml": "(നബിയേ,) നിനക്ക് എന്തറിയാം? അയാള്‍ (അന്ധന്‍) ഒരു വേള പരിശുദ്ധി പ്രാപിച്ചേക്കാമല്ലോ?"
                 },
                 {
                     "number": 4,
@@ -3849,7 +3849,7 @@ const quranData = {
                             "translation_ml": "the reminder"
                         }
                     ],
-                    "translation_ml": "Or be reminded so would benefit him the reminder"
+                    "translation_ml": "അല്ലെങ്കില്‍ ഉപദേശം സ്വീകരിക്കുകയും, ആ ഉപദേശം അയാള്‍ക്ക് പ്രയോജനപ്പെടുകയും ചെയ്തേക്കാമല്ലോ."
                 },
                 {
                     "number": 5,
@@ -3883,7 +3883,7 @@ const quranData = {
                             "translation_ml": "considers himself free from need"
                         }
                     ],
-                    "translation_ml": "As for (him) who considers himself free from need"
+                    "translation_ml": "എന്നാല്‍ സ്വയം പര്യാപ്തത നടിച്ചവനാകട്ടെ"
                 },
                 {
                     "number": 6,
@@ -3917,7 +3917,7 @@ const quranData = {
                             "translation_ml": "give attention"
                         }
                     ],
-                    "translation_ml": "So you to him give attention"
+                    "translation_ml": "നീ അവന്‍റെ നേരെ ശ്രദ്ധതിരിക്കുന്നു."
                 },
                 {
                     "number": 7,
@@ -3959,7 +3959,7 @@ const quranData = {
                             "translation_ml": "he purifies himself"
                         }
                     ],
-                    "translation_ml": "And not upon you that not he purifies himself"
+                    "translation_ml": "അവന്‍ പരിശുദ്ധി പ്രാപിക്കാതിരിക്കുന്നതിനാല്‍ നിനക്കെന്താണ് കുറ്റം?"
                 },
                 {
                     "number": 8,
@@ -4001,7 +4001,7 @@ const quranData = {
                             "translation_ml": "striving"
                         }
                     ],
-                    "translation_ml": "But as for (he) who came to you striving"
+                    "translation_ml": "എന്നാല്‍ നിന്‍റെ അടുക്കല്‍ ഓടിവന്നവനാകട്ടെ,"
                 },
                 {
                     "number": 9,
@@ -4027,7 +4027,7 @@ const quranData = {
                             "translation_ml": "fears"
                         }
                     ],
-                    "translation_ml": "While he fears"
+                    "translation_ml": "(അല്ലാഹുവെ) അവന്‍ ഭയപ്പെടുന്നവനായിക്കൊണ്ട്‌"
                 },
                 {
                     "number": 10,
@@ -4061,7 +4061,7 @@ const quranData = {
                             "translation_ml": "(are) distracted"
                         }
                     ],
-                    "translation_ml": "But you from him (are) distracted"
+                    "translation_ml": "അവന്‍റെ കാര്യത്തില്‍ നീ അശ്രദ്ധകാണിക്കുന്നു."
                 },
                 {
                     "number": 11,
@@ -4095,7 +4095,7 @@ const quranData = {
                             "translation_ml": "(is) a reminder"
                         }
                     ],
-                    "translation_ml": "Nay Indeed, it (is) a reminder"
+                    "translation_ml": "നിസ്സംശയം ഇത് (ഖുര്‍ആന്‍) ഒരു ഉല്‍ബോധനമാകുന്നു; തീര്‍ച്ച."
                 },
                 {
                     "number": 12,
@@ -4129,7 +4129,7 @@ const quranData = {
                             "translation_ml": "may remember it"
                         }
                     ],
-                    "translation_ml": "So whosoever wills may remember it"
+                    "translation_ml": "അതിനാല്‍ ആര്‍ ഉദ്ദേശിക്കുന്നുവോ അവനത് ഓര്‍മിച്ച് കൊള്ളട്ടെ."
                 },
                 {
                     "number": 13,
@@ -4163,7 +4163,7 @@ const quranData = {
                             "translation_ml": "honored"
                         }
                     ],
-                    "translation_ml": "In sheets honored"
+                    "translation_ml": "ആദരണീയമായ ചില ഏടുകളിലാണത്‌."
                 },
                 {
                     "number": 14,
@@ -4189,7 +4189,7 @@ const quranData = {
                             "translation_ml": "purified"
                         }
                     ],
-                    "translation_ml": "Exalted purified"
+                    "translation_ml": "ഔന്നത്യം നല്‍കപ്പെട്ടതും പരിശുദ്ധമാക്കപ്പെട്ടതുമായ (ഏടുകളില്‍)"
                 },
                 {
                     "number": 15,
@@ -4215,7 +4215,7 @@ const quranData = {
                             "translation_ml": "(of) scribes"
                         }
                     ],
-                    "translation_ml": "In (the) hands (of) scribes"
+                    "translation_ml": "ചില സന്ദേശവാഹകരുടെ കൈകളിലാണത്‌."
                 },
                 {
                     "number": 16,
@@ -4241,7 +4241,7 @@ const quranData = {
                             "translation_ml": "dutiful"
                         }
                     ],
-                    "translation_ml": "Noble dutiful"
+                    "translation_ml": "മാന്യന്‍മാരും പുണ്യവാന്‍മാരും ആയിട്ടുള്ളവരുടെ."
                 },
                 {
                     "number": 17,
@@ -4283,7 +4283,7 @@ const quranData = {
                             "translation_ml": "ungrateful is he"
                         }
                     ],
-                    "translation_ml": "Is destroyed [the] man how ungrateful is he"
+                    "translation_ml": "മനുഷ്യന്‍ നാശമടയട്ടെ. എന്താണവന്‍ ഇത്ര നന്ദികെട്ടവനാകാന്‍?"
                 },
                 {
                     "number": 18,
@@ -4325,7 +4325,7 @@ const quranData = {
                             "translation_ml": "He created him"
                         }
                     ],
-                    "translation_ml": "From what thing He created him"
+                    "translation_ml": "ഏതൊരു വസ്തുവില്‍ നിന്നാണ് അല്ലാഹു അവനെ സൃഷ്ടിച്ചത്‌?"
                 },
                 {
                     "number": 19,
@@ -4367,7 +4367,7 @@ const quranData = {
                             "translation_ml": "then He proportioned him"
                         }
                     ],
-                    "translation_ml": "From a semen-drop He created him then He proportioned him"
+                    "translation_ml": "ഒരു ബീജത്തില്‍ നിന്ന് അവനെ സൃഷ്ടിക്കുകയും, എന്നിട്ട് അവനെ (അവന്‍റെ കാര്യം) വ്യവസ്ഥപ്പെടുത്തുകയും ചെയ്തു."
                 },
                 {
                     "number": 20,
@@ -4401,7 +4401,7 @@ const quranData = {
                             "translation_ml": "He made easy for him"
                         }
                     ],
-                    "translation_ml": "Then the way He made easy for him"
+                    "translation_ml": "പിന്നീട് അവന്‍ മാര്‍ഗം എളുപ്പമാക്കുകയും ചെയ്തു."
                 },
                 {
                     "number": 21,
@@ -4435,7 +4435,7 @@ const quranData = {
                             "translation_ml": "and provides a grave for him"
                         }
                     ],
-                    "translation_ml": "Then He causes him to die and provides a grave for him"
+                    "translation_ml": "അനന്തരം അവനെ മരിപ്പിക്കുകയും, ഖബ്‌റില്‍ മറയ്ക്കുകയും ചെയ്തു."
                 },
                 {
                     "number": 22,
@@ -4477,7 +4477,7 @@ const quranData = {
                             "translation_ml": "He will resurrect him"
                         }
                     ],
-                    "translation_ml": "Then when He wills He will resurrect him"
+                    "translation_ml": "പിന്നീട് അവന്‍ ഉദ്ദേശിക്കുമ്പോള്‍ അവനെ ഉയിര്‍ത്തെഴുന്നേല്‍പിക്കുന്നതാണ്‌."
                 },
                 {
                     "number": 23,
@@ -4527,7 +4527,7 @@ const quranData = {
                             "translation_ml": "He commanded him"
                         }
                     ],
-                    "translation_ml": "Nay Not he has accomplished what He commanded him"
+                    "translation_ml": "നിസ്സംശയം, അവനോട് അല്ലാഹു കല്‍പിച്ചത് അവന്‍ നിര്‍വഹിച്ചില്ല."
                 },
                 {
                     "number": 24,
@@ -4569,7 +4569,7 @@ const quranData = {
                             "translation_ml": "his food"
                         }
                     ],
-                    "translation_ml": "Then let look the man at his food"
+                    "translation_ml": "എന്നാല്‍ മനുഷ്യന്‍ തന്‍റെ ഭക്ഷണത്തെപ്പറ്റി ഒന്നു ചിന്തിച്ച് നോക്കട്ടെ."
                 },
                 {
                     "number": 25,
@@ -4611,7 +4611,7 @@ const quranData = {
                             "translation_ml": "(in) abundance"
                         }
                     ],
-                    "translation_ml": "That [We] [We] poured the water (in) abundance"
+                    "translation_ml": "നാം ശക്തിയായി മഴ വെള്ളം ചൊരിഞ്ഞുകൊടുത്തു."
                 },
                 {
                     "number": 26,
@@ -4653,7 +4653,7 @@ const quranData = {
                             "translation_ml": "splitting"
                         }
                     ],
-                    "translation_ml": "Then We cleaved the earth splitting"
+                    "translation_ml": "പിന്നീട് നാം ഭൂമിയെ ഒരു തരത്തില്‍ പിളര്‍ത്തി,"
                 },
                 {
                     "number": 27,
@@ -4687,7 +4687,7 @@ const quranData = {
                             "translation_ml": "grain"
                         }
                     ],
-                    "translation_ml": "Then We caused to grow therein grain"
+                    "translation_ml": "എന്നിട്ട് അതില്‍ നാം ധാന്യം മുളപ്പിച്ചു."
                 },
                 {
                     "number": 28,
@@ -4713,7 +4713,7 @@ const quranData = {
                             "translation_ml": "and green fodder"
                         }
                     ],
-                    "translation_ml": "And grapes and green fodder"
+                    "translation_ml": "മുന്തിരിയും പച്ചക്കറികളും"
                 },
                 {
                     "number": 29,
@@ -4739,7 +4739,7 @@ const quranData = {
                             "translation_ml": "and date-palms"
                         }
                     ],
-                    "translation_ml": "And olive and date-palms"
+                    "translation_ml": "ഒലീവും ഈന്തപ്പനയും"
                 },
                 {
                     "number": 30,
@@ -4765,7 +4765,7 @@ const quranData = {
                             "translation_ml": "(of) thick foliage"
                         }
                     ],
-                    "translation_ml": "And gardens (of) thick foliage"
+                    "translation_ml": "ഇടതൂര്‍ന്നു നില്‍ക്കുന്ന തോട്ടങ്ങളും."
                 },
                 {
                     "number": 31,
@@ -4791,7 +4791,7 @@ const quranData = {
                             "translation_ml": "and grass"
                         }
                     ],
-                    "translation_ml": "And fruits and grass"
+                    "translation_ml": "പഴവര്‍ഗവും പുല്ലും."
                 },
                 {
                     "number": 32,
@@ -4825,7 +4825,7 @@ const quranData = {
                             "translation_ml": "and for your cattle"
                         }
                     ],
-                    "translation_ml": "(As) a provision for you and for your cattle"
+                    "translation_ml": "നിങ്ങള്‍ക്കും നിങ്ങളുടെ കന്നുകാലികള്‍ക്കും ഉപയോഗത്തിനായിട്ട്‌."
                 },
                 {
                     "number": 33,
@@ -4859,7 +4859,7 @@ const quranData = {
                             "translation_ml": "the Deafening Blast"
                         }
                     ],
-                    "translation_ml": "But when comes the Deafening Blast"
+                    "translation_ml": "എന്നാല്‍ ചെകിടടപ്പിക്കുന്ന ആ ശബ്ദം വന്നാല്‍."
                 },
                 {
                     "number": 34,
@@ -4909,7 +4909,7 @@ const quranData = {
                             "translation_ml": "his brother"
                         }
                     ],
-                    "translation_ml": "(The) Day will flee a man from his brother"
+                    "translation_ml": "അതായത് മനുഷ്യന്‍ തന്‍റെ സഹോദരനെ വിട്ട് ഓടിപ്പോകുന്ന ദിവസം."
                 },
                 {
                     "number": 35,
@@ -4935,7 +4935,7 @@ const quranData = {
                             "translation_ml": "and his father"
                         }
                     ],
-                    "translation_ml": "And his mother and his father"
+                    "translation_ml": "തന്‍റെ മാതാവിനെയും പിതാവിനെയും."
                 },
                 {
                     "number": 36,
@@ -4961,7 +4961,7 @@ const quranData = {
                             "translation_ml": "and his children"
                         }
                     ],
-                    "translation_ml": "And his wife and his children"
+                    "translation_ml": "തന്‍റെ ഭാര്യയെയും മക്കളെയും."
                 },
                 {
                     "number": 37,
@@ -5019,7 +5019,7 @@ const quranData = {
                             "translation_ml": "occupying him"
                         }
                     ],
-                    "translation_ml": "For every man among them that Day (will be) a matter occupying him"
+                    "translation_ml": "അവരില്‍പ്പെട്ട ഓരോ മനുഷ്യനും തനിക്ക് മതിയാവുന്നത്ര (ചിന്താ) വിഷയം അന്ന് ഉണ്ടായിരിക്കും."
                 },
                 {
                     "number": 38,
@@ -5053,7 +5053,7 @@ const quranData = {
                             "translation_ml": "(will be) bright"
                         }
                     ],
-                    "translation_ml": "Faces that Day (will be) bright"
+                    "translation_ml": "അന്ന് ചില മുഖങ്ങള്‍ പ്രസന്നതയുള്ളവയായിരിക്കും"
                 },
                 {
                     "number": 39,
@@ -5079,7 +5079,7 @@ const quranData = {
                             "translation_ml": "rejoicing at good news"
                         }
                     ],
-                    "translation_ml": "Laughing rejoicing at good news"
+                    "translation_ml": "ചിരിക്കുന്നവയും സന്തോഷം കൊള്ളുന്നവയും."
                 },
                 {
                     "number": 40,
@@ -5121,7 +5121,7 @@ const quranData = {
                             "translation_ml": "(will be) dust"
                         }
                     ],
-                    "translation_ml": "And faces that Day upon them (will be) dust"
+                    "translation_ml": "വെറെ ചില മുഖങ്ങളാകട്ടെ അന്ന് പൊടി പുരണ്ടിരിക്കും."
                 },
                 {
                     "number": 41,
@@ -5147,7 +5147,7 @@ const quranData = {
                             "translation_ml": "darkness"
                         }
                     ],
-                    "translation_ml": "Will cover them darkness"
+                    "translation_ml": "അവയെ കൂരിരുട്ട് മൂടിയിരിക്കും."
                 },
                 {
                     "number": 42,
@@ -5189,7 +5189,7 @@ const quranData = {
                             "translation_ml": "the wicked ones"
                         }
                     ],
-                    "translation_ml": "Those [they] (are) the disbelievers the wicked ones"
+                    "translation_ml": "അക്കൂട്ടരാകുന്നു അവിശ്വാസികളും അധര്‍മ്മകാരികളുമായിട്ടുള്ളവര്‍."
                 }
             ]
         },
@@ -5234,7 +5234,7 @@ const quranData = {
                             "translation_ml": "is wrapped up"
                         }
                     ],
-                    "translation_ml": "When the sun is wrapped up"
+                    "translation_ml": "സൂര്യന്‍ ചുറ്റിപ്പൊതിയപ്പെടുമ്പോള്‍,"
                 },
                 {
                     "number": 2,
@@ -5268,7 +5268,7 @@ const quranData = {
                             "translation_ml": "fall, losing their luster"
                         }
                     ],
-                    "translation_ml": "And when the stars fall, losing their luster"
+                    "translation_ml": "നക്ഷത്രങ്ങള്‍ ഉതിര്‍ന്നു വീഴുമ്പോള്‍,"
                 },
                 {
                     "number": 3,
@@ -5302,7 +5302,7 @@ const quranData = {
                             "translation_ml": "are moved away"
                         }
                     ],
-                    "translation_ml": "And when the mountains are moved away"
+                    "translation_ml": "പര്‍വ്വതങ്ങള്‍ സഞ്ചരിപ്പിക്കപ്പെടുമ്പോള്‍,"
                 },
                 {
                     "number": 4,
@@ -5336,7 +5336,7 @@ const quranData = {
                             "translation_ml": "(are) left untended"
                         }
                     ],
-                    "translation_ml": "And when the full-term she-camels (are) left untended"
+                    "translation_ml": "പൂര്‍ണ്ണഗര്‍ഭിണികളായ ഒട്ടകങ്ങള്‍ അവഗണിക്കപ്പെടുമ്പോള്‍,"
                 },
                 {
                     "number": 5,
@@ -5370,7 +5370,7 @@ const quranData = {
                             "translation_ml": "are gathered"
                         }
                     ],
-                    "translation_ml": "And when the wild beasts are gathered"
+                    "translation_ml": "വന്യമൃഗങ്ങള്‍ ഒരുമിച്ചുകൂട്ടപ്പെടുമ്പോള്‍,"
                 },
                 {
                     "number": 6,
@@ -5404,7 +5404,7 @@ const quranData = {
                             "translation_ml": "are made to overflow"
                         }
                     ],
-                    "translation_ml": "And when the seas are made to overflow"
+                    "translation_ml": "സമുദ്രങ്ങള്‍ ആളിക്കത്തിക്കപ്പെടുമ്പോള്‍,"
                 },
                 {
                     "number": 7,
@@ -5438,7 +5438,7 @@ const quranData = {
                             "translation_ml": "are paired"
                         }
                     ],
-                    "translation_ml": "And when the souls are paired"
+                    "translation_ml": "ആത്മാവുകള്‍ കൂട്ടിയിണക്കപ്പെടുമ്പോള്‍,"
                 },
                 {
                     "number": 8,
@@ -5472,7 +5472,7 @@ const quranData = {
                             "translation_ml": "is asked"
                         }
                     ],
-                    "translation_ml": "And when the female infant buried alive is asked"
+                    "translation_ml": "(ജീവനോടെ) കുഴിച്ചു മൂടപ്പെട്ട പെണ്‍കുട്ടിയോടു ചോദിക്കപ്പെടുമ്പോള്‍,"
                 },
                 {
                     "number": 9,
@@ -5506,7 +5506,7 @@ const quranData = {
                             "translation_ml": "she was killed"
                         }
                     ],
-                    "translation_ml": "For what sin she was killed"
+                    "translation_ml": "താന്‍ എന്തൊരു കുറ്റത്തിനാണ് കൊല്ലപ്പെട്ടത് എന്ന്‌."
                 },
                 {
                     "number": 10,
@@ -5540,7 +5540,7 @@ const quranData = {
                             "translation_ml": "are laid open"
                         }
                     ],
-                    "translation_ml": "And when the pages are laid open"
+                    "translation_ml": "(കര്‍മ്മങ്ങള്‍ രേഖപ്പെടുത്തിയ) ഏടുകള്‍ തുറന്നുവെക്കപ്പെടുമ്പോള്‍."
                 },
                 {
                     "number": 11,
@@ -5574,7 +5574,7 @@ const quranData = {
                             "translation_ml": "is stripped away"
                         }
                     ],
-                    "translation_ml": "And when the sky is stripped away"
+                    "translation_ml": "ഉപരിലോകം മറ നീക്കികാണിക്കപ്പെടുമ്പോള്‍"
                 },
                 {
                     "number": 12,
@@ -5608,7 +5608,7 @@ const quranData = {
                             "translation_ml": "is set ablaze"
                         }
                     ],
-                    "translation_ml": "And when the Hellfire is set ablaze"
+                    "translation_ml": "ജ്വലിക്കുന്ന നരകാഗ്നി ആളിക്കത്തിക്കപ്പെടുമ്പോള്‍."
                 },
                 {
                     "number": 13,
@@ -5642,7 +5642,7 @@ const quranData = {
                             "translation_ml": "is brought near"
                         }
                     ],
-                    "translation_ml": "And when Paradise is brought near"
+                    "translation_ml": "സ്വര്‍ഗം അടുത്തു കൊണ്ടുവരപ്പെടുമ്പോള്‍."
                 },
                 {
                     "number": 14,
@@ -5684,7 +5684,7 @@ const quranData = {
                             "translation_ml": "it has brought"
                         }
                     ],
-                    "translation_ml": "Will know a soul what it has brought"
+                    "translation_ml": "ഓരോ വ്യക്തിയും താന്‍ തയ്യാറാക്കിക്കൊണ്ടു വന്നിട്ടുള്ളത് എന്തെന്ന് അറിയുന്നതാണ്‌."
                 },
                 {
                     "number": 15,
@@ -5718,7 +5718,7 @@ const quranData = {
                             "translation_ml": "by the retreating planets"
                         }
                     ],
-                    "translation_ml": "But nay I swear by the retreating planets"
+                    "translation_ml": "പിന്‍വാങ്ങിപ്പോകുന്നവയെ (നക്ഷത്രങ്ങളെ) ക്കൊണ്ട് ഞാന്‍ സത്യം ചെയ്തു പറയുന്നു."
                 },
                 {
                     "number": 16,
@@ -5744,7 +5744,7 @@ const quranData = {
                             "translation_ml": "(and) disappear"
                         }
                     ],
-                    "translation_ml": "Those that run (and) disappear"
+                    "translation_ml": "സഞ്ചരിച്ചുകൊണ്ടിരിക്കുന്നവയും അപ്രത്യക്ഷമായിക്കൊണ്ടിരിക്കുന്നവയും"
                 },
                 {
                     "number": 17,
@@ -5778,7 +5778,7 @@ const quranData = {
                             "translation_ml": "it departs"
                         }
                     ],
-                    "translation_ml": "And the night when it departs"
+                    "translation_ml": "രാത്രി നീങ്ങുമ്പോള്‍ അതു കൊണ്ടും,"
                 },
                 {
                     "number": 18,
@@ -5812,7 +5812,7 @@ const quranData = {
                             "translation_ml": "it breathes"
                         }
                     ],
-                    "translation_ml": "And the dawn when it breathes"
+                    "translation_ml": "പ്രഭാതം വിടര്‍ന്ന് വരുമ്പോള്‍ അതു കൊണ്ടും (ഞാന്‍ സത്യം ചെയ്തു പറയുന്നു.)"
                 },
                 {
                     "number": 19,
@@ -5854,7 +5854,7 @@ const quranData = {
                             "translation_ml": "noble"
                         }
                     ],
-                    "translation_ml": "Indeed, it (is) surely a word (of) a Messenger noble"
+                    "translation_ml": "തീര്‍ച്ചയായും ഇത് (ഖുര്‍ആന്‍) മാന്യനായ ഒരു ദൂതന്‍റെ വാക്കാകുന്നു."
                 },
                 {
                     "number": 20,
@@ -5912,7 +5912,7 @@ const quranData = {
                             "translation_ml": "secure"
                         }
                     ],
-                    "translation_ml": "Possessor of power with (the) Owner of the Throne secure"
+                    "translation_ml": "ശക്തിയുള്ളവനും, സിംഹാസനസ്ഥനായ അല്ലാഹുവിങ്കല്‍ സ്ഥാനമുള്ളവനുമായ (ദൂതന്‍റെ)"
                 },
                 {
                     "number": 21,
@@ -5946,7 +5946,7 @@ const quranData = {
                             "translation_ml": "trustworthy"
                         }
                     ],
-                    "translation_ml": "One to be obeyed and trustworthy"
+                    "translation_ml": "അവിടെ അനുസരിക്കപ്പെടുന്നവനും വിശ്വസ്തനുമായ (ദൂതന്‍റെ)"
                 },
                 {
                     "number": 22,
@@ -5980,7 +5980,7 @@ const quranData = {
                             "translation_ml": "mad"
                         }
                     ],
-                    "translation_ml": "And not (is) your companion mad"
+                    "translation_ml": "നിങ്ങളുടെ കൂട്ടുകാരന്‍ (പ്രവാചകന്‍) ഒരു ഭ്രാന്തനല്ല തന്നെ,"
                 },
                 {
                     "number": 23,
@@ -6022,7 +6022,7 @@ const quranData = {
                             "translation_ml": "the clear"
                         }
                     ],
-                    "translation_ml": "And certainly he saw him in the horizon the clear"
+                    "translation_ml": "തീര്‍ച്ചയായും അദ്ദേഹത്തെ (ജിബ്‌രീല്‍ എന്ന ദൂതനെ) പ്രത്യക്ഷമായ മണ്ഡലത്തില്‍ വെച്ച് അദ്ദേഹം കണ്ടിട്ടുണ്ട്‌."
                 },
                 {
                     "number": 24,
@@ -6072,7 +6072,7 @@ const quranData = {
                             "translation_ml": "a withholder"
                         }
                     ],
-                    "translation_ml": "And not he (is) on the unseen a withholder"
+                    "translation_ml": "അദ്ദേഹം അദൃശ്യവാര്‍ത്തയുടെ കാര്യത്തില്‍ പിശുക്ക് കാണിക്കുന്നവനുമല്ല."
                 },
                 {
                     "number": 25,
@@ -6122,7 +6122,7 @@ const quranData = {
                             "translation_ml": "accursed"
                         }
                     ],
-                    "translation_ml": "And not it (is the) word (of) Shaitaan accursed"
+                    "translation_ml": "ഇത് (ഖുര്‍ആന്‍) ശപിക്കപ്പെട്ട ഒരു പിശാചിന്‍റെ വാക്കുമല്ല."
                 },
                 {
                     "number": 26,
@@ -6148,7 +6148,7 @@ const quranData = {
                             "translation_ml": "are you going"
                         }
                     ],
-                    "translation_ml": "So where are you going"
+                    "translation_ml": "അപ്പോള്‍ എങ്ങോട്ടാണ് നിങ്ങള്‍ പോകുന്നത്‌?"
                 },
                 {
                     "number": 27,
@@ -6198,7 +6198,7 @@ const quranData = {
                             "translation_ml": "to the worlds"
                         }
                     ],
-                    "translation_ml": "Not it (is) except a reminder to the worlds"
+                    "translation_ml": "ഇത് ലോകര്‍ക്ക് വേണ്ടിയുള്ള ഒരു ഉല്‍ബോധനമല്ലാതെ മറ്റൊന്നുമല്ല."
                 },
                 {
                     "number": 28,
@@ -6248,7 +6248,7 @@ const quranData = {
                             "translation_ml": "take a straight way"
                         }
                     ],
-                    "translation_ml": "For whoever wills among you to take a straight way"
+                    "translation_ml": "അതായത് നിങ്ങളുടെ കൂട്ടത്തില്‍ നിന്ന് നേരെ നിലകൊള്ളാന്‍ ഉദ്ദേശിച്ചവര്‍ക്ക് വേണ്ടി."
                 },
                 {
                     "number": 29,
@@ -6322,7 +6322,7 @@ const quranData = {
                             "translation_ml": "(of) the worlds"
                         }
                     ],
-                    "translation_ml": "And not you will except that wills Allah Lord (of) the worlds"
+                    "translation_ml": "ലോകരക്ഷിതാവായ അല്ലാഹു ഉദ്ദേശിക്കുന്നുവെങ്കിലല്ലാതെ നിങ്ങള്‍ ഉദ്ദേശിക്കുകയില്ല."
                 }
             ]
         },
@@ -6367,7 +6367,7 @@ const quranData = {
                             "translation_ml": "(is) cleft asunder"
                         }
                     ],
-                    "translation_ml": "When the sky (is) cleft asunder"
+                    "translation_ml": "ആകാശം പൊട്ടി പിളരുമ്പോള്‍."
                 },
                 {
                     "number": 2,
@@ -6401,7 +6401,7 @@ const quranData = {
                             "translation_ml": "scatter"
                         }
                     ],
-                    "translation_ml": "And when the stars scatter"
+                    "translation_ml": "നക്ഷത്രങ്ങള്‍ കൊഴിഞ്ഞു വീഴുമ്പോള്‍."
                 },
                 {
                     "number": 3,
@@ -6435,7 +6435,7 @@ const quranData = {
                             "translation_ml": "are made to gush forth"
                         }
                     ],
-                    "translation_ml": "And when the seas are made to gush forth"
+                    "translation_ml": "സമുദ്രങ്ങള്‍ പൊട്ടി ഒഴുകുമ്പോള്‍."
                 },
                 {
                     "number": 4,
@@ -6469,7 +6469,7 @@ const quranData = {
                             "translation_ml": "are overturned"
                         }
                     ],
-                    "translation_ml": "And when the graves are overturned"
+                    "translation_ml": "ഖബ്‌റുകള്‍ ഇളക്കിമറിക്കപ്പെടുമ്പോള്‍"
                 },
                 {
                     "number": 5,
@@ -6519,7 +6519,7 @@ const quranData = {
                             "translation_ml": "and left behind"
                         }
                     ],
-                    "translation_ml": "Will know a soul what it has sent forth and left behind"
+                    "translation_ml": "ഓരോ വ്യക്തിയും താന്‍ മുന്‍കൂട്ടി ചെയ്തു വെച്ചതും പിന്നോട്ട് മേറ്റീവ്ച്ചതും എന്താണെന്ന് അറിയുന്നതാണ്‌."
                 },
                 {
                     "number": 6,
@@ -6577,7 +6577,7 @@ const quranData = {
                             "translation_ml": "the Most Noble"
                         }
                     ],
-                    "translation_ml": "O man What has deceived you concerning your Lord the Most Noble"
+                    "translation_ml": "ഹേ; മനുഷ്യാ, ഉദാരനായ നിന്‍റെ രക്ഷിതാവിന്‍റെ കാര്യത്തില്‍ നിന്നെ വഞ്ചിച്ചു കളഞ്ഞതെന്താണ്‌?"
                 },
                 {
                     "number": 7,
@@ -6619,7 +6619,7 @@ const quranData = {
                             "translation_ml": "then balanced you"
                         }
                     ],
-                    "translation_ml": "Who created you then fashioned you then balanced you"
+                    "translation_ml": "നിന്നെ സൃഷ്ടിക്കുകയും, നിന്നെ സംവിധാനിക്കുകയും , നിന്നെ ശരിയായ അവസ്ഥയിലാക്കുകയും ചെയ്തവനത്രെ അവന്‍."
                 },
                 {
                     "number": 8,
@@ -6677,7 +6677,7 @@ const quranData = {
                             "translation_ml": "He assembled you"
                         }
                     ],
-                    "translation_ml": "In whatever form what He willed He assembled you"
+                    "translation_ml": "താന്‍ ഉദ്ദേശിച്ച രൂപത്തില്‍ നിന്നെ സംഘടിപ്പിച്ചവന്‍."
                 },
                 {
                     "number": 9,
@@ -6719,7 +6719,7 @@ const quranData = {
                             "translation_ml": "the Judgment"
                         }
                     ],
-                    "translation_ml": "Nay But you deny the Judgment"
+                    "translation_ml": "അല്ല; പക്ഷെ, പ്രതിഫല നടപടിയെ നിങ്ങള്‍ നിഷേധിച്ചു തള്ളുന്നു."
                 },
                 {
                     "number": 10,
@@ -6753,7 +6753,7 @@ const quranData = {
                             "translation_ml": "(are) surely guardians"
                         }
                     ],
-                    "translation_ml": "And indeed over you (are) surely guardians"
+                    "translation_ml": "തീര്‍ച്ചയായും നിങ്ങളുടെ മേല്‍ ചില മേല്‍നോട്ടക്കാരുണ്ട്‌."
                 },
                 {
                     "number": 11,
@@ -6779,7 +6779,7 @@ const quranData = {
                             "translation_ml": "recording"
                         }
                     ],
-                    "translation_ml": "Noble recording"
+                    "translation_ml": "രേഖപ്പെടുത്തിവെക്കുന്ന ചില മാന്യന്‍മാര്‍."
                 },
                 {
                     "number": 12,
@@ -6813,7 +6813,7 @@ const quranData = {
                             "translation_ml": "you do"
                         }
                     ],
-                    "translation_ml": "They know whatever you do"
+                    "translation_ml": "നിങ്ങള്‍ പ്രവര്‍ത്തിക്കുന്നത് അവര്‍ അറിയുന്നു."
                 },
                 {
                     "number": 13,
@@ -6855,7 +6855,7 @@ const quranData = {
                             "translation_ml": "bliss"
                         }
                     ],
-                    "translation_ml": "Indeed the righteous (will be) surely in bliss"
+                    "translation_ml": "തീര്‍ച്ചയായും സുകൃതവാന്‍മാര്‍ സുഖാനുഭവത്തില്‍ തന്നെയായിരിക്കും."
                 },
                 {
                     "number": 14,
@@ -6897,7 +6897,7 @@ const quranData = {
                             "translation_ml": "Hellfire"
                         }
                     ],
-                    "translation_ml": "And indeed the wicked (will be) surely in Hellfire"
+                    "translation_ml": "തീര്‍ച്ചയായും ദുര്‍മാര്‍ഗികള്‍ ജ്വലിക്കുന്ന നരകാഗ്നിയില്‍ തന്നെയായിരിക്കും"
                 },
                 {
                     "number": 15,
@@ -6931,7 +6931,7 @@ const quranData = {
                             "translation_ml": "(of) the Judgment"
                         }
                     ],
-                    "translation_ml": "They will burn (in) it (on the) Day (of) the Judgment"
+                    "translation_ml": "പ്രതിഫലത്തിന്‍റെ നാളില്‍ അവരതില്‍ കടന്ന് എരിയുന്നതാണ്‌."
                 },
                 {
                     "number": 16,
@@ -6973,7 +6973,7 @@ const quranData = {
                             "translation_ml": "(will be) absent"
                         }
                     ],
-                    "translation_ml": "And not they from it (will be) absent"
+                    "translation_ml": "അവര്‍ക്ക് അതില്‍ നിന്ന് മാറി നില്‍ക്കാനാവില്ല."
                 },
                 {
                     "number": 17,
@@ -7023,7 +7023,7 @@ const quranData = {
                             "translation_ml": "(of) the Judgment"
                         }
                     ],
-                    "translation_ml": "And what can make you know what (is the) Day (of) the Judgment"
+                    "translation_ml": "പ്രതിഫലനടപടിയുടെ ദിവസം എന്നാല്‍ എന്താണെന്ന് നിനക്കറിയുമോ?"
                 },
                 {
                     "number": 18,
@@ -7081,7 +7081,7 @@ const quranData = {
                             "translation_ml": "(of) the Judgment"
                         }
                     ],
-                    "translation_ml": "Then what can make you know what (is the) Day (of) the Judgment"
+                    "translation_ml": "വീണ്ടും; പ്രതിഫലനടപടിയുടെ ദിവസം എന്നാല്‍ എന്താണെന്ന് നിനക്കറിയുമോ?"
                 },
                 {
                     "number": 19,
@@ -7163,7 +7163,7 @@ const quranData = {
                             "translation_ml": "(will be) with Allah"
                         }
                     ],
-                    "translation_ml": "(The) Day not will have power a soul for a soul anything and the Command that Day (will be) with Allah"
+                    "translation_ml": "ഒരാള്‍ക്കും മറ്റൊരാള്‍ക്കു വേണ്ടി യാതൊന്നും അധീനപ്പെടുത്താനാവാത്ത ഒരു ദിവസം. അന്നേ ദിവസം കൈകാര്യകര്‍ത്തൃത്വം അല്ലാഹുവിന്നായിരിക്കും."
                 }
             ]
         },
@@ -7200,7 +7200,7 @@ const quranData = {
                             "translation_ml": "to those who give less"
                         }
                     ],
-                    "translation_ml": "Woe to those who give less"
+                    "translation_ml": "അളവില്‍ കുറക്കുന്നവര്‍ക്ക് മഹാനാശം"
                 },
                 {
                     "number": 2,
@@ -7258,7 +7258,7 @@ const quranData = {
                             "translation_ml": "they take in full"
                         }
                     ],
-                    "translation_ml": "Those who when they take a measure from the people they take in full"
+                    "translation_ml": "അതായത് ജനങ്ങളോട് അളന്നുവാങ്ങുകയാണെങ്കില്‍ തികച്ചെടുക്കുകയും."
                 },
                 {
                     "number": 3,
@@ -7308,7 +7308,7 @@ const quranData = {
                             "translation_ml": "they give less"
                         }
                     ],
-                    "translation_ml": "But when they give by measure (to) them or they weigh (for) them they give less"
+                    "translation_ml": "ജനങ്ങള്‍ക്ക് അളന്നുകൊടുക്കുകയോ തൂക്കികൊടുക്കുകയോ ആണെങ്കില്‍ നഷ്ടം വരുത്തുകയും ചെയ്യുന്നവര്‍ക്ക്‌."
                 },
                 {
                     "number": 4,
@@ -7358,7 +7358,7 @@ const quranData = {
                             "translation_ml": "(will be) resurrected"
                         }
                     ],
-                    "translation_ml": "Do not think those that they (will be) resurrected"
+                    "translation_ml": "അക്കൂട്ടര്‍ വിചാരിക്കുന്നില്ലേ; തങ്ങള്‍ എഴുന്നേല്‍പിക്കപ്പെടുന്നവരാണെന്ന്‌?"
                 },
                 {
                     "number": 5,
@@ -7384,7 +7384,7 @@ const quranData = {
                             "translation_ml": "Great"
                         }
                     ],
-                    "translation_ml": "For a Day Great"
+                    "translation_ml": "ഭയങ്കരമായ ഒരു ദിവസത്തിനായിട്ട്‌"
                 },
                 {
                     "number": 6,
@@ -7434,7 +7434,7 @@ const quranData = {
                             "translation_ml": "(of) the worlds"
                         }
                     ],
-                    "translation_ml": "(The) Day will stand mankind before (the) Lord (of) the worlds"
+                    "translation_ml": "അതെ, ലോകരക്ഷിതാവിങ്കലേക്ക് ജനങ്ങള്‍ എഴുന്നേറ്റ് വരുന്ന ദിവസം."
                 },
                 {
                     "number": 7,
@@ -7492,7 +7492,7 @@ const quranData = {
                             "translation_ml": "Sijjin"
                         }
                     ],
-                    "translation_ml": "Nay Indeed (the) record (of) the wicked (is) surely in Sijjin"
+                    "translation_ml": "നിസ്സംശയം; ദുര്‍മാര്‍ഗികളുടെ രേഖ സിജ്ജീനില്‍ തന്നെയായിരിക്കും."
                 },
                 {
                     "number": 8,
@@ -7534,7 +7534,7 @@ const quranData = {
                             "translation_ml": "(is) Sijjin"
                         }
                     ],
-                    "translation_ml": "And what can make you know what (is) Sijjin"
+                    "translation_ml": "സിജ്ജീന്‍ എന്നാല്‍ എന്താണെന്ന് നിനക്കറിയാമോ?"
                 },
                 {
                     "number": 9,
@@ -7560,7 +7560,7 @@ const quranData = {
                             "translation_ml": "written"
                         }
                     ],
-                    "translation_ml": "A book written"
+                    "translation_ml": "എഴുതപ്പെട്ട ഒരു ഗ്രന്ഥമാകുന്നു അത്‌."
                 },
                 {
                     "number": 10,
@@ -7594,7 +7594,7 @@ const quranData = {
                             "translation_ml": "to the deniers"
                         }
                     ],
-                    "translation_ml": "Woe that Day to the deniers"
+                    "translation_ml": "അന്നേ ദിവസം നിഷേധിച്ചു തള്ളുന്നവര്‍ക്കാകുന്നു നാശം."
                 },
                 {
                     "number": 11,
@@ -7636,7 +7636,7 @@ const quranData = {
                             "translation_ml": "(of) the Judgment"
                         }
                     ],
-                    "translation_ml": "Those who deny (the) Day (of) the Judgment"
+                    "translation_ml": "അതായത് പ്രതിഫല നടപടിയുടെ ദിവസത്തെ നിഷേധിച്ചു തള്ളുന്നവര്‍ക്ക്‌."
                 },
                 {
                     "number": 12,
@@ -7702,7 +7702,7 @@ const quranData = {
                             "translation_ml": "sinful"
                         }
                     ],
-                    "translation_ml": "And not can deny [of] it except every transgressor sinful"
+                    "translation_ml": "എല്ലാ അതിരുവിട്ടവനും മഹാപാപിയുമായിട്ടുള്ളവനല്ലാതെ അതിനെ നിഷേധിച്ചു തള്ളുകയില്ല."
                 },
                 {
                     "number": 13,
@@ -7768,7 +7768,7 @@ const quranData = {
                             "translation_ml": "(of) the former (people)"
                         }
                     ],
-                    "translation_ml": "When are recited to him Our Verses he says Stories (of) the former (people)"
+                    "translation_ml": "അവന്ന് നമ്മുടെ ദൃഷ്ടാന്തങ്ങള്‍ ഓതികേള്‍പിക്കപ്പെടുകയാണെങ്കില്‍ അവന്‍ പറയും; പൂര്‍വ്വികന്‍മാരുടെ ഐതിഹ്യങ്ങളാണെന്ന്‌."
                 },
                 {
                     "number": 14,
@@ -7842,7 +7842,7 @@ const quranData = {
                             "translation_ml": "earn"
                         }
                     ],
-                    "translation_ml": "Nay But (the) stain has covered [over] their hearts (for) what they used to earn"
+                    "translation_ml": "അല്ല; പക്ഷെ, അവര്‍ പ്രവര്‍ത്തിച്ചുക്കൊണ്ടിരിക്കുന്നത് അവരുടെ ഹൃദയങ്ങളില്‍ കറയുണ്ടാക്കിയിരിക്കുന്നു."
                 },
                 {
                     "number": 15,
@@ -7900,7 +7900,7 @@ const quranData = {
                             "translation_ml": "surely will be partitioned"
                         }
                     ],
-                    "translation_ml": "Nay Indeed, they from their Lord that Day surely will be partitioned"
+                    "translation_ml": "അല്ല; തീര്‍ച്ചയായും അവര്‍ അന്നേ ദിവസം അവരുടെ രക്ഷിതാവില്‍ നിന്ന് മറയ്ക്കപ്പെടുന്നവരാകുന്നു."
                 },
                 {
                     "number": 16,
@@ -7942,7 +7942,7 @@ const quranData = {
                             "translation_ml": "(in) the Hellfire"
                         }
                     ],
-                    "translation_ml": "Then indeed, they (surely) will burn (in) the Hellfire"
+                    "translation_ml": "പിന്നീടവര്‍ ജ്വലിക്കുന്ന നരകാഗ്നിയില്‍ കടന്നെരിയുന്നവരാകുന്നു."
                 },
                 {
                     "number": 17,
@@ -8008,7 +8008,7 @@ const quranData = {
                             "translation_ml": "deny"
                         }
                     ],
-                    "translation_ml": "Then it will be said This (is) what you used to [of it] deny"
+                    "translation_ml": "പിന്നീട് പറയപ്പെടും; ഇതാണ് നിങ്ങള്‍ നിഷേധിച്ചുതള്ളിക്കൊണ്ടിരുന്ന കാര്യം."
                 },
                 {
                     "number": 18,
@@ -8066,7 +8066,7 @@ const quranData = {
                             "translation_ml": "Illiyin"
                         }
                     ],
-                    "translation_ml": "Nay Indeed (the) record (of) the righteous (will be) surely in Illiyin"
+                    "translation_ml": "നിസ്സംശയം; പുണ്യവാന്‍മാരുടെ രേഖ ഇല്ലിയ്യൂനില്‍ തന്നെയായിരിക്കും."
                 },
                 {
                     "number": 19,
@@ -8108,7 +8108,7 @@ const quranData = {
                             "translation_ml": "(is) Illiyun"
                         }
                     ],
-                    "translation_ml": "And what can make you know what (is) Illiyun"
+                    "translation_ml": "ഇല്ലിയ്യൂന്‍ എന്നാല്‍ എന്താണെന്ന് നിനക്കറിയുമോ?"
                 },
                 {
                     "number": 20,
@@ -8134,7 +8134,7 @@ const quranData = {
                             "translation_ml": "written"
                         }
                     ],
-                    "translation_ml": "A book written"
+                    "translation_ml": "എഴുതപ്പെട്ട ഒരു രേഖയത്രെ അത്‌."
                 },
                 {
                     "number": 21,
@@ -8160,7 +8160,7 @@ const quranData = {
                             "translation_ml": "those brought near"
                         }
                     ],
-                    "translation_ml": "Witness it those brought near"
+                    "translation_ml": "സാമീപ്യം സിദ്ധിച്ചവര്‍ അതിന്‍റെ അടുക്കല്‍ സന്നിഹിതരാകുന്നതാണ്‌."
                 },
                 {
                     "number": 22,
@@ -8202,7 +8202,7 @@ const quranData = {
                             "translation_ml": "bliss"
                         }
                     ],
-                    "translation_ml": "Indeed the righteous (will be) surely in bliss"
+                    "translation_ml": "തീര്‍ച്ചയായും സുകൃതവാന്‍മാര്‍ സുഖാനുഭവത്തില്‍ തന്നെയായിരിക്കും."
                 },
                 {
                     "number": 23,
@@ -8236,7 +8236,7 @@ const quranData = {
                             "translation_ml": "observing"
                         }
                     ],
-                    "translation_ml": "On thrones observing"
+                    "translation_ml": "സോഫകളിലിരുന്ന് അവര്‍ നോക്കിക്കൊണ്ടിരിക്കും."
                 },
                 {
                     "number": 24,
@@ -8286,7 +8286,7 @@ const quranData = {
                             "translation_ml": "(of) bliss"
                         }
                     ],
-                    "translation_ml": "You will recognize in their faces (the) radiance (of) bliss"
+                    "translation_ml": "അവരുടെ മുഖങ്ങളില്‍ സുഖാനുഭവത്തിന്‍റെ തിളക്കം നിനക്കറിയാം."
                 },
                 {
                     "number": 25,
@@ -8328,7 +8328,7 @@ const quranData = {
                             "translation_ml": "sealed"
                         }
                     ],
-                    "translation_ml": "They will be given to drink of a pure wine sealed"
+                    "translation_ml": "മുദ്രവെക്കപ്പെട്ട ശുദ്ധമായ മദ്യത്തില്‍ നിന്ന് അവര്‍ക്ക് കുടിക്കാന്‍ നല്‍കപ്പെടും."
                 },
                 {
                     "number": 26,
@@ -8386,7 +8386,7 @@ const quranData = {
                             "translation_ml": "the aspirers"
                         }
                     ],
-                    "translation_ml": "Its seal (will be of) musk And for that let aspire the aspirers"
+                    "translation_ml": "അതിന്‍റെ മുദ്ര കസ്തൂരിയായിരിക്കും. വാശി കാണിക്കുന്നവര്‍ അതിന് വേണ്ടി വാശി കാണിക്കട്ടെ."
                 },
                 {
                     "number": 27,
@@ -8420,7 +8420,7 @@ const quranData = {
                             "translation_ml": "Tasneem"
                         }
                     ],
-                    "translation_ml": "And its mixture (is) of Tasneem"
+                    "translation_ml": "അതിലെ ചേരുവ തസ്നീം ആയിരിക്കും."
                 },
                 {
                     "number": 28,
@@ -8462,7 +8462,7 @@ const quranData = {
                             "translation_ml": "those brought near"
                         }
                     ],
-                    "translation_ml": "A spring will drink from it those brought near"
+                    "translation_ml": "അതായത് സാമീപ്യം സിദ്ധിച്ചവര്‍ കുടിക്കുന്ന ഒരു ഉറവ് ജലം."
                 },
                 {
                     "number": 29,
@@ -8536,7 +8536,7 @@ const quranData = {
                             "translation_ml": "laugh"
                         }
                     ],
-                    "translation_ml": "Indeed those who committed crimes used to at those who believed laugh"
+                    "translation_ml": "തീര്‍ച്ചയായും കുറ്റകൃത്യത്തില്‍ ഏര്‍പെട്ടവര്‍ സത്യവിശ്വാസികളെ കളിയാക്കി ചിരിക്കുമായിരുന്നു."
                 },
                 {
                     "number": 30,
@@ -8578,7 +8578,7 @@ const quranData = {
                             "translation_ml": "they winked at one another"
                         }
                     ],
-                    "translation_ml": "And when they passed by them they winked at one another"
+                    "translation_ml": "അവരുടെ (സത്യവിശ്വാസികളുടെ) മുമ്പിലൂടെ കടന്നു പോകുമ്പോള്‍ അവര്‍ പരസ്പരം കണ്ണിട്ടു കാണിക്കുമായിരുന്നു."
                 },
                 {
                     "number": 31,
@@ -8636,7 +8636,7 @@ const quranData = {
                             "translation_ml": "jesting"
                         }
                     ],
-                    "translation_ml": "And when they returned to their people they would return jesting"
+                    "translation_ml": "അവരുടെ സ്വന്തക്കാരുടെ അടുക്കലേക്ക് തിരിച്ചുചെല്ലുമ്പോള്‍ രസിച്ചു കൊണ്ട് അവര്‍ തിരിച്ചുചെല്ലുമായിരുന്നു."
                 },
                 {
                     "number": 32,
@@ -8694,7 +8694,7 @@ const quranData = {
                             "translation_ml": "surely have gone astray"
                         }
                     ],
-                    "translation_ml": "And when they saw them they said Indeed these surely have gone astray"
+                    "translation_ml": "അവരെ (സത്യവിശ്വാസികളെ) അവര്‍ കാണുമ്പോള്‍, തീര്‍ച്ചയായും ഇക്കൂട്ടര്‍ വഴിപിഴച്ചവര്‍ തന്നെയാണ് എന്ന് അവര്‍ പറയുകയും ചെയ്യുമായിരുന്നു."
                 },
                 {
                     "number": 33,
@@ -8736,7 +8736,7 @@ const quranData = {
                             "translation_ml": "(as) guardians"
                         }
                     ],
-                    "translation_ml": "But not they had been sent over them (as) guardians"
+                    "translation_ml": "അവരുടെ (സത്യവിശ്വാസികളുടെ) മേല്‍ മേല്‍നോട്ടക്കാരായിട്ട് അവര്‍ നിയോഗിക്കപ്പെട്ടിട്ടൊന്നുമില്ല."
                 },
                 {
                     "number": 34,
@@ -8794,7 +8794,7 @@ const quranData = {
                             "translation_ml": "they will laugh"
                         }
                     ],
-                    "translation_ml": "So today those who believed  at the disbelievers they will laugh"
+                    "translation_ml": "എന്നാല്‍ അന്ന് (ഖിയാമത്ത് നാളില്‍) ആ സത്യവിശ്വാസികള്‍ സത്യനിഷേധികളെ കളിയാക്കി ചിരിക്കുന്നതാണ്‌."
                 },
                 {
                     "number": 35,
@@ -8828,7 +8828,7 @@ const quranData = {
                             "translation_ml": "observing"
                         }
                     ],
-                    "translation_ml": "On the thrones observing"
+                    "translation_ml": "സോഫകളിലിരുന്ന് അവര്‍ നോക്കിക്കൊണ്ടിരിക്കും."
                 },
                 {
                     "number": 36,
@@ -8886,7 +8886,7 @@ const quranData = {
                             "translation_ml": "do"
                         }
                     ],
-                    "translation_ml": "Have (not) been rewarded the disbelievers (for) what they used to do"
+                    "translation_ml": "സത്യനിഷേധികള്‍ ചെയ്തു കൊണ്ടിരുന്നതിന് അവര്‍ക്ക് പ്രതിഫലം നല്‍കപ്പെട്ടുവോ എന്ന്‌."
                 }
             ]
         },
@@ -8931,7 +8931,7 @@ const quranData = {
                             "translation_ml": "is split asunder"
                         }
                     ],
-                    "translation_ml": "When the sky is split asunder"
+                    "translation_ml": "ആകാശം പിളരുമ്പോള്‍,"
                 },
                 {
                     "number": 2,
@@ -8965,7 +8965,7 @@ const quranData = {
                             "translation_ml": "and was obligated"
                         }
                     ],
-                    "translation_ml": "And has listened to its Lord and was obligated"
+                    "translation_ml": "അത് അതിന്‍റെ രക്ഷിതാവിന് കീഴ്പെടുകയും ചെയ്യുമ്പോള്‍-അത് (അങ്ങനെ കീഴ്പെടാന്‍) കടപ്പെട്ടിരിക്കുന്നുതാനും."
                 },
                 {
                     "number": 3,
@@ -8999,7 +8999,7 @@ const quranData = {
                             "translation_ml": "is spread"
                         }
                     ],
-                    "translation_ml": "And when the earth is spread"
+                    "translation_ml": "ഭൂമി നീട്ടപ്പെടുമ്പോള്‍"
                 },
                 {
                     "number": 4,
@@ -9041,7 +9041,7 @@ const quranData = {
                             "translation_ml": "and becomes empty"
                         }
                     ],
-                    "translation_ml": "And has cast out what (is) in it and becomes empty"
+                    "translation_ml": "അതിലുള്ളത് അത് (പുറത്തേക്ക്‌) ഇടുകയും, അത് കാലിയായിത്തീരുകയും ചെയ്യുമ്പോള്‍,"
                 },
                 {
                     "number": 5,
@@ -9075,7 +9075,7 @@ const quranData = {
                             "translation_ml": "and was obligated"
                         }
                     ],
-                    "translation_ml": "And has listened to its Lord and was obligated"
+                    "translation_ml": "അതിന്‍റെ രക്ഷിതാവിന് അത് കീഴ്പെടുകയും ചെയ്യുമ്പോള്‍- അത് (അങ്ങനെ കീഴ്പെടാന്‍) കടപ്പെട്ടിരിക്കുന്നു താനും."
                 },
                 {
                     "number": 6,
@@ -9149,7 +9149,7 @@ const quranData = {
                             "translation_ml": "and you (will) meet Him"
                         }
                     ],
-                    "translation_ml": "O mankind Indeed, you (are) laboring to your Lord (with) exertion and you (will) meet Him"
+                    "translation_ml": "ഹേ, മനുഷ്യാ, നീ നിന്‍റെ രക്ഷിതാവിങ്കലേക്ക് കടുത്ത അദ്ധ്വാനം നടത്തി ചെല്ലുന്നവനും അങ്ങനെ അവനുമായി കണ്ടുമുട്ടുന്നവനുമാകുന്നു."
                 },
                 {
                     "number": 7,
@@ -9199,7 +9199,7 @@ const quranData = {
                             "translation_ml": "in his right (hand)"
                         }
                     ],
-                    "translation_ml": "Then as for (him) who is given his record in his right (hand)"
+                    "translation_ml": "എന്നാല്‍ (പരലോകത്ത്‌) ഏതൊരുവന്ന് തന്‍റെ രേഖ വലതുകൈയ്യില്‍ നല്‍കപ്പെട്ടുവോ,"
                 },
                 {
                     "number": 8,
@@ -9241,7 +9241,7 @@ const quranData = {
                             "translation_ml": "easy"
                         }
                     ],
-                    "translation_ml": "Then soon his account will be taken an account easy"
+                    "translation_ml": "അവന്‍ ലഘുവായ വിചാരണയ്ക്ക് (മാത്രം) വിധേയനാകുന്നതാണ്‌."
                 },
                 {
                     "number": 9,
@@ -9283,7 +9283,7 @@ const quranData = {
                             "translation_ml": "happily"
                         }
                     ],
-                    "translation_ml": "And he will return to his people happily"
+                    "translation_ml": "അവന്‍ അവന്‍റെ സ്വന്തക്കാരുടെ അടുത്തേക്ക് സന്തുഷ്ടനായിക്കൊണ്ട് തിരിച്ചുപോകുകയും ചെയ്യും."
                 },
                 {
                     "number": 10,
@@ -9341,7 +9341,7 @@ const quranData = {
                             "translation_ml": "his back"
                         }
                     ],
-                    "translation_ml": "But as for (him) who is given his record behind his back"
+                    "translation_ml": "എന്നാല്‍ ഏതൊരുവന് തന്‍റെ രേഖ അവന്‍റെ മുതുകിന്‍റെ പിന്നിലൂടെ കൊടുക്കപ്പെട്ടുവോ"
                 },
                 {
                     "number": 11,
@@ -9375,7 +9375,7 @@ const quranData = {
                             "translation_ml": "(for) destruction"
                         }
                     ],
-                    "translation_ml": "Then soon he will call (for) destruction"
+                    "translation_ml": "അവന്‍ നാശമേ എന്ന് നിലവിളിക്കുകയും,"
                 },
                 {
                     "number": 12,
@@ -9401,7 +9401,7 @@ const quranData = {
                             "translation_ml": "(in) a Blaze"
                         }
                     ],
-                    "translation_ml": "And he will burn (in) a Blaze"
+                    "translation_ml": "ആളിക്കത്തുന്ന നരകാഗ്നിയില്‍ കടന്ന് എരിയുകയും ചെയ്യും."
                 },
                 {
                     "number": 13,
@@ -9451,7 +9451,7 @@ const quranData = {
                             "translation_ml": "happy"
                         }
                     ],
-                    "translation_ml": "Indeed, he had been among his people happy"
+                    "translation_ml": "തീര്‍ച്ചയായും അവന്‍ അവന്‍റെ സ്വന്തക്കാര്‍ക്കിടയില്‍ സന്തോഷത്തോടെ കഴിയുന്നവനായിരുന്നു."
                 },
                 {
                     "number": 14,
@@ -9501,7 +9501,7 @@ const quranData = {
                             "translation_ml": "he would return"
                         }
                     ],
-                    "translation_ml": "Indeed, he (had) thought that never he would return"
+                    "translation_ml": "തീര്‍ച്ചയായും അവന്‍ ധരിച്ചു; അവന്‍ മടങ്ങി വരുന്നതേ അല്ല എന്ന്‌."
                 },
                 {
                     "number": 15,
@@ -9559,7 +9559,7 @@ const quranData = {
                             "translation_ml": "All-Seer"
                         }
                     ],
-                    "translation_ml": "Yes Indeed his Lord was of him All-Seer"
+                    "translation_ml": "അതെ, തീര്‍ച്ചയായും അവന്‍റെ രക്ഷിതാവ് അവനെപ്പറ്റി കണ്ടറിയുന്നവനായിരിക്കുന്നു."
                 },
                 {
                     "number": 16,
@@ -9593,7 +9593,7 @@ const quranData = {
                             "translation_ml": "by the twilight glow"
                         }
                     ],
-                    "translation_ml": "But nay I swear by the twilight glow"
+                    "translation_ml": "എന്നാല്‍ അസ്തമയശോഭയെക്കൊണ്ട് ഞാന്‍ സത്യം ചെയ്തു പറയുന്നു:"
                 },
                 {
                     "number": 17,
@@ -9627,7 +9627,7 @@ const quranData = {
                             "translation_ml": "it envelops"
                         }
                     ],
-                    "translation_ml": "And the night and what it envelops"
+                    "translation_ml": "രാത്രിയും അതു ഒന്നിച്ച് ചേര്‍ക്കുന്നവയും കൊണ്ടും,"
                 },
                 {
                     "number": 18,
@@ -9661,7 +9661,7 @@ const quranData = {
                             "translation_ml": "it becomes full"
                         }
                     ],
-                    "translation_ml": "And the moon when it becomes full"
+                    "translation_ml": "ചന്ദ്രന്‍ പൂര്‍ണ്ണത പ്രാപിക്കുമ്പോള്‍ അതിനെ കൊണ്ടും."
                 },
                 {
                     "number": 19,
@@ -9703,7 +9703,7 @@ const quranData = {
                             "translation_ml": "stage"
                         }
                     ],
-                    "translation_ml": "You will surely embark (to) stage from stage"
+                    "translation_ml": "തീര്‍ച്ചയായും നിങ്ങള്‍ ഘട്ടംഘട്ടമായി കയറിക്കൊണ്ടിരിക്കുന്നതാണ്‌."
                 },
                 {
                     "number": 20,
@@ -9745,7 +9745,7 @@ const quranData = {
                             "translation_ml": "they believe"
                         }
                     ],
-                    "translation_ml": "So what (is) for them not they believe"
+                    "translation_ml": "എന്നാല്‍ അവര്‍ക്കെന്തുപറ്റി? അവര്‍ വിശ്വസിക്കുന്നില്ല."
                 },
                 {
                     "number": 21,
@@ -9803,7 +9803,7 @@ const quranData = {
                             "translation_ml": "they prostrate"
                         }
                     ],
-                    "translation_ml": "And when is recited to them the Quran not they prostrate"
+                    "translation_ml": "അവര്‍ക്ക് ഖുര്‍ആന്‍ ഓതികൊടുക്കപ്പെട്ടാല്‍ അവര്‍ സുജൂദ് ചെയ്യുന്നുമില്ല."
                 },
                 {
                     "number": 22,
@@ -9845,7 +9845,7 @@ const quranData = {
                             "translation_ml": "deny"
                         }
                     ],
-                    "translation_ml": "Nay Those who disbelieved deny"
+                    "translation_ml": "പക്ഷെ അവിശ്വാസികള്‍ നിഷേധിച്ചു തള്ളുകയാണ്‌."
                 },
                 {
                     "number": 23,
@@ -9887,7 +9887,7 @@ const quranData = {
                             "translation_ml": "they keep within themselves"
                         }
                     ],
-                    "translation_ml": "And Allah (is) most knowing of what they keep within themselves"
+                    "translation_ml": "അവര്‍ മനസ്സുകളില്‍ സൂക്ഷിച്ച് വെക്കുന്നതിനെപ്പറ്റി അല്ലാഹു നല്ലവണ്ണം അറിയുന്നവനാകുന്നു."
                 },
                 {
                     "number": 24,
@@ -9921,7 +9921,7 @@ const quranData = {
                             "translation_ml": "painful"
                         }
                     ],
-                    "translation_ml": "so give them tidings of a punishment painful"
+                    "translation_ml": "ആകയാല്‍ (നബിയേ,) നീ അവര്‍ക്ക് വേദനയേറിയ ഒരു ശിക്ഷയെപ്പറ്റി സന്തോഷവാര്‍ത്ത അറിയിക്കുക."
                 },
                 {
                     "number": 25,
@@ -10003,7 +10003,7 @@ const quranData = {
                             "translation_ml": "ending"
                         }
                     ],
-                    "translation_ml": "Except those who believe and do righteous deeds For them (is) a reward never ending"
+                    "translation_ml": "വിശ്വസിക്കുകയും സല്‍കര്‍മ്മങ്ങള്‍ പ്രവര്‍ത്തിക്കുകയും ചെയ്തവര്‍ക്കൊഴികെ. അവര്‍ക്ക് മുറിഞ്ഞു പോകാത്ത പ്രതിഫലമുണ്ട്‌."
                 }
             ]
         },
@@ -10048,7 +10048,7 @@ const quranData = {
                             "translation_ml": "the constellations"
                         }
                     ],
-                    "translation_ml": "By the sky containing the constellations"
+                    "translation_ml": "നക്ഷത്രമണ്ഡലങ്ങളുള്ള ആകാശം തന്നെയാണ സത്യം."
                 },
                 {
                     "number": 2,
@@ -10074,7 +10074,7 @@ const quranData = {
                             "translation_ml": "Promised"
                         }
                     ],
-                    "translation_ml": "And the Day Promised"
+                    "translation_ml": "വാഗ്ദാനം ചെയ്യപ്പെട്ട ആ ദിവസം തന്നെയാണ സത്യം."
                 },
                 {
                     "number": 3,
@@ -10100,7 +10100,7 @@ const quranData = {
                             "translation_ml": "and what is witnessed"
                         }
                     ],
-                    "translation_ml": "And (the) witness and what is witnessed"
+                    "translation_ml": "സാക്ഷിയും സാക്ഷ്യം വഹിക്കപ്പെടുന്ന കാര്യവും തന്നെയാണ സത്യം."
                 },
                 {
                     "number": 4,
@@ -10134,7 +10134,7 @@ const quranData = {
                             "translation_ml": "(of) the pit"
                         }
                     ],
-                    "translation_ml": "Destroyed were (the) companions (of) the pit"
+                    "translation_ml": "ആ കിടങ്ങിന്‍റെ ആള്‍ക്കാര്‍ നശിച്ചു പോകട്ടെ."
                 },
                 {
                     "number": 5,
@@ -10168,7 +10168,7 @@ const quranData = {
                             "translation_ml": "(of) the fuel"
                         }
                     ],
-                    "translation_ml": "(Of) the fire full (of) the fuel"
+                    "translation_ml": "അതായത് വിറകു നിറച്ച തീയുടെ ആള്‍ക്കാര്‍."
                 },
                 {
                     "number": 6,
@@ -10210,7 +10210,7 @@ const quranData = {
                             "translation_ml": "(were) sitting"
                         }
                     ],
-                    "translation_ml": "When they by it (were) sitting"
+                    "translation_ml": "അവര്‍ അതിങ്കല്‍ ഇരിക്കുന്നവരായിരുന്ന സന്ദര്‍ഭം."
                 },
                 {
                     "number": 7,
@@ -10268,7 +10268,7 @@ const quranData = {
                             "translation_ml": "witnesses"
                         }
                     ],
-                    "translation_ml": "And they over what they were doing to the believers witnesses"
+                    "translation_ml": "സത്യവിശ്വാസികളെക്കൊണ്ട് തങ്ങള്‍ ചെയ്യുന്നതിന് അവര്‍ ദൃക്‌സാക്ഷികളായിരുന്നു."
                 },
                 {
                     "number": 8,
@@ -10350,7 +10350,7 @@ const quranData = {
                             "translation_ml": "the Praiseworthy"
                         }
                     ],
-                    "translation_ml": "And not they resented [of] them except that they believed in Allah the All-Mighty the Praiseworthy"
+                    "translation_ml": "പ്രതാപശാലിയും സ്തുത്യര്‍ഹനുമായ അല്ലാഹുവില്‍ അവര്‍ വിശ്വസിക്കുന്നു എന്നത് മാത്രമായിരുന്നു അവരുടെ (സത്യവിശ്വാസികളുടെ) മേല്‍ അവര്‍ (മര്‍ദ്ദകര്‍) ചുമത്തിയ കുറ്റം."
                 },
                 {
                     "number": 9,
@@ -10440,7 +10440,7 @@ const quranData = {
                             "translation_ml": "(is) a Witness"
                         }
                     ],
-                    "translation_ml": "The One Who for Him (is) the dominion (of) the heavens and the earth and Allah on every thing (is) a Witness"
+                    "translation_ml": "ആകാശങ്ങളുടെയും ഭൂമിയുടെയും മേല്‍ ആധിപത്യം ഉള്ളവനുമായ (അല്ലാഹുവില്‍). അല്ലാഹു എല്ലാകാര്യത്തിനും സാക്ഷിയാകുന്നു."
                 },
                 {
                     "number": 10,
@@ -10562,7 +10562,7 @@ const quranData = {
                             "translation_ml": "(of) the Burning Fire"
                         }
                     ],
-                    "translation_ml": "Indeed those who persecuted the believing men and the believing women then not they repented then for them (is the) punishment (of) Hell and for them (is the) punishment (of) the Burning Fire"
+                    "translation_ml": "സത്യവിശ്വാസികളെയും സത്യവിശ്വാസിനികളെയും മര്‍ദ്ദിക്കുകയും, പിന്നീട് പശ്ചാത്തപിക്കാതിരിക്കുകയും ചെയ്തവരാരോ അവര്‍ക്കു നരകശിക്ഷയുണ്ട്‌. തീര്‍ച്ച. അവര്‍ക്ക് ചുട്ടുകരിക്കുന്ന ശിക്ഷയുണ്ട്‌."
                 },
                 {
                     "number": 11,
@@ -10684,7 +10684,7 @@ const quranData = {
                             "translation_ml": "the great"
                         }
                     ],
-                    "translation_ml": "Indeed those who believe and do the righteous deeds for them (will be) Gardens flow from underneath it the rivers That (is) the success the great"
+                    "translation_ml": "വിശ്വസിക്കുകയും സല്‍കര്‍മ്മങ്ങള്‍ പ്രവര്‍ത്തിക്കുകയും ചെയ്തവരാരോ അവര്‍ക്ക് താഴ്ഭാഗത്തുകൂടി അരുവികള്‍ ഒഴുകുന്ന സ്വര്‍ഗത്തോപ്പുകളുണ്ട്‌; തീര്‍ച്ച. അതത്രെ വലിയ വിജയം."
                 },
                 {
                     "number": 12,
@@ -10726,7 +10726,7 @@ const quranData = {
                             "translation_ml": "(is) surely strong"
                         }
                     ],
-                    "translation_ml": "Indeed (the) Grip (of) your Lord (is) surely strong"
+                    "translation_ml": "തീര്‍ച്ചയായും നിന്‍റെ രക്ഷിതാവിന്‍റെ പിടുത്തം കഠിനമായത് തന്നെയാകുന്നു."
                 },
                 {
                     "number": 13,
@@ -10768,7 +10768,7 @@ const quranData = {
                             "translation_ml": "and repeats"
                         }
                     ],
-                    "translation_ml": "Indeed He He originates and repeats"
+                    "translation_ml": "തീര്‍ച്ചയായും അവന്‍ തന്നെയാണ് ആദ്യമായി ഉണ്ടാക്കുന്നതും ആവര്‍ത്തിച്ച് ഉണ്ടാക്കുന്നതും."
                 },
                 {
                     "number": 14,
@@ -10802,7 +10802,7 @@ const quranData = {
                             "translation_ml": "the Most Loving"
                         }
                     ],
-                    "translation_ml": "And He (is) the Oft-Forgiving the Most Loving"
+                    "translation_ml": "അവന്‍ ഏറെ പൊറുക്കുന്നവനും ഏറെ സ്നേഹമുള്ളവനും,"
                 },
                 {
                     "number": 15,
@@ -10836,7 +10836,7 @@ const quranData = {
                             "translation_ml": "the Glorious"
                         }
                     ],
-                    "translation_ml": "Owner (of) the Throne the Glorious"
+                    "translation_ml": "സിംഹാസനത്തിന്‍റെ ഉടമയും, മഹത്വമുള്ളവനും,"
                 },
                 {
                     "number": 16,
@@ -10870,7 +10870,7 @@ const quranData = {
                             "translation_ml": "He intends"
                         }
                     ],
-                    "translation_ml": "Doer of what He intends"
+                    "translation_ml": "താന്‍ ഉദ്ദേശിക്കുന്നതെന്തോ അത് തികച്ചും പ്രാവര്‍ത്തികമാക്കുന്നവനുമാണ്‌."
                 },
                 {
                     "number": 17,
@@ -10912,7 +10912,7 @@ const quranData = {
                             "translation_ml": "(of) the hosts"
                         }
                     ],
-                    "translation_ml": "Has come to you (the) story (of) the hosts"
+                    "translation_ml": "ആ സൈന്യങ്ങളുടെ വര്‍ത്തമാനം നിനക്ക് വന്നുകിട്ടിയിരിക്കുന്നോ?"
                 },
                 {
                     "number": 18,
@@ -10938,7 +10938,7 @@ const quranData = {
                             "translation_ml": "and Thamud"
                         }
                     ],
-                    "translation_ml": "Firaun and Thamud"
+                    "translation_ml": "അഥവാ ഫിര്‍ഔന്‍റെയും ഥമൂദിന്‍റെയും (വര്‍ത്തമാനം)."
                 },
                 {
                     "number": 19,
@@ -10988,7 +10988,7 @@ const quranData = {
                             "translation_ml": "denial"
                         }
                     ],
-                    "translation_ml": "Nay Those who disbelieve (are) in denial"
+                    "translation_ml": "അല്ല, സത്യനിഷേധികള്‍ നിഷേധിച്ചു തള്ളുന്നതിലാകുന്നു ഏര്‍പെട്ടിട്ടുള്ളത്‌."
                 },
                 {
                     "number": 20,
@@ -11030,7 +11030,7 @@ const quranData = {
                             "translation_ml": "encompasses"
                         }
                     ],
-                    "translation_ml": "But Allah from behind them encompasses"
+                    "translation_ml": "അല്ലാഹു അവരുടെ പിന്‍വശത്തുകൂടി (അവരെ) വലയം ചെയ്തുകൊണ്ടിരിക്കുന്നവനാകുന്നു."
                 },
                 {
                     "number": 21,
@@ -11072,7 +11072,7 @@ const quranData = {
                             "translation_ml": "Glorious"
                         }
                     ],
-                    "translation_ml": "Nay It (is) a Quran Glorious"
+                    "translation_ml": "അല്ല, അത് മഹത്വമേറിയ ഒരു ഖുര്‍ആനാകുന്നു."
                 },
                 {
                     "number": 22,
@@ -11106,7 +11106,7 @@ const quranData = {
                             "translation_ml": "Guarded"
                         }
                     ],
-                    "translation_ml": "In a Tablet Guarded"
+                    "translation_ml": "സംരക്ഷിതമായ ഒരു ഫലകത്തിലാണ് അതുള്ളത്‌."
                 }
             ]
         },
@@ -11143,7 +11143,7 @@ const quranData = {
                             "translation_ml": "and the night comer"
                         }
                     ],
-                    "translation_ml": "By the sky and the night comer"
+                    "translation_ml": "ആകാശം തന്നെയാണ, രാത്രിയില്‍ വരുന്നതു തന്നെയാണ സത്യം."
                 },
                 {
                     "number": 2,
@@ -11185,7 +11185,7 @@ const quranData = {
                             "translation_ml": "the night comer (is)"
                         }
                     ],
-                    "translation_ml": "And what can make you know what the night comer (is)"
+                    "translation_ml": "രാത്രിയില്‍ വരുന്നത് എന്നാല്‍ എന്താണെന്ന് നിനക്കറിയുമോ?"
                 },
                 {
                     "number": 3,
@@ -11211,7 +11211,7 @@ const quranData = {
                             "translation_ml": "the piercing"
                         }
                     ],
-                    "translation_ml": "(It is) the star the piercing"
+                    "translation_ml": "തുളച്ച് കയറുന്ന നക്ഷത്രമത്രെ അത്‌."
                 },
                 {
                     "number": 4,
@@ -11269,7 +11269,7 @@ const quranData = {
                             "translation_ml": "(is) a protector"
                         }
                     ],
-                    "translation_ml": "Not (is) every soul but over it (is) a protector"
+                    "translation_ml": "തന്‍റെ കാര്യത്തില്‍ ഒരു മേല്‍നോട്ടക്കാരനുണ്ടായിക്കൊണ്ടല്ലാതെ യാതൊരാളുമില്ല."
                 },
                 {
                     "number": 5,
@@ -11311,7 +11311,7 @@ const quranData = {
                             "translation_ml": "he is created"
                         }
                     ],
-                    "translation_ml": "So let see man from what he is created"
+                    "translation_ml": "എന്നാല്‍ മനുഷ്യന്‍ ചിന്തിച്ചു നോക്കട്ടെ താന്‍ എന്തില്‍ നിന്നാണ് സൃഷ്ടിക്കപ്പെട്ടിരിക്കുന്നത് എന്ന്‌"
                 },
                 {
                     "number": 6,
@@ -11353,7 +11353,7 @@ const quranData = {
                             "translation_ml": "ejected"
                         }
                     ],
-                    "translation_ml": "He is created from a water ejected"
+                    "translation_ml": "തെറിച്ചു വീഴുന്ന ഒരു ദ്രാവകത്തില്‍ നിന്നത്രെ അവന്‍ സൃഷ്ടിക്കപ്പെട്ടിരിക്കുന്നത്‌."
                 },
                 {
                     "number": 7,
@@ -11403,7 +11403,7 @@ const quranData = {
                             "translation_ml": "and the ribs"
                         }
                     ],
-                    "translation_ml": "Coming forth from between the backbone and the ribs"
+                    "translation_ml": "മുതുകെല്ലിനും, വാരിയെല്ലുകള്‍ക്കുമിടയില്‍ നിന്ന് അത് പുറത്തു വരുന്നു."
                 },
                 {
                     "number": 8,
@@ -11445,7 +11445,7 @@ const quranData = {
                             "translation_ml": "(is) Able"
                         }
                     ],
-                    "translation_ml": "Indeed, He to return him (is) Able"
+                    "translation_ml": "അവനെ (മനുഷ്യനെ) തിരിച്ചുകൊണ്ടു വരാന്‍ തീര്‍ച്ചയായും അവന്‍ (അല്ലാഹു) കഴിവുള്ളവനാകുന്നു."
                 },
                 {
                     "number": 9,
@@ -11479,7 +11479,7 @@ const quranData = {
                             "translation_ml": "the secrets"
                         }
                     ],
-                    "translation_ml": "(The) Day will be tested the secrets"
+                    "translation_ml": "രഹസ്യങ്ങള്‍ പരിശോധിക്കപ്പെടുന്ന ദിവസം"
                 },
                 {
                     "number": 10,
@@ -11537,7 +11537,7 @@ const quranData = {
                             "translation_ml": "any helper"
                         }
                     ],
-                    "translation_ml": "Then not (is) for him any power and not any helper"
+                    "translation_ml": "അപ്പോള്‍ അവന് (മനുഷ്യന്‌) യാതൊരു ശക്തിയോ, സഹായിയോ ഉണ്ടായിരിക്കുകയില്ല."
                 },
                 {
                     "number": 11,
@@ -11571,7 +11571,7 @@ const quranData = {
                             "translation_ml": "returns"
                         }
                     ],
-                    "translation_ml": "By the sky which returns"
+                    "translation_ml": "ആവര്‍ത്തിച്ച് മഴപെയ്യിക്കുന്ന ആകാശത്തെക്കൊണ്ടും"
                 },
                 {
                     "number": 12,
@@ -11605,7 +11605,7 @@ const quranData = {
                             "translation_ml": "cracks open"
                         }
                     ],
-                    "translation_ml": "And the earth which cracks open"
+                    "translation_ml": "സസ്യലതാദികള്‍ മുളപ്പിക്കുന്ന ഭൂമിയെക്കൊണ്ടും സത്യം."
                 },
                 {
                     "number": 13,
@@ -11639,7 +11639,7 @@ const quranData = {
                             "translation_ml": "decisive"
                         }
                     ],
-                    "translation_ml": "Indeed, it (is) surely a Word decisive"
+                    "translation_ml": "തീര്‍ച്ചയായും ഇതു നിര്‍ണായകമായ ഒരു വാക്കാകുന്നു."
                 },
                 {
                     "number": 14,
@@ -11673,7 +11673,7 @@ const quranData = {
                             "translation_ml": "(is) for amusement"
                         }
                     ],
-                    "translation_ml": "And not it (is) for amusement"
+                    "translation_ml": "ഇതു തമാശയല്ല."
                 },
                 {
                     "number": 15,
@@ -11707,7 +11707,7 @@ const quranData = {
                             "translation_ml": "a plot"
                         }
                     ],
-                    "translation_ml": "Indeed, they are plotting a plot"
+                    "translation_ml": "തീര്‍ച്ചയായും അവര്‍ (വലിയ) തന്ത്രം പ്രയോഗിച്ചു കൊണ്ടിരിക്കും."
                 },
                 {
                     "number": 16,
@@ -11733,7 +11733,7 @@ const quranData = {
                             "translation_ml": "a plan"
                         }
                     ],
-                    "translation_ml": "But I am planning a plan"
+                    "translation_ml": "ഞാനും (വലിയ) തന്ത്രം പ്രയോഗിച്ചു കൊണ്ടിരിക്കും."
                 },
                 {
                     "number": 17,
@@ -11775,7 +11775,7 @@ const quranData = {
                             "translation_ml": "little"
                         }
                     ],
-                    "translation_ml": "So give respite (to) the disbelievers Give respite to them  little"
+                    "translation_ml": "ആകയാല്‍ (നബിയേ,) നീ സത്യനിഷേധികള്‍ക്ക് കാലതാമസം നല്‍കുക. അല്‍പസമയത്തേക്ക് അവര്‍ക്ക് താമസം നല്‍കിയേക്കുക."
                 }
             ]
         },
@@ -11828,7 +11828,7 @@ const quranData = {
                             "translation_ml": "the Most High"
                         }
                     ],
-                    "translation_ml": "Glorify (the) name (of) your Lord the Most High"
+                    "translation_ml": "അത്യുന്നതനായ നിന്‍റെ രക്ഷിതാവിന്‍റെ നാമം പ്രകീര്‍ത്തിക്കുക."
                 },
                 {
                     "number": 2,
@@ -11862,7 +11862,7 @@ const quranData = {
                             "translation_ml": "then proportioned"
                         }
                     ],
-                    "translation_ml": "The One Who created then proportioned"
+                    "translation_ml": "സൃഷ്ടിക്കുകയും, സംവിധാനിക്കുകയും ചെയ്ത (രക്ഷിതാവിന്‍റെ)"
                 },
                 {
                     "number": 3,
@@ -11896,7 +11896,7 @@ const quranData = {
                             "translation_ml": "then guided"
                         }
                     ],
-                    "translation_ml": "And the One Who measured then guided"
+                    "translation_ml": "വ്യവസ്ഥ നിര്‍ണയിച്ചു മാര്‍ഗദര്‍ശനം നല്‍കിയവനും,"
                 },
                 {
                     "number": 4,
@@ -11930,7 +11930,7 @@ const quranData = {
                             "translation_ml": "the pasture"
                         }
                     ],
-                    "translation_ml": "And the One Who brings forth the pasture"
+                    "translation_ml": "മേച്ചില്‍ പുറങ്ങള്‍ ഉല്‍പാദിപ്പിച്ചവനും"
                 },
                 {
                     "number": 5,
@@ -11964,7 +11964,7 @@ const quranData = {
                             "translation_ml": "dark"
                         }
                     ],
-                    "translation_ml": "And then makes it stubble dark"
+                    "translation_ml": "എന്നിട്ട് അതിനെ ഉണങ്ങിക്കരിഞ്ഞ ചവറാക്കി തീര്‍ത്തവനുമായ (രക്ഷിതാവിന്‍റെ നാമം)"
                 },
                 {
                     "number": 6,
@@ -11998,7 +11998,7 @@ const quranData = {
                             "translation_ml": "you will forget"
                         }
                     ],
-                    "translation_ml": "We will make you recite so not you will forget"
+                    "translation_ml": "നിനക്ക് നാം ഓതിത്തരാം. നീ മറന്നുപോകുകയില്ല."
                 },
                 {
                     "number": 7,
@@ -12080,7 +12080,7 @@ const quranData = {
                             "translation_ml": "is hidden"
                         }
                     ],
-                    "translation_ml": "Except what wills Allah Indeed, He knows the manifest and what is hidden"
+                    "translation_ml": "അല്ലാഹു ഉദ്ദേശിച്ചതൊഴികെ. തീര്‍ച്ചയായും അവന്‍ പരസ്യമായതും, രഹസ്യമായിരിക്കുന്നതും അറിയുന്നു."
                 },
                 {
                     "number": 8,
@@ -12106,7 +12106,7 @@ const quranData = {
                             "translation_ml": "to the ease"
                         }
                     ],
-                    "translation_ml": "And We will ease you to the ease"
+                    "translation_ml": "കൂടുതല്‍ എളുപ്പമുള്ളതിലേക്ക് നിനക്ക് നാം സൌകര്യമുണ്ടാക്കിത്തരുന്നതുമാണ്‌."
                 },
                 {
                     "number": 9,
@@ -12148,7 +12148,7 @@ const quranData = {
                             "translation_ml": "the reminder"
                         }
                     ],
-                    "translation_ml": "So remind if benefits the reminder"
+                    "translation_ml": "അതിനാല്‍ ഉപദേശം ഫലപ്പെടുന്നുവെങ്കില്‍ നീ ഉപദേശിച്ചു കൊള്ളുക."
                 },
                 {
                     "number": 10,
@@ -12182,7 +12182,7 @@ const quranData = {
                             "translation_ml": "fears (Allah)"
                         }
                     ],
-                    "translation_ml": "He will pay heed  (one) who fears (Allah)"
+                    "translation_ml": "ഭയപ്പെടുന്നവര്‍ ഉപദേശം സ്വീകരിച്ചു കൊള്ളുന്നതാണ്‌."
                 },
                 {
                     "number": 11,
@@ -12208,7 +12208,7 @@ const quranData = {
                             "translation_ml": "the wretched one"
                         }
                     ],
-                    "translation_ml": "And will avoid it the wretched one"
+                    "translation_ml": "ഏറ്റവും നിര്‍ഭാഗ്യവാനായിട്ടുള്ളവന്‍ അതിനെ (ഉപദേശത്തെ) വിട്ടകന്നു പോകുന്നതാണ്‌."
                 },
                 {
                     "number": 12,
@@ -12250,7 +12250,7 @@ const quranData = {
                             "translation_ml": "[the] great"
                         }
                     ],
-                    "translation_ml": "The one who will burn (in) the Fire [the] great"
+                    "translation_ml": "വലിയ അഗ്നിയില്‍ കടന്ന് എരിയുന്നവനത്രെ അവന്‍"
                 },
                 {
                     "number": 13,
@@ -12308,7 +12308,7 @@ const quranData = {
                             "translation_ml": "will live"
                         }
                     ],
-                    "translation_ml": "Then not he will die therein and not will live"
+                    "translation_ml": "പിന്നീട് അവന്‍ അതില്‍ മരിക്കുകയില്ല. ജീവിക്കുകയുമില്ല."
                 },
                 {
                     "number": 14,
@@ -12350,7 +12350,7 @@ const quranData = {
                             "translation_ml": "purifies (himself)"
                         }
                     ],
-                    "translation_ml": "Certainly has succeeded (one) who purifies (himself)"
+                    "translation_ml": "തീര്‍ച്ചയായും പരിശുദ്ധി നേടിയവര്‍ വിജയം പ്രാപിച്ചു."
                 },
                 {
                     "number": 15,
@@ -12392,7 +12392,7 @@ const quranData = {
                             "translation_ml": "and prays"
                         }
                     ],
-                    "translation_ml": "And remembers (the) name (of) his Lord and prays"
+                    "translation_ml": "തന്‍റെ രക്ഷിതാവിന്‍റെ നാമം സ്മരിക്കുകയും എന്നിട്ട് നമസ്കരിക്കുകയും (ചെയ്തവന്‍)"
                 },
                 {
                     "number": 16,
@@ -12434,7 +12434,7 @@ const quranData = {
                             "translation_ml": "(of) the world"
                         }
                     ],
-                    "translation_ml": "Nay You prefer the life (of) the world"
+                    "translation_ml": "പക്ഷെ, നിങ്ങള്‍ ഐഹികജീവിതത്തിന്ന് കൂടുതല്‍ പ്രാധാന്യം നല്‍കുന്നു."
                 },
                 {
                     "number": 17,
@@ -12468,7 +12468,7 @@ const quranData = {
                             "translation_ml": "and everlasting"
                         }
                     ],
-                    "translation_ml": "While the Hereafter (is) better and everlasting"
+                    "translation_ml": "പരലോകമാകുന്നു ഏറ്റവും ഉത്തമവും നിലനില്‍ക്കുന്നതും."
                 },
                 {
                     "number": 18,
@@ -12518,7 +12518,7 @@ const quranData = {
                             "translation_ml": "[the] former"
                         }
                     ],
-                    "translation_ml": "Indeed this surely (is) in the Scriptures [the] former"
+                    "translation_ml": "തീര്‍ച്ചയായും ഇത് ആദ്യത്തെ ഏടുകളില്‍ തന്നെയുണ്ട്‌."
                 },
                 {
                     "number": 19,
@@ -12552,7 +12552,7 @@ const quranData = {
                             "translation_ml": "and Musa"
                         }
                     ],
-                    "translation_ml": "(The) Scriptures (of) Ibrahim and Musa"
+                    "translation_ml": "അതായത് ഇബ്രാഹീമിന്‍റെയും മൂസായുടെയും ഏടുകളില്‍."
                 }
             ]
         },
@@ -12605,7 +12605,7 @@ const quranData = {
                             "translation_ml": "(of) the Overwhelming"
                         }
                     ],
-                    "translation_ml": "Has (there) come to you (the) news (of) the Overwhelming"
+                    "translation_ml": "(നബിയേ,) ആ മൂടുന്ന സംഭവത്തെ സംബന്ധിച്ച വര്‍ത്തമാനം നിനക്ക് വന്നുകിട്ടിയോ?"
                 },
                 {
                     "number": 2,
@@ -12639,7 +12639,7 @@ const quranData = {
                             "translation_ml": "(will be) humbled"
                         }
                     ],
-                    "translation_ml": "Faces that Day (will be) humbled"
+                    "translation_ml": "അന്നേ ദിവസം ചില മുഖങ്ങള്‍ താഴ്മകാണിക്കുന്നതും"
                 },
                 {
                     "number": 3,
@@ -12665,7 +12665,7 @@ const quranData = {
                             "translation_ml": "exhausted"
                         }
                     ],
-                    "translation_ml": "Laboring exhausted"
+                    "translation_ml": "പണിയെടുത്ത് ക്ഷീണിച്ചതുമായിരിക്കും."
                 },
                 {
                     "number": 4,
@@ -12699,7 +12699,7 @@ const quranData = {
                             "translation_ml": "intensely hot"
                         }
                     ],
-                    "translation_ml": "They will burn (in) a Fire intensely hot"
+                    "translation_ml": "ചൂടേറിയ അഗ്നിയില്‍ അവ പ്രവേശിക്കുന്നതാണ്‌."
                 },
                 {
                     "number": 5,
@@ -12741,7 +12741,7 @@ const quranData = {
                             "translation_ml": "boiling"
                         }
                     ],
-                    "translation_ml": "They will be given to drink from a spring boiling"
+                    "translation_ml": "ചുട്ടുതിളക്കുന്ന ഒരു ഉറവില്‍ നിന്ന് അവര്‍ക്കു കുടിപ്പിക്കപ്പെടുന്നതാണ്‌."
                 },
                 {
                     "number": 6,
@@ -12799,7 +12799,7 @@ const quranData = {
                             "translation_ml": "a bitter thorny plant"
                         }
                     ],
-                    "translation_ml": "Not is for them food except from a bitter thorny plant"
+                    "translation_ml": "ളരീഇല്‍ നിന്നല്ലാതെ അവര്‍ക്ക് യാതൊരു ആഹാരവുമില്ല."
                 },
                 {
                     "number": 7,
@@ -12857,7 +12857,7 @@ const quranData = {
                             "translation_ml": "hunger"
                         }
                     ],
-                    "translation_ml": "Not it nourishes and not it avails from hunger"
+                    "translation_ml": "അത് പോഷണം നല്‍കുകയില്ല. വിശപ്പിന് ശമനമുണ്ടാക്കുകയുമില്ല."
                 },
                 {
                     "number": 8,
@@ -12891,7 +12891,7 @@ const quranData = {
                             "translation_ml": "(will be) joyful"
                         }
                     ],
-                    "translation_ml": "Faces that Day (will be) joyful"
+                    "translation_ml": "ചില മുഖങ്ങള്‍ അന്നു തുടുത്തു മിനുത്തതായിരിക്കും."
                 },
                 {
                     "number": 9,
@@ -12917,7 +12917,7 @@ const quranData = {
                             "translation_ml": "satisfied"
                         }
                     ],
-                    "translation_ml": "With their effort satisfied"
+                    "translation_ml": "അവയുടെ പ്രയത്നത്തെപ്പറ്റി തൃപ്തിയടഞ്ഞവയുമായിരിക്കും."
                 },
                 {
                     "number": 10,
@@ -12951,7 +12951,7 @@ const quranData = {
                             "translation_ml": "elevated"
                         }
                     ],
-                    "translation_ml": "In a garden elevated"
+                    "translation_ml": "ഉന്നതമായ സ്വര്‍ഗത്തില്‍."
                 },
                 {
                     "number": 11,
@@ -12993,7 +12993,7 @@ const quranData = {
                             "translation_ml": "vain talk"
                         }
                     ],
-                    "translation_ml": "Not they will hear therein vain talk"
+                    "translation_ml": "അവിടെ യാതൊരു നിരര്‍ത്ഥകമായ വാക്കും അവര്‍ കേള്‍ക്കുകയില്ല."
                 },
                 {
                     "number": 12,
@@ -13027,7 +13027,7 @@ const quranData = {
                             "translation_ml": "flowing"
                         }
                     ],
-                    "translation_ml": "Therein (will be) a spring flowing"
+                    "translation_ml": "അതില്‍ ഒഴുകി കൊണ്ടിരിക്കുന്ന അരുവിയുണ്ട്‌."
                 },
                 {
                     "number": 13,
@@ -13061,7 +13061,7 @@ const quranData = {
                             "translation_ml": "raised high"
                         }
                     ],
-                    "translation_ml": "Therein (will be) thrones raised high"
+                    "translation_ml": "അതില്‍ ഉയര്‍ത്തിവെക്കപ്പെട്ട കട്ടിലുകളും,"
                 },
                 {
                     "number": 14,
@@ -13087,7 +13087,7 @@ const quranData = {
                             "translation_ml": "put in place"
                         }
                     ],
-                    "translation_ml": "And cups put in place"
+                    "translation_ml": "തയ്യാറാക്കി വെക്കപ്പെട്ട കോപ്പകളും,"
                 },
                 {
                     "number": 15,
@@ -13113,7 +13113,7 @@ const quranData = {
                             "translation_ml": "lined up"
                         }
                     ],
-                    "translation_ml": "And cushions lined up"
+                    "translation_ml": "അണിയായി വെക്കപ്പെട്ട തലയണകളും,"
                 },
                 {
                     "number": 16,
@@ -13139,7 +13139,7 @@ const quranData = {
                             "translation_ml": "spread out"
                         }
                     ],
-                    "translation_ml": "And carpets spread out"
+                    "translation_ml": "വിരിച്ചുവെക്കപ്പെട്ട പരവതാനികളുമുണ്ട്‌."
                 },
                 {
                     "number": 17,
@@ -13197,7 +13197,7 @@ const quranData = {
                             "translation_ml": "they are created"
                         }
                     ],
-                    "translation_ml": "Then do not they look towards the camels how they are created"
+                    "translation_ml": "ഒട്ടകത്തിന്‍റെ നേര്‍ക്ക് അവര്‍ നോക്കുന്നില്ലേ? അത് എങ്ങനെ സൃഷ്ടിക്കപ്പെട്ടിരിക്കുന്നു എന്ന്‌."
                 },
                 {
                     "number": 18,
@@ -13239,7 +13239,7 @@ const quranData = {
                             "translation_ml": "it is raised"
                         }
                     ],
-                    "translation_ml": "And towards the sky how it is raised"
+                    "translation_ml": "ആകാശത്തേക്ക് (അവര്‍ നോക്കുന്നില്ലേ?) അത് എങ്ങനെ ഉയര്‍ത്തപ്പെട്ടിരിക്കുന്നു എന്ന്‌."
                 },
                 {
                     "number": 19,
@@ -13281,7 +13281,7 @@ const quranData = {
                             "translation_ml": "they are fixed"
                         }
                     ],
-                    "translation_ml": "And towards the mountains how they are fixed"
+                    "translation_ml": "പര്‍വ്വതങ്ങളിലേക്ക് (അവര്‍ നോക്കുന്നില്ലേ?) അവ എങ്ങനെ നാട്ടിനിര്‍ത്തപ്പെട്ടിരിക്കുന്നു വെന്ന്‌."
                 },
                 {
                     "number": 20,
@@ -13323,7 +13323,7 @@ const quranData = {
                             "translation_ml": "it is spread out"
                         }
                     ],
-                    "translation_ml": "And towards the earth how it is spread out"
+                    "translation_ml": "ഭൂമിയിലേക്ക് (അവര്‍ നോക്കുന്നില്ലേ?) അത് എങ്ങനെ പരത്തപ്പെട്ടിരിക്കുന്നുവെന്ന്‌"
                 },
                 {
                     "number": 21,
@@ -13365,7 +13365,7 @@ const quranData = {
                             "translation_ml": "(are) a reminder"
                         }
                     ],
-                    "translation_ml": "So remind only you (are) a reminder"
+                    "translation_ml": "അതിനാല്‍ (നബിയേ,) നീ ഉല്‍ബോധിപ്പിക്കുക. നീ ഒരു ഉല്‍ബോധകന്‍ മാത്രമാകുന്നു."
                 },
                 {
                     "number": 22,
@@ -13399,7 +13399,7 @@ const quranData = {
                             "translation_ml": "a controller"
                         }
                     ],
-                    "translation_ml": "You are not over them a controller"
+                    "translation_ml": "നീ അവരുടെ മേല്‍ അധികാരം ചെലുത്തേണ്ടവനല്ല."
                 },
                 {
                     "number": 23,
@@ -13441,7 +13441,7 @@ const quranData = {
                             "translation_ml": "and disbelieves"
                         }
                     ],
-                    "translation_ml": "But whoever turns away and disbelieves"
+                    "translation_ml": "പക്ഷെ, വല്ലവനും തിരിഞ്ഞുകളയുകയും, അവിശ്വസിക്കുകയും ചെയ്യുന്ന പക്ഷം"
                 },
                 {
                     "number": 24,
@@ -13483,7 +13483,7 @@ const quranData = {
                             "translation_ml": "greatest"
                         }
                     ],
-                    "translation_ml": "Then will punish him Allah (with) the punishment greatest"
+                    "translation_ml": "അല്ലാഹു അവനെ ഏറ്റവും വലിയ ശിക്ഷ ശിക്ഷിക്കുന്നതാണ്‌."
                 },
                 {
                     "number": 25,
@@ -13517,7 +13517,7 @@ const quranData = {
                             "translation_ml": "(will be) their return"
                         }
                     ],
-                    "translation_ml": "Indeed to Us (will be) their return"
+                    "translation_ml": "തീര്‍ച്ചയായും നമ്മുടെ അടുത്തേക്കാണ് അവരുടെ മടക്കം."
                 },
                 {
                     "number": 26,
@@ -13559,7 +13559,7 @@ const quranData = {
                             "translation_ml": "(is) their account"
                         }
                     ],
-                    "translation_ml": "Then indeed upon Us (is) their account"
+                    "translation_ml": "പിന്നീട്‌, തീര്‍ച്ചയായും നമ്മുടെ ബാധ്യതയാണ് അവരുടെ വിചാരണ."
                 }
             ]
         },
@@ -13588,7 +13588,7 @@ const quranData = {
                             "translation_ml": "By the dawn"
                         }
                     ],
-                    "translation_ml": "By the dawn"
+                    "translation_ml": "പ്രഭാതം തന്നെയാണ സത്യം."
                 },
                 {
                     "number": 2,
@@ -13614,7 +13614,7 @@ const quranData = {
                             "translation_ml": "ten"
                         }
                     ],
-                    "translation_ml": "And the nights ten"
+                    "translation_ml": "പത്തു രാത്രികള്‍ തന്നെയാണ സത്യം."
                 },
                 {
                     "number": 3,
@@ -13640,7 +13640,7 @@ const quranData = {
                             "translation_ml": "and the odd"
                         }
                     ],
-                    "translation_ml": "And the even and the odd"
+                    "translation_ml": "ഇരട്ടയും ഒറ്റയും തന്നെയാണ സത്യം"
                 },
                 {
                     "number": 4,
@@ -13674,7 +13674,7 @@ const quranData = {
                             "translation_ml": "it passes"
                         }
                     ],
-                    "translation_ml": "And the night when it passes"
+                    "translation_ml": "രാത്രി സഞ്ചരിച്ച് കൊണ്ടിരിക്കെ അത് തന്നെയാണ സത്യം."
                 },
                 {
                     "number": 5,
@@ -13732,7 +13732,7 @@ const quranData = {
                             "translation_ml": "who understand"
                         }
                     ],
-                    "translation_ml": "Is in that (not) an oath for those who understand"
+                    "translation_ml": "അതില്‍ (മേല്‍ പറഞ്ഞവയില്‍) കാര്യബോധമുള്ളവന്ന് സത്യത്തിന് വകയുണേ്ടാ?"
                 },
                 {
                     "number": 6,
@@ -13790,7 +13790,7 @@ const quranData = {
                             "translation_ml": "with Aad"
                         }
                     ],
-                    "translation_ml": "Did not you see how dealt your Lord with Aad"
+                    "translation_ml": "ആദ് സമുദായത്തെ കൊണ്ട് നിന്‍റെ രക്ഷിതാവ് എന്തു ചെയ്തുവെന്ന് നീ കണ്ടില്ലേ?"
                 },
                 {
                     "number": 7,
@@ -13824,7 +13824,7 @@ const quranData = {
                             "translation_ml": "lofty pillars"
                         }
                     ],
-                    "translation_ml": "Iram possessors (of) lofty pillars"
+                    "translation_ml": "അതായത് തൂണുകളുടെ ഉടമകളായ ഇറം ഗോത്രത്തെ കൊണ്ട്‌"
                 },
                 {
                     "number": 8,
@@ -13882,7 +13882,7 @@ const quranData = {
                             "translation_ml": "the cities"
                         }
                     ],
-                    "translation_ml": "Which not had been created like them in the cities"
+                    "translation_ml": "തത്തുല്യമായിട്ടൊന്ന് രാജ്യങ്ങളില്‍ സൃഷ്ടിക്കപ്പെട്ടിട്ടില്ലാത്ത ഗോത്രം."
                 },
                 {
                     "number": 9,
@@ -13932,7 +13932,7 @@ const quranData = {
                             "translation_ml": "in the valley"
                         }
                     ],
-                    "translation_ml": "And Thamud who carved out the rocks in the valley"
+                    "translation_ml": "താഴ്‌വരയില്‍ പാറവെട്ടി കെട്ടിടമുണ്ടാക്കിയവരായ ഥമൂദ് ഗോത്രത്തെക്കൊണ്ടും"
                 },
                 {
                     "number": 10,
@@ -13966,7 +13966,7 @@ const quranData = {
                             "translation_ml": "stakes"
                         }
                     ],
-                    "translation_ml": "And Firaun owner of stakes"
+                    "translation_ml": "ആണികളുടെ ആളായ ഫിര്‍ഔനെക്കൊണ്ടും."
                 },
                 {
                     "number": 11,
@@ -14008,7 +14008,7 @@ const quranData = {
                             "translation_ml": "the lands"
                         }
                     ],
-                    "translation_ml": "Who transgressed in the lands"
+                    "translation_ml": "നാടുകളില്‍ അതിക്രമം പ്രവര്‍ത്തിക്കുകയും"
                 },
                 {
                     "number": 12,
@@ -14042,7 +14042,7 @@ const quranData = {
                             "translation_ml": "corruption"
                         }
                     ],
-                    "translation_ml": "And (made) much therein corruption"
+                    "translation_ml": "അവിടെ കുഴപ്പം വര്‍ദ്ധിപ്പിക്കുകയും ചെയ്തവരാണവര്‍."
                 },
                 {
                     "number": 13,
@@ -14092,7 +14092,7 @@ const quranData = {
                             "translation_ml": "(of) punishment"
                         }
                     ],
-                    "translation_ml": "So poured on them your Lord scourge (of) punishment"
+                    "translation_ml": "അതിനാല്‍ നിന്‍റെ രക്ഷിതാവ് അവരുടെ മേല്‍ ശിക്ഷയുടെ ചമ്മട്ടി വര്‍ഷിച്ചു."
                 },
                 {
                     "number": 14,
@@ -14126,7 +14126,7 @@ const quranData = {
                             "translation_ml": "(is) surely Ever Watchful"
                         }
                     ],
-                    "translation_ml": "Indeed your Lord (is) surely Ever Watchful"
+                    "translation_ml": "തീര്‍ച്ചയായും നിന്‍റെ രക്ഷിതാവ് പതിയിരിക്കുന്ന സ്ഥാനത്തു തന്നെയുണ്ട്‌."
                 },
                 {
                     "number": 15,
@@ -14224,7 +14224,7 @@ const quranData = {
                             "translation_ml": "has honored me"
                         }
                     ],
-                    "translation_ml": "And as for man when does try him his Lord and is generous to him and favors him he says My Lord has honored me"
+                    "translation_ml": "എന്നാല്‍ മനുഷ്യനെ അവന്‍റെ രക്ഷിതാവ് പരീക്ഷിക്കുകയും അങ്ങനെ അവനെ ആദരിക്കുകയും അവന് സൌഖ്യം നല്‍കുകയും ചെയ്താല്‍ അവന്‍ പറയും; എന്‍റെ രക്ഷിതാവ് എന്നെ ആദരിച്ചിരിക്കുന്നു എന്ന്‌."
                 },
                 {
                     "number": 16,
@@ -14314,7 +14314,7 @@ const quranData = {
                             "translation_ml": "(has) humiliated me"
                         }
                     ],
-                    "translation_ml": "But when does He try him and restricts for him his provision then he says My Lord (has) humiliated me"
+                    "translation_ml": "എന്നാല്‍ അവനെ (മനുഷ്യനെ) അവന്‍ പരീക്ഷിക്കുകയും എന്നിട്ടവന്‍റെ ഉപജീവനം ഇടുങ്ങിയതാക്കുകയും ചെയ്താല്‍ അവന്‍ പറയും; എന്‍റെ രക്ഷിതാവ് എന്നെ അപമാനിച്ചിരിക്കുന്നു എന്ന്‌."
                 },
                 {
                     "number": 17,
@@ -14364,7 +14364,7 @@ const quranData = {
                             "translation_ml": "the orphan"
                         }
                     ],
-                    "translation_ml": "Nay But not you honor the orphan"
+                    "translation_ml": "അല്ല, പക്ഷെ നിങ്ങള്‍ അനാഥയെ ആദരിക്കുന്നില്ല."
                 },
                 {
                     "number": 18,
@@ -14414,7 +14414,7 @@ const quranData = {
                             "translation_ml": "the poor"
                         }
                     ],
-                    "translation_ml": "And not you feel the urge to feed the poor"
+                    "translation_ml": "പാവപ്പെട്ടവന്‍റെ ആഹാരത്തിന് നിങ്ങള്‍ പ്രോത്സാഹനം നല്‍കുന്നുമില്ല."
                 },
                 {
                     "number": 19,
@@ -14456,7 +14456,7 @@ const quranData = {
                             "translation_ml": "altogether"
                         }
                     ],
-                    "translation_ml": "And you consume the inheritance devouring altogether"
+                    "translation_ml": "അനന്തരാവകാശ സ്വത്ത് നിങ്ങള്‍ വാരിക്കൂട്ടി തിന്നുകയും ചെയ്യുന്നു."
                 },
                 {
                     "number": 20,
@@ -14498,7 +14498,7 @@ const quranData = {
                             "translation_ml": "immense"
                         }
                     ],
-                    "translation_ml": "And you love wealth (with) love immense"
+                    "translation_ml": "ധനത്തെ നിങ്ങള്‍ അമിതമായ തോതില്‍ സ്നേഹിക്കുകയും ചെയ്യുന്നു."
                 },
                 {
                     "number": 21,
@@ -14556,7 +14556,7 @@ const quranData = {
                             "translation_ml": "(and) crushed"
                         }
                     ],
-                    "translation_ml": "Nay When is leveled the earth pounded (and) crushed"
+                    "translation_ml": "അല്ല, ഭൂമി പൊടിപൊടിയായി പൊടിക്കപ്പെടുകയും,"
                 },
                 {
                     "number": 22,
@@ -14606,7 +14606,7 @@ const quranData = {
                             "translation_ml": "(upon) rank"
                         }
                     ],
-                    "translation_ml": "And comes your Lord and the Angels rank (upon) rank"
+                    "translation_ml": "നിന്‍റെ രക്ഷിതാവും, അണിയണിയായി മലക്കുകളും വരുകയും,"
                 },
                 {
                     "number": 23,
@@ -14688,7 +14688,7 @@ const quranData = {
                             "translation_ml": "the remembrance"
                         }
                     ],
-                    "translation_ml": "And is brought that Day Hell That Day will remember man but how (will be) for him the remembrance"
+                    "translation_ml": "അന്ന് നരകം കൊണ്ടു വരപ്പെടുകയും ചെയ്താല്‍! അന്നേ ദിവസം മനുഷ്യന്ന് ഓര്‍മ വരുന്നതാണ്‌. എവിടെനിന്നാണവന്ന് ഓര്‍മ വരുന്നത്‌?"
                 },
                 {
                     "number": 24,
@@ -14730,7 +14730,7 @@ const quranData = {
                             "translation_ml": "for my life"
                         }
                     ],
-                    "translation_ml": "He will say O I wish I had sent forth for my life"
+                    "translation_ml": "അവന്‍ പറയും. അയ്യോ, ഞാന്‍ എന്‍റെ ജീവിതത്തിനു വേണ്ടി മുന്‍കൂട്ടി (സല്‍കര്‍മ്മങ്ങള്‍) ചെയ്തുവെച്ചിരുന്നെങ്കില്‍ എത്ര നന്നായിരുന്നേനെ!"
                 },
                 {
                     "number": 25,
@@ -14780,7 +14780,7 @@ const quranData = {
                             "translation_ml": "anyone"
                         }
                     ],
-                    "translation_ml": "So that Day not will punish (as) His punishment anyone"
+                    "translation_ml": "അപ്പോള്‍ അന്നേ ദിവസം അല്ലാഹു ശിക്ഷിക്കുന്നപ്രകാരം ഒരാളും ശിക്ഷിക്കുകയില്ല."
                 },
                 {
                     "number": 26,
@@ -14822,7 +14822,7 @@ const quranData = {
                             "translation_ml": "anyone"
                         }
                     ],
-                    "translation_ml": "And not will bind (as) His binding anyone"
+                    "translation_ml": "അവന്‍ പിടിച്ചു ബന്ധിക്കുന്നത് പോലെ ഒരാളും പിടിച്ചു ബന്ധിക്കുന്നതുമല്ല."
                 },
                 {
                     "number": 27,
@@ -14856,7 +14856,7 @@ const quranData = {
                             "translation_ml": "who is satisfied"
                         }
                     ],
-                    "translation_ml": "O soul who is satisfied"
+                    "translation_ml": "ഹേ; സമാധാനമടഞ്ഞ ആത്മാവേ,"
                 },
                 {
                     "number": 28,
@@ -14906,7 +14906,7 @@ const quranData = {
                             "translation_ml": "and pleasing"
                         }
                     ],
-                    "translation_ml": "Return to your Lord well pleased and pleasing"
+                    "translation_ml": "നീ നിന്‍റെ രക്ഷിതാവിങ്കലേക്ക് തൃപ്തിപ്പെട്ടുകൊണ്ടും, തൃപ്തി ലഭിച്ചു കൊണ്ടും മടങ്ങിക്കൊള്ളുക."
                 },
                 {
                     "number": 29,
@@ -14940,7 +14940,7 @@ const quranData = {
                             "translation_ml": "My slaves"
                         }
                     ],
-                    "translation_ml": "So enter among My slaves"
+                    "translation_ml": "എന്നിട്ട് എന്‍റെ അടിയാന്‍മാരുടെ കൂട്ടത്തില്‍ പ്രവേശിച്ചു കൊള്ളുക."
                 },
                 {
                     "number": 30,
@@ -14966,7 +14966,7 @@ const quranData = {
                             "translation_ml": "My Paradise"
                         }
                     ],
-                    "translation_ml": "And enter My Paradise"
+                    "translation_ml": "എന്‍റെ സ്വര്‍ഗത്തില്‍ പ്രവേശിച്ചു കൊള്ളുക."
                 }
             ]
         },
@@ -15019,7 +15019,7 @@ const quranData = {
                             "translation_ml": "city"
                         }
                     ],
-                    "translation_ml": "Nay I swear by this city"
+                    "translation_ml": "ഈ രാജ്യത്തെ (മക്കയെ) ക്കൊണ്ട് ഞാന്‍ സത്യം ചെയ്തു പറയുന്നു."
                 },
                 {
                     "number": 2,
@@ -15061,7 +15061,7 @@ const quranData = {
                             "translation_ml": "city"
                         }
                     ],
-                    "translation_ml": "And you (are) free (to dwell) in this city"
+                    "translation_ml": "നീയാകട്ടെ ഈ രാജ്യത്തെ നിവാസിയാണ് താനും."
                 },
                 {
                     "number": 3,
@@ -15095,7 +15095,7 @@ const quranData = {
                             "translation_ml": "he begot"
                         }
                     ],
-                    "translation_ml": "And the begetter and what he begot"
+                    "translation_ml": "ജനയിതാവിനെയും, അവന്‍ ജനിപ്പിക്കുന്നതിനെയും തന്നെയാണ സത്യം."
                 },
                 {
                     "number": 4,
@@ -15145,7 +15145,7 @@ const quranData = {
                             "translation_ml": "hardship"
                         }
                     ],
-                    "translation_ml": "Certainly We have created man (to be) in hardship"
+                    "translation_ml": "തീര്‍ച്ചയായും മനുഷ്യനെ നാം സൃഷ്ടിച്ചിട്ടുള്ളത് ക്ലേശം സഹിക്കേണ്ട നിലയിലാകുന്നു."
                 },
                 {
                     "number": 5,
@@ -15203,7 +15203,7 @@ const quranData = {
                             "translation_ml": "anyone"
                         }
                     ],
-                    "translation_ml": "Does he think that not has power over him anyone"
+                    "translation_ml": "അവനെ പിടികൂടാന്‍ ആര്‍ക്കും സാധിക്കുകയേ ഇല്ലെന്ന് അവന്‍ വിചാരിക്കുന്നുണേ്ടാ?"
                 },
                 {
                     "number": 6,
@@ -15245,7 +15245,7 @@ const quranData = {
                             "translation_ml": "abundant"
                         }
                     ],
-                    "translation_ml": "He will say I have squandered wealth abundant"
+                    "translation_ml": "അവന്‍ പറയുന്നു: ഞാന്‍ മേല്‍ക്കുമേല്‍ പണം തുലച്ചിരിക്കുന്നു എന്ന്‌."
                 },
                 {
                     "number": 7,
@@ -15295,7 +15295,7 @@ const quranData = {
                             "translation_ml": "anyone"
                         }
                     ],
-                    "translation_ml": "Does he think that not sees him anyone"
+                    "translation_ml": "അവന്‍ വിചാരിക്കുന്നുണേ്ടാ; അവനെ ആരുംകണ്ടിട്ടില്ലെന്ന്‌?"
                 },
                 {
                     "number": 8,
@@ -15337,7 +15337,7 @@ const quranData = {
                             "translation_ml": "two eyes"
                         }
                     ],
-                    "translation_ml": "Have not We made for him two eyes"
+                    "translation_ml": "അവന് നാം രണ്ട് കണ്ണുകള്‍ ഉണ്ടാക്കി കൊടുത്തിട്ടില്ലേ?"
                 },
                 {
                     "number": 9,
@@ -15363,7 +15363,7 @@ const quranData = {
                             "translation_ml": "and two lips"
                         }
                     ],
-                    "translation_ml": "And a tongue and two lips"
+                    "translation_ml": "ഒരു നാവും രണ്ടു ചുണ്ടുകളും"
                 },
                 {
                     "number": 10,
@@ -15389,7 +15389,7 @@ const quranData = {
                             "translation_ml": "the two ways"
                         }
                     ],
-                    "translation_ml": "And shown him the two ways"
+                    "translation_ml": "തെളിഞ്ഞു നില്‍ക്കുന്ന രണ്ടു പാതകള്‍ അവന്നു നാം കാട്ടികൊടുക്കുകയും ചെയ്തിരിക്കുന്നു."
                 },
                 {
                     "number": 11,
@@ -15423,7 +15423,7 @@ const quranData = {
                             "translation_ml": "the steep path"
                         }
                     ],
-                    "translation_ml": "But not he has attempted the steep path"
+                    "translation_ml": "എന്നിട്ട് ആ മലമ്പാതയില്‍ അവന്‍ തള്ളിക്കടന്നില്ല."
                 },
                 {
                     "number": 12,
@@ -15465,7 +15465,7 @@ const quranData = {
                             "translation_ml": "the steep path (is)"
                         }
                     ],
-                    "translation_ml": "And what can make you know what the steep path (is)"
+                    "translation_ml": "ആ മലമ്പാത എന്താണെന്ന് നിനക്കറിയാമോ?"
                 },
                 {
                     "number": 13,
@@ -15491,7 +15491,7 @@ const quranData = {
                             "translation_ml": "a neck"
                         }
                     ],
-                    "translation_ml": "(It is) freeing a neck"
+                    "translation_ml": "ഒരു അടിമയെ മോചിപ്പിക്കുക."
                 },
                 {
                     "number": 14,
@@ -15549,7 +15549,7 @@ const quranData = {
                             "translation_ml": "severe hunger"
                         }
                     ],
-                    "translation_ml": "Or feeding in a day of severe hunger"
+                    "translation_ml": "അല്ലെങ്കില്‍ പട്ടിണിയുള്ള നാളില്‍ ഭക്ഷണം കൊടുക്കുക."
                 },
                 {
                     "number": 15,
@@ -15583,7 +15583,7 @@ const quranData = {
                             "translation_ml": "near relationship"
                         }
                     ],
-                    "translation_ml": "An orphan of near relationship"
+                    "translation_ml": "കുടുംബബന്ധമുള്ള അനാഥയ്ക്ക്‌"
                 },
                 {
                     "number": 16,
@@ -15625,7 +15625,7 @@ const quranData = {
                             "translation_ml": "misery"
                         }
                     ],
-                    "translation_ml": "Or a needy person in misery"
+                    "translation_ml": "അല്ലെങ്കില്‍ കടുത്ത ദാരിദ്യ്‌രമുള്ള സാധുവിന്‌"
                 },
                 {
                     "number": 17,
@@ -15707,7 +15707,7 @@ const quranData = {
                             "translation_ml": "to compassion"
                         }
                     ],
-                    "translation_ml": "Then he is of those who believe and enjoin (each other) to patience and enjoin (each other) to compassion"
+                    "translation_ml": "പുറമെ, വിശ്വസിക്കുകയും, ക്ഷമ കൊണ്ടും കാരുണ്യം കൊണ്ടും പരസ്പരം ഉപദേശിക്കുകയും ചെയ്തവരുടെ കൂട്ടത്തില്‍ അവന്‍ ആയിത്തീരുകയും ചെയ്യുക."
                 },
                 {
                     "number": 18,
@@ -15741,7 +15741,7 @@ const quranData = {
                             "translation_ml": "(of) the right (hand)"
                         }
                     ],
-                    "translation_ml": "Those (are the) companions (of) the right (hand)"
+                    "translation_ml": "അങ്ങനെ ചെയ്യുന്നവരത്രെ വലതുപക്ഷക്കാര്‍."
                 },
                 {
                     "number": 19,
@@ -15799,7 +15799,7 @@ const quranData = {
                             "translation_ml": "(of) the left (hand)"
                         }
                     ],
-                    "translation_ml": "But those who disbelieve in Our Verses they (are the) companions (of) the left (hand)"
+                    "translation_ml": "നമ്മുടെ ദൃഷ്ടാന്തങ്ങള്‍ നിഷേധിച്ചവരാരോ അവരത്രെ ഇടതുപക്ഷത്തിന്‍റെ ആള്‍ക്കാര്‍."
                 },
                 {
                     "number": 20,
@@ -15833,7 +15833,7 @@ const quranData = {
                             "translation_ml": "closed in"
                         }
                     ],
-                    "translation_ml": "Over them (will be the) Fire closed in"
+                    "translation_ml": "അവരുടെ മേല്‍ അടച്ചുമൂടിയ നരകാഗ്നിയുണ്ട്‌."
                 }
             ]
         },
@@ -15870,7 +15870,7 @@ const quranData = {
                             "translation_ml": "and its brightness"
                         }
                     ],
-                    "translation_ml": "By the sun and its brightness"
+                    "translation_ml": "സൂര്യനും അതിന്‍റെ പ്രഭയും തന്നെയാണ സത്യം."
                 },
                 {
                     "number": 2,
@@ -15904,7 +15904,7 @@ const quranData = {
                             "translation_ml": "it follows it"
                         }
                     ],
-                    "translation_ml": "And the moon when it follows it"
+                    "translation_ml": "ചന്ദ്രന്‍ തന്നെയാണ സത്യം; അത് അതിനെ തുടര്‍ന്ന് വരുമ്പോള്‍."
                 },
                 {
                     "number": 3,
@@ -15938,7 +15938,7 @@ const quranData = {
                             "translation_ml": "it displays it"
                         }
                     ],
-                    "translation_ml": "And the day when it displays it"
+                    "translation_ml": "പകലിനെ തന്നെയാണ സത്യം; അത് അതിനെ (സൂര്യനെ) പ്രത്യക്ഷപ്പെടുത്തുമ്പേള്‍"
                 },
                 {
                     "number": 4,
@@ -15972,7 +15972,7 @@ const quranData = {
                             "translation_ml": "it covers it"
                         }
                     ],
-                    "translation_ml": "And the night when it covers it"
+                    "translation_ml": "രാത്രിയെ തന്നെയാണ സത്യം; അത് അതിനെ മൂടുമ്പോള്‍."
                 },
                 {
                     "number": 5,
@@ -16006,7 +16006,7 @@ const quranData = {
                             "translation_ml": "constructed it"
                         }
                     ],
-                    "translation_ml": "And the heaven and (He) Who constructed it"
+                    "translation_ml": "ആകാശത്തെയും, അതിനെ സ്ഥാപിച്ച രീതിയെയും തന്നെയാണ സത്യം."
                 },
                 {
                     "number": 6,
@@ -16040,7 +16040,7 @@ const quranData = {
                             "translation_ml": "spread it"
                         }
                     ],
-                    "translation_ml": "And the earth and by (He) Who spread it"
+                    "translation_ml": "ഭൂമിയെയും, അതിനെ വിസ്തൃതമാക്കിയ രീതിയെയും തന്നെയാണ സത്യം."
                 },
                 {
                     "number": 7,
@@ -16074,7 +16074,7 @@ const quranData = {
                             "translation_ml": "proportioned it"
                         }
                     ],
-                    "translation_ml": "And (the) soul and (He) Who proportioned it"
+                    "translation_ml": "മനുഷ്യാസ്തിത്വത്തെയും അതിനെ സംവിധാനിച്ച രീതിയെയും തന്നെയാണ സത്യം."
                 },
                 {
                     "number": 8,
@@ -16108,7 +16108,7 @@ const quranData = {
                             "translation_ml": "and its righteousness"
                         }
                     ],
-                    "translation_ml": "And He inspired it (to distinguish) its wickedness and its righteousness"
+                    "translation_ml": "എന്നിട്ട് അതിന്ന് അതിന്‍റെ ദുഷ്ടതയും അതിന്‍റെ സൂക്ഷ്മതയും സംബന്ധിച്ച് അവന്‍ ബോധം നല്‍കുകയും ചെയ്തിരിക്കുന്നു."
                 },
                 {
                     "number": 9,
@@ -16150,7 +16150,7 @@ const quranData = {
                             "translation_ml": "purifies it"
                         }
                     ],
-                    "translation_ml": "Indeed he succeeds who purifies it"
+                    "translation_ml": "തീര്‍ച്ചയായും അതിനെ (അസ്തിത്വത്തെ) പരിശുദ്ധമാക്കിയവന്‍ വിജയം കൈവരിച്ചു."
                 },
                 {
                     "number": 10,
@@ -16192,7 +16192,7 @@ const quranData = {
                             "translation_ml": "buries it"
                         }
                     ],
-                    "translation_ml": "And indeed he fails who buries it"
+                    "translation_ml": "അതിനെ കളങ്കപ്പെടുത്തിയവന്‍ തീര്‍ച്ചയായും നിര്‍ഭാഗ്യമടയുകയും ചെയ്തു."
                 },
                 {
                     "number": 11,
@@ -16226,7 +16226,7 @@ const quranData = {
                             "translation_ml": "by their transgression"
                         }
                     ],
-                    "translation_ml": "Denied Thamud by their transgression"
+                    "translation_ml": "ഥമൂദ് ഗോത്രം അതിന്‍റെ ധിക്കാരം മൂലം (സത്യത്തെ) നിഷേധിച്ചു തള്ളുകയുണ്ടായി."
                 },
                 {
                     "number": 12,
@@ -16260,7 +16260,7 @@ const quranData = {
                             "translation_ml": "(the) most wicked of them"
                         }
                     ],
-                    "translation_ml": "When (was) sent forth (the) most wicked of them"
+                    "translation_ml": "അവരുടെ കൂട്ടത്തിലെ ഏറ്റവും ദുഷ്ടതയുള്ളവന്‍ ഒരുങ്ങി പുറപ്പെട്ട സന്ദര്‍ഭം ."
                 },
                 {
                     "number": 13,
@@ -16326,7 +16326,7 @@ const quranData = {
                             "translation_ml": "and her drink"
                         }
                     ],
-                    "translation_ml": "But said to them (the) Messenger (of) Allah (It is the) she-camel (of) Allah and her drink"
+                    "translation_ml": "അപ്പോള്‍ അല്ലാഹുവിന്‍റെ ദൂതന്‍ അവരോട് പറഞ്ഞു. അല്ലാഹുവിന്‍റെ ഒട്ടകത്തെയും അതിന്‍റെ വെള്ളം കുടിയും നിങ്ങള്‍ സൂക്ഷിക്കുക"
                 },
                 {
                     "number": 14,
@@ -16392,7 +16392,7 @@ const quranData = {
                             "translation_ml": "and leveled them"
                         }
                     ],
-                    "translation_ml": "But they denied him and they hamstrung her So destroyed them their Lord for their sin and leveled them"
+                    "translation_ml": "അപ്പോള്‍ അവര്‍ അദ്ദേഹത്തെ നിഷേധിച്ചു തള്ളുകയും അതിനെ (ഒട്ടകത്തെ) അറുകൊല നടത്തുകയും ചെയ്തു. അപ്പോള്‍ അവരുടെ പാപം നിമിത്തം അവരുടെ രക്ഷിതാവ് അവര്‍ക്ക് സമൂല നാശം വരുത്തുകയും (അവര്‍ക്കെല്ലാം) അത് സമമാക്കുകയും ചെയ്തു."
                 },
                 {
                     "number": 15,
@@ -16426,7 +16426,7 @@ const quranData = {
                             "translation_ml": "its consequences"
                         }
                     ],
-                    "translation_ml": "And not He fears its consequences"
+                    "translation_ml": "അതിന്‍റെ അനന്തരഫലം അവന്‍ ഭയപ്പെട്ടിരുന്നുമില്ല."
                 }
             ]
         },
@@ -16471,7 +16471,7 @@ const quranData = {
                             "translation_ml": "it covers"
                         }
                     ],
-                    "translation_ml": "By the night when it covers"
+                    "translation_ml": "രാവിനെതന്നെയാണ സത്യം ; അത് മൂടികൊണ്ടിരിക്കുമ്പോള്‍"
                 },
                 {
                     "number": 2,
@@ -16505,7 +16505,7 @@ const quranData = {
                             "translation_ml": "it shines in brightness"
                         }
                     ],
-                    "translation_ml": "And the day when it shines in brightness"
+                    "translation_ml": "പകലിനെ തന്നെയാണ സത്യം ; അത് പ്രത്യക്ഷപ്പെടുമ്പോള്‍"
                 },
                 {
                     "number": 3,
@@ -16547,7 +16547,7 @@ const quranData = {
                             "translation_ml": "and the female"
                         }
                     ],
-                    "translation_ml": "And He Who created the male and the female"
+                    "translation_ml": "ആണിനെയും പെണ്ണിനെയും സൃഷ്ടിച്ച രീതിയെ തന്നെയാണ സത്യം;"
                 },
                 {
                     "number": 4,
@@ -16581,7 +16581,7 @@ const quranData = {
                             "translation_ml": "(are) surely diverse"
                         }
                     ],
-                    "translation_ml": "Indeed your efforts (are) surely diverse"
+                    "translation_ml": "തീര്‍ച്ചയായും നിങ്ങളുടെ പരിശ്രമം വിഭിന്ന രൂപത്തിലുള്ളതാകുന്നു."
                 },
                 {
                     "number": 5,
@@ -16623,7 +16623,7 @@ const quranData = {
                             "translation_ml": "and fears"
                         }
                     ],
-                    "translation_ml": "Then as for (him) who gives and fears"
+                    "translation_ml": "എന്നാല്‍ ഏതൊരാള്‍ ദാനം നല്‍കുകയും, സൂക്ഷ്മത പാലിക്കുകയും"
                 },
                 {
                     "number": 6,
@@ -16649,7 +16649,7 @@ const quranData = {
                             "translation_ml": "in the best"
                         }
                     ],
-                    "translation_ml": "And believes in the best"
+                    "translation_ml": "ഏറ്റവും ഉത്തമമായതിനെ സത്യപ്പെടുത്തുകയും ചെയ്തുവോ"
                 },
                 {
                     "number": 7,
@@ -16675,7 +16675,7 @@ const quranData = {
                             "translation_ml": "towards [the] ease"
                         }
                     ],
-                    "translation_ml": "Then We will ease him towards [the] ease"
+                    "translation_ml": "അവന്നു നാം ഏറ്റവും എളുപ്പമായതിലേക്ക് സൌകര്യപ്പെടുത്തി കൊടുക്കുന്നതാണ്‌."
                 },
                 {
                     "number": 8,
@@ -16717,7 +16717,7 @@ const quranData = {
                             "translation_ml": "and considers himself free from need"
                         }
                     ],
-                    "translation_ml": "But as for (him) who withholds and considers himself free from need"
+                    "translation_ml": "എന്നാല്‍ ആര്‍ പിശുക്കു കാണിക്കുകയും, സ്വയം പര്യാപ്തത നടിക്കുകയും,"
                 },
                 {
                     "number": 9,
@@ -16743,7 +16743,7 @@ const quranData = {
                             "translation_ml": "the best"
                         }
                     ],
-                    "translation_ml": "And denies the best"
+                    "translation_ml": "ഏറ്റവും ഉത്തമമായതിനെ നിഷേധിച്ചു തള്ളുകയും ചെയ്തുവോ"
                 },
                 {
                     "number": 10,
@@ -16769,7 +16769,7 @@ const quranData = {
                             "translation_ml": "towards [the] difficulty"
                         }
                     ],
-                    "translation_ml": "Then We will ease him towards [the] difficulty"
+                    "translation_ml": "അവന്നു നാം ഏറ്റവും ഞെരുക്കമുള്ളതിലേക്ക് സൌകര്യമൊരുക്കികൊടുക്കുന്നതാണ്‌."
                 },
                 {
                     "number": 11,
@@ -16827,7 +16827,7 @@ const quranData = {
                             "translation_ml": "he falls"
                         }
                     ],
-                    "translation_ml": "And not will avail him his wealth when he falls"
+                    "translation_ml": "അവന്‍ നാശത്തില്‍ പതിക്കുമ്പോള്‍ അവന്‍റെ ധനം അവന്ന് പ്രയോജനപ്പെടുന്നതല്ല."
                 },
                 {
                     "number": 12,
@@ -16861,7 +16861,7 @@ const quranData = {
                             "translation_ml": "(is) the guidance"
                         }
                     ],
-                    "translation_ml": "Indeed upon Us (is) the guidance"
+                    "translation_ml": "തീര്‍ച്ചയായും മാര്‍ഗദര്‍ശനം നമ്മുടെ ബാധ്യതയാകുന്നു."
                 },
                 {
                     "number": 13,
@@ -16903,7 +16903,7 @@ const quranData = {
                             "translation_ml": "and the first (life)"
                         }
                     ],
-                    "translation_ml": "And indeed for Us (is) the Hereafter and the first (life)"
+                    "translation_ml": "തീര്‍ച്ചയായും നമുക്കുള്ളതാകുന്നു പരലോകവും ഇഹലോകവും."
                 },
                 {
                     "number": 14,
@@ -16937,7 +16937,7 @@ const quranData = {
                             "translation_ml": "blazing"
                         }
                     ],
-                    "translation_ml": "So I warn you (of) a Fire blazing"
+                    "translation_ml": "അതിനാല്‍ ആളിക്കത്തിക്കൊണ്ടിരിക്കുന്ന അഗ്നിയെപ്പറ്റി ഞാന്‍ നിങ്ങള്‍ക്ക് താക്കീത് നല്‍കിയിരിക്കുന്നു."
                 },
                 {
                     "number": 15,
@@ -16979,7 +16979,7 @@ const quranData = {
                             "translation_ml": "the most wretched"
                         }
                     ],
-                    "translation_ml": "Not will burn (in) it except the most wretched"
+                    "translation_ml": "ഏറ്റവും ദുഷ്ടനായ വ്യക്തിയല്ലാതെ അതില്‍ പ്രവേശിക്കുകയില്ല."
                 },
                 {
                     "number": 16,
@@ -17013,7 +17013,7 @@ const quranData = {
                             "translation_ml": "and turned away"
                         }
                     ],
-                    "translation_ml": "The one who denied and turned away"
+                    "translation_ml": "നിഷേധിച്ചു തള്ളുകയും, പിന്തിരിഞ്ഞു കളയുകയും (വ്യക്തി)"
                 },
                 {
                     "number": 17,
@@ -17039,7 +17039,7 @@ const quranData = {
                             "translation_ml": "the righteous"
                         }
                     ],
-                    "translation_ml": "But will be removed from it the righteous"
+                    "translation_ml": "ഏറ്റവും സൂക്ഷ്മതയുള്ള വ്യക്തി അതില്‍ നിന്ന് അകറ്റി നിര്‍ത്തപ്പെടുന്നതാണ്‌."
                 },
                 {
                     "number": 18,
@@ -17081,7 +17081,7 @@ const quranData = {
                             "translation_ml": "(to) purify himself"
                         }
                     ],
-                    "translation_ml": "The one who gives his wealth (to) purify himself"
+                    "translation_ml": "പരിശുദ്ധിനേടുവാനായി തന്‍റെ ധനം നല്‍കുന്ന (വ്യക്തി)"
                 },
                 {
                     "number": 19,
@@ -17139,7 +17139,7 @@ const quranData = {
                             "translation_ml": "to be recompensed"
                         }
                     ],
-                    "translation_ml": "And not for anyone with him any favor to be recompensed"
+                    "translation_ml": "പ്രത്യുപകാരം നല്‍കപ്പെടേണ്ടതായ യാതൊരു അനുഗ്രഹവും അവന്‍റെ പക്കല്‍ ഒരാള്‍ക്കുമില്ല."
                 },
                 {
                     "number": 20,
@@ -17189,7 +17189,7 @@ const quranData = {
                             "translation_ml": "the Most High"
                         }
                     ],
-                    "translation_ml": "Except seeking (the) Countenance (of) his Lord the Most High"
+                    "translation_ml": "തന്‍റെ അത്യുന്നതനായ രക്ഷിതാവിന്‍റെ പ്രീതി തേടുക എന്നതല്ലാതെ."
                 },
                 {
                     "number": 21,
@@ -17215,7 +17215,7 @@ const quranData = {
                             "translation_ml": "he will be pleased"
                         }
                     ],
-                    "translation_ml": "And soon, surely he will be pleased"
+                    "translation_ml": "വഴിയെ അവന്‍ തൃപ്തിപ്പെടുന്നതാണ്‌."
                 }
             ]
         },
@@ -17244,7 +17244,7 @@ const quranData = {
                             "translation_ml": "By the morning brightness"
                         }
                     ],
-                    "translation_ml": "By the morning brightness"
+                    "translation_ml": "പൂര്‍വ്വാഹ്നം തന്നെയാണ സത്യം;"
                 },
                 {
                     "number": 2,
@@ -17278,7 +17278,7 @@ const quranData = {
                             "translation_ml": "it covers with darkness"
                         }
                     ],
-                    "translation_ml": "And the night when it covers with darkness"
+                    "translation_ml": "രാത്രി തന്നെയാണ സത്യം; അത് ശാന്തമാവുമ്പോള്‍"
                 },
                 {
                     "number": 3,
@@ -17328,7 +17328,7 @@ const quranData = {
                             "translation_ml": "He is displeased"
                         }
                     ],
-                    "translation_ml": "Not has forsaken you your Lord and not He is displeased"
+                    "translation_ml": "(നബിയേ,) നിന്‍റെ രക്ഷിതാവ് നിന്നെ കൈവിട്ടിട്ടില്ല. വെറുത്തിട്ടുമില്ല."
                 },
                 {
                     "number": 4,
@@ -17378,7 +17378,7 @@ const quranData = {
                             "translation_ml": "the first"
                         }
                     ],
-                    "translation_ml": "And surely the Hereafter (is) better for you than the first"
+                    "translation_ml": "തീര്‍ച്ചയായും പരലോകമാണ് നിനക്ക് ഇഹലോകത്തെക്കാള്‍ ഉത്തമമായിട്ടുള്ളത്‌."
                 },
                 {
                     "number": 5,
@@ -17420,7 +17420,7 @@ const quranData = {
                             "translation_ml": "then you will be satisfied"
                         }
                     ],
-                    "translation_ml": "And soon will give you your Lord then you will be satisfied"
+                    "translation_ml": "വഴിയെ നിനക്ക് നിന്‍റെ രക്ഷിതാവ് (അനുഗ്രഹങ്ങള്‍) നല്‍കുന്നതും അപ്പോള്‍ നീ തൃപ്തിപ്പെടുന്നതുമാണ.്‌"
                 },
                 {
                     "number": 6,
@@ -17462,7 +17462,7 @@ const quranData = {
                             "translation_ml": "and give shelter"
                         }
                     ],
-                    "translation_ml": "Did not He find you an orphan and give shelter"
+                    "translation_ml": "നിന്നെ അവന്‍ ഒരു അനാഥയായി കണെ്ടത്തുകയും , എന്നിട്ട് (നിനക്ക്‌) ആശ്രയം നല്‍കുകയും ചെയ്തില്ലേ?"
                 },
                 {
                     "number": 7,
@@ -17496,7 +17496,7 @@ const quranData = {
                             "translation_ml": "so He guided"
                         }
                     ],
-                    "translation_ml": "And He found you lost so He guided"
+                    "translation_ml": "നിന്നെ അവന്‍ വഴി അറിയാത്തവനായി കണെ്ടത്തുകയും എന്നിട്ട് (നിനക്ക്‌) മാര്‍ഗദര്‍ശനം നല്‍കുകയും ചെയ്തിരിക്കുന്നു."
                 },
                 {
                     "number": 8,
@@ -17530,7 +17530,7 @@ const quranData = {
                             "translation_ml": "so He made self-sufficient"
                         }
                     ],
-                    "translation_ml": "And He found you in need so He made self-sufficient"
+                    "translation_ml": "നിന്നെ അവന്‍ ദരിദ്രനായി കണെ്ടത്തുകയും എന്നിട്ട് അവന്‍ ഐശ്വര്യം നല്‍കുകയും ചെയ്തിരിക്കുന്നു."
                 },
                 {
                     "number": 9,
@@ -17572,7 +17572,7 @@ const quranData = {
                             "translation_ml": "oppress"
                         }
                     ],
-                    "translation_ml": "So as for the orphan then (do) not oppress"
+                    "translation_ml": "എന്നിരിക്കെ അനാഥയെ നീ അടിച്ചമര്‍ത്തരുത്‌"
                 },
                 {
                     "number": 10,
@@ -17614,7 +17614,7 @@ const quranData = {
                             "translation_ml": "repel"
                         }
                     ],
-                    "translation_ml": "And as for one who asks then (do) not repel"
+                    "translation_ml": "ചോദിച്ച് വരുന്നവനെ നീ വിരട്ടി വിടുകയും ചെയ്യരുത്‌."
                 },
                 {
                     "number": 11,
@@ -17656,7 +17656,7 @@ const quranData = {
                             "translation_ml": "narrate"
                         }
                     ],
-                    "translation_ml": "But as for (the) Favor (of) your Lord narrate"
+                    "translation_ml": "നിന്‍റെ രക്ഷിതാവിന്‍റെ അനുഗ്രഹത്തെ സംബന്ധിച്ച് നീ സംസാരിക്കുക."
                 }
             ]
         },
@@ -17709,7 +17709,7 @@ const quranData = {
                             "translation_ml": "your breast"
                         }
                     ],
-                    "translation_ml": "Have not We expanded for you your breast"
+                    "translation_ml": "നിനക്ക് നിന്‍റെ ഹൃദയം നാം വിശാലതയുള്ളതാക്കി തന്നില്ലേ?"
                 },
                 {
                     "number": 2,
@@ -17743,7 +17743,7 @@ const quranData = {
                             "translation_ml": "your burden"
                         }
                     ],
-                    "translation_ml": "And We removed from you your burden"
+                    "translation_ml": "നിന്നില്‍ നിന്ന് നിന്‍റെ ആ ഭാരം നാം ഇറക്കിവെക്കുകയും ചെയ്തു."
                 },
                 {
                     "number": 3,
@@ -17777,7 +17777,7 @@ const quranData = {
                             "translation_ml": "your back"
                         }
                     ],
-                    "translation_ml": "Which weighed upon your back"
+                    "translation_ml": "നിന്‍റെ മുതുകിനെ ഞെരിച്ചു കളഞ്ഞതായ (ഭാരം)"
                 },
                 {
                     "number": 4,
@@ -17811,7 +17811,7 @@ const quranData = {
                             "translation_ml": "your reputation"
                         }
                     ],
-                    "translation_ml": "And We raised high for you your reputation"
+                    "translation_ml": "നിനക്ക് നിന്‍റെ കീര്‍ത്തി നാം ഉയര്‍ത്തിത്തരികയും ചെയ്തിരിക്കുന്നു."
                 },
                 {
                     "number": 5,
@@ -17853,7 +17853,7 @@ const quranData = {
                             "translation_ml": "(is) ease"
                         }
                     ],
-                    "translation_ml": "So indeed with the hardship (is) ease"
+                    "translation_ml": "എന്നാല്‍ തീര്‍ച്ചയായും ഞെരുക്കത്തിന്‍റെ കൂടെ ഒരു എളുപ്പമുണ്ടായിരിക്കും."
                 },
                 {
                     "number": 6,
@@ -17895,7 +17895,7 @@ const quranData = {
                             "translation_ml": "(is) ease"
                         }
                     ],
-                    "translation_ml": "Indeed with the hardship (is) ease"
+                    "translation_ml": "തീര്‍ച്ചയായും ഞെരുക്കത്തിന്‍റെ കൂടെ ഒരു എളുപ്പമുണ്ടായിരിക്കും."
                 },
                 {
                     "number": 7,
@@ -17929,7 +17929,7 @@ const quranData = {
                             "translation_ml": "then labor hard"
                         }
                     ],
-                    "translation_ml": "So when you have finished then labor hard"
+                    "translation_ml": "ആകയാല്‍ നിനക്ക് ഒഴിവ് കിട്ടിയാല്‍ നീ അദ്ധ്വാനിക്കുക."
                 },
                 {
                     "number": 8,
@@ -17963,7 +17963,7 @@ const quranData = {
                             "translation_ml": "turn your attention"
                         }
                     ],
-                    "translation_ml": "And to your Lord turn your attention"
+                    "translation_ml": "നിന്‍റെ രക്ഷിതാവിലേക്ക് തന്നെ നിന്‍റെ ആഗ്രഹം സമര്‍പ്പിക്കുകയും ചെയ്യുക."
                 }
             ]
         },
@@ -18000,7 +18000,7 @@ const quranData = {
                             "translation_ml": "and the olive"
                         }
                     ],
-                    "translation_ml": "By the fig and the olive"
+                    "translation_ml": "അത്തിയും, ഒലീവും,"
                 },
                 {
                     "number": 2,
@@ -18026,7 +18026,7 @@ const quranData = {
                             "translation_ml": "Sinai"
                         }
                     ],
-                    "translation_ml": "And (the) Mount Sinai"
+                    "translation_ml": "സീനാപര്‍വ്വതവും,"
                 },
                 {
                     "number": 3,
@@ -18060,7 +18060,7 @@ const quranData = {
                             "translation_ml": "[the] secure"
                         }
                     ],
-                    "translation_ml": "And this [the] city [the] secure"
+                    "translation_ml": "നിര്‍ഭയത്വമുള്ള ഈ രാജ്യവും തന്നെയാണ സത്യം."
                 },
                 {
                     "number": 4,
@@ -18118,7 +18118,7 @@ const quranData = {
                             "translation_ml": "mould"
                         }
                     ],
-                    "translation_ml": "Indeed We created man in (the) best mould"
+                    "translation_ml": "തീര്‍ച്ചയായും മനുഷ്യനെ നാം ഏറ്റവും നല്ല ഘടനയോടു കൂടി സൃഷ്ടിച്ചിരിക്കുന്നു."
                 },
                 {
                     "number": 5,
@@ -18160,7 +18160,7 @@ const quranData = {
                             "translation_ml": "(of the) low"
                         }
                     ],
-                    "translation_ml": "Then We returned him (to the) lowest (of the) low"
+                    "translation_ml": "പിന്നീട് അവനെ നാം അധമരില്‍ അധമനാക്കിത്തീര്‍ത്തു."
                 },
                 {
                     "number": 6,
@@ -18242,7 +18242,7 @@ const quranData = {
                             "translation_ml": "ending"
                         }
                     ],
-                    "translation_ml": "Except those who believe and do righteous deeds then for them (is a) reward never ending"
+                    "translation_ml": "വിശ്വസിക്കുകയും സല്‍കര്‍മ്മങ്ങള്‍ പ്രവര്‍ത്തിക്കുകയും ചെയ്തവരൊഴികെ. എന്നാല്‍ അവര്‍ക്കാകട്ടെ മുറിഞ്ഞ് പോകാത്ത പ്രതിഫലമുണ്ടായിരിക്കും."
                 },
                 {
                     "number": 7,
@@ -18284,7 +18284,7 @@ const quranData = {
                             "translation_ml": "the judgment"
                         }
                     ],
-                    "translation_ml": "Then what causes you to deny after (this) the judgment"
+                    "translation_ml": "എന്നിരിക്കെ ഇതിന് ശേഷം പരലോകത്തെ പ്രതിഫല നടപടിയുടെ കാര്യത്തില്‍ (നബിയേ,) നിന്നെ നിഷേധിച്ചു തള്ളാന്‍ എന്ത് ന്യായമാണുള്ളത്‌?"
                 },
                 {
                     "number": 8,
@@ -18326,7 +18326,7 @@ const quranData = {
                             "translation_ml": "(of) the Judges"
                         }
                     ],
-                    "translation_ml": "Is not Allah (the) Most Just (of) the Judges"
+                    "translation_ml": "അല്ലാഹു വിധികര്‍ത്താക്കളില്‍ വെച്ചു ഏറ്റവും വലിയ വിധികര്‍ത്താവല്ലയോ?"
                 }
             ]
         },
@@ -18387,7 +18387,7 @@ const quranData = {
                             "translation_ml": "created "
                         }
                     ],
-                    "translation_ml": "Read in (the) name (of) your Lord the One Who created "
+                    "translation_ml": "സൃഷ്ടിച്ചവനായ നിന്‍റെ രക്ഷിതാവിന്‍റെ നാമത്തില്‍ വായിക്കുക."
                 },
                 {
                     "number": 2,
@@ -18429,7 +18429,7 @@ const quranData = {
                             "translation_ml": "a clinging substance"
                         }
                     ],
-                    "translation_ml": "He created man from a clinging substance"
+                    "translation_ml": "മനുഷ്യനെ അവന്‍ ഭ്രൂണത്തില്‍ നിന്ന് സൃഷ്ടിച്ചിരിക്കുന്നു."
                 },
                 {
                     "number": 3,
@@ -18463,7 +18463,7 @@ const quranData = {
                             "translation_ml": "(is) the Most Generous"
                         }
                     ],
-                    "translation_ml": "Read and your Lord (is) the Most Generous"
+                    "translation_ml": "നീ വായിക്കുക നിന്‍റെ രക്ഷിതാവ് ഏറ്റവും വലിയ ഔദാര്യവാനാകുന്നു."
                 },
                 {
                     "number": 4,
@@ -18497,7 +18497,7 @@ const quranData = {
                             "translation_ml": "by the pen"
                         }
                     ],
-                    "translation_ml": "The One Who taught by the pen"
+                    "translation_ml": "പേന കൊണ്ട് പഠിപ്പിച്ചവന്‍"
                 },
                 {
                     "number": 5,
@@ -18547,7 +18547,7 @@ const quranData = {
                             "translation_ml": "he knew"
                         }
                     ],
-                    "translation_ml": "Taught man what not he knew"
+                    "translation_ml": "മനുഷ്യന് അറിയാത്തത് അവന്‍ പഠിപ്പിച്ചിരിക്കുന്നു."
                 },
                 {
                     "number": 6,
@@ -18589,7 +18589,7 @@ const quranData = {
                             "translation_ml": "surely transgresses"
                         }
                     ],
-                    "translation_ml": "Nay Indeed man surely transgresses"
+                    "translation_ml": "നിസ്സംശയം മനുഷ്യന്‍ ധിക്കാരിയായി തീരുന്നു."
                 },
                 {
                     "number": 7,
@@ -18623,7 +18623,7 @@ const quranData = {
                             "translation_ml": "self-sufficient"
                         }
                     ],
-                    "translation_ml": "That he sees himself self-sufficient"
+                    "translation_ml": "തന്നെ സ്വയം പര്യാപ്തനായി കണ്ടതിനാല്‍"
                 },
                 {
                     "number": 8,
@@ -18665,7 +18665,7 @@ const quranData = {
                             "translation_ml": "(is) the return"
                         }
                     ],
-                    "translation_ml": "Indeed to your Lord (is) the return"
+                    "translation_ml": "തീര്‍ച്ചയായും നിന്‍റെ രക്ഷിതാവിലേക്കാണ് മടക്കം."
                 },
                 {
                     "number": 9,
@@ -18699,7 +18699,7 @@ const quranData = {
                             "translation_ml": "forbids"
                         }
                     ],
-                    "translation_ml": "Have you seen the one who forbids"
+                    "translation_ml": "വിലക്കുന്നവനെ നീ കണ്ടുവോ?"
                 },
                 {
                     "number": 10,
@@ -18733,7 +18733,7 @@ const quranData = {
                             "translation_ml": "he prays"
                         }
                     ],
-                    "translation_ml": "A slave when he prays"
+                    "translation_ml": "ഒരു അടിയനെ, അവന്‍ നമസ്കരിച്ചാല്‍."
                 },
                 {
                     "number": 11,
@@ -18783,7 +18783,7 @@ const quranData = {
                             "translation_ml": "[the] guidance"
                         }
                     ],
-                    "translation_ml": "Have you seen if he is upon [the] guidance"
+                    "translation_ml": "അദ്ദേഹം സന്‍മാര്‍ഗത്തിലാണെങ്കില്‍ , (ആ വിലക്കുന്നവന്‍റെ അവസ്ഥ എന്തായിരിക്കുമെന്ന്‌) നീ കണ്ടുവോ?"
                 },
                 {
                     "number": 12,
@@ -18817,7 +18817,7 @@ const quranData = {
                             "translation_ml": "[of the] righteousness"
                         }
                     ],
-                    "translation_ml": "Or he enjoins [of the] righteousness"
+                    "translation_ml": "അഥവാ അദ്ദേഹം സൂക്ഷ്മത കൈ കൊള്ളാന്‍ കല്‍പിച്ചിരിക്കുകയാണെങ്കില്‍"
                 },
                 {
                     "number": 13,
@@ -18859,7 +18859,7 @@ const quranData = {
                             "translation_ml": "and turns away"
                         }
                     ],
-                    "translation_ml": "Have you seen if he denies and turns away"
+                    "translation_ml": "അവന്‍ (ആ വിലക്കുന്നവന്‍) നിഷേധിച്ചു തള്ളുകയും തിരിഞ്ഞുകളയുകയും ചെയ്തിരിക്കയാണെങ്കില്‍ (അവന്‍റെ അവസ്ഥ എന്തായിരിക്കുമെന്ന്‌) നീ കണ്ടുവോ?"
                 },
                 {
                     "number": 14,
@@ -18909,7 +18909,7 @@ const quranData = {
                             "translation_ml": "sees"
                         }
                     ],
-                    "translation_ml": "Does not he know that Allah sees"
+                    "translation_ml": "അവന്‍ മനസ്സിലാക്കിയിട്ടില്ലേ, അല്ലാഹു കാണുന്നുണെ്ടന്ന്‌?"
                 },
                 {
                     "number": 15,
@@ -18967,7 +18967,7 @@ const quranData = {
                             "translation_ml": "by the forelock"
                         }
                     ],
-                    "translation_ml": "Nay If not he desists surely We will drag him by the forelock"
+                    "translation_ml": "നിസ്സംശയം. അവന്‍ വിരമിച്ചിട്ടില്ലെങ്കല്‍ നാം ആ കുടുമ പിടിച്ചു വലിക്കുക തന്നെ ചെയ്യും ."
                 },
                 {
                     "number": 16,
@@ -19001,7 +19001,7 @@ const quranData = {
                             "translation_ml": "sinful"
                         }
                     ],
-                    "translation_ml": "A forelock lying sinful"
+                    "translation_ml": "കള്ളം പറയുന്ന , പാപം ചെയ്യുന്ന കുടുമ."
                 },
                 {
                     "number": 17,
@@ -19027,7 +19027,7 @@ const quranData = {
                             "translation_ml": "his associates"
                         }
                     ],
-                    "translation_ml": "Then let him call his associates"
+                    "translation_ml": "എന്നിട്ട് അവന്‍ അവന്‍റെ സഭയിലുള്ളവരെ വിളിച്ചുകൊള്ളട്ടെ."
                 },
                 {
                     "number": 18,
@@ -19053,7 +19053,7 @@ const quranData = {
                             "translation_ml": "the Angels of Hell"
                         }
                     ],
-                    "translation_ml": "We will call the Angels of Hell"
+                    "translation_ml": "നാം സബാനിയത്തിനെ (ശിക്ഷ നടപ്പാക്കുന്ന മലക്കുകളെ) വിളിച്ചുകൊള്ളാം."
                 },
                 {
                     "number": 19,
@@ -19103,7 +19103,7 @@ const quranData = {
                             "translation_ml": "and draw near (to Allah)"
                         }
                     ],
-                    "translation_ml": "Nay (Do) not obey him But prostrate and draw near (to Allah)"
+                    "translation_ml": "നിസ്സംശയം; നീ അവനെ അനുസരിച്ചു പോകരുത് , നീ പ്രണമിക്കുകയും സാമീപ്യം നേടുകയും ചെയ്യുക."
                 }
             ]
         },
@@ -19164,7 +19164,7 @@ const quranData = {
                             "translation_ml": "(of) Power"
                         }
                     ],
-                    "translation_ml": "Indeed, We revealed it in (the) Night (of) Power"
+                    "translation_ml": "തീര്‍ച്ചയായും നാം ഇതിനെ (ഖുര്‍ആനിനെ) നിര്‍ണയത്തിന്‍റെ രാത്രിയില്‍ അവതരിപ്പിച്ചിരിക്കുന്നു."
                 },
                 {
                     "number": 2,
@@ -19214,7 +19214,7 @@ const quranData = {
                             "translation_ml": "(of) Power (is)"
                         }
                     ],
-                    "translation_ml": "And what can make you know what (the) Night (of) Power (is)"
+                    "translation_ml": "നിര്‍ണയത്തിന്‍റെ രാത്രി എന്നാല്‍ എന്താണെന്ന് നിനക്കറിയാമോ?"
                 },
                 {
                     "number": 3,
@@ -19272,7 +19272,7 @@ const quranData = {
                             "translation_ml": "month(s)"
                         }
                     ],
-                    "translation_ml": "(The) Night (of) Power (is) better than a thousand month(s)"
+                    "translation_ml": "നിര്‍ണയത്തിന്‍റെ രാത്രി ആയിരം മാസത്തെക്കാള്‍ ഉത്തമമാകുന്നു."
                 },
                 {
                     "number": 4,
@@ -19354,7 +19354,7 @@ const quranData = {
                             "translation_ml": "affair"
                         }
                     ],
-                    "translation_ml": "Descend the Angels and the Spirit therein by (the) permission (of) their Lord for every affair"
+                    "translation_ml": "മലക്കുകളും ആത്മാവും അവരുടെ രക്ഷിതാവിന്‍റെ എല്ലാകാര്യത്തെ സംബന്ധിച്ചുമുള്ള ഉത്തരവുമായി ആ രാത്രിയില്‍ ഇറങ്ങി വരുന്നു."
                 },
                 {
                     "number": 5,
@@ -19404,7 +19404,7 @@ const quranData = {
                             "translation_ml": "(of) the dawn"
                         }
                     ],
-                    "translation_ml": "Peace it (is) until (the) emergence (of) the dawn"
+                    "translation_ml": "പ്രഭാതോദയം വരെ അത് സമാധാനമത്രെ."
                 }
             ]
         },
@@ -19521,7 +19521,7 @@ const quranData = {
                             "translation_ml": "the clear evidence"
                         }
                     ],
-                    "translation_ml": "Not were those who disbelieved from (the) People of the Book and the polytheists to be abandoned until (there) comes to them the clear evidence"
+                    "translation_ml": "വേദക്കാരിലും ബഹുദൈവവിശ്വാസികളിലും പെട്ട സത്യനിഷേധികള്‍ വ്യക്തമായ തെളിവ് തങ്ങള്‍ക്ക് കിട്ടുന്നത് വരെ (അവിശ്വാസത്തില്‍ നിന്ന്‌) വേറിട്ട് പോരുന്നവരായിട്ടില്ല."
                 },
                 {
                     "number": 2,
@@ -19579,7 +19579,7 @@ const quranData = {
                             "translation_ml": "purified"
                         }
                     ],
-                    "translation_ml": "A Messenger from Allah reciting pages purified"
+                    "translation_ml": "അതായത് പരിശുദ്ധി നല്‍കപ്പെട്ട ഏടുകള്‍ ഓതികേള്‍പിക്കുന്ന, അല്ലാഹുവിങ്കല്‍ നിന്നുള്ള ഒരു ദൂതന്‍ (വരുന്നതു വരെ)"
                 },
                 {
                     "number": 3,
@@ -19613,7 +19613,7 @@ const quranData = {
                             "translation_ml": "correct"
                         }
                     ],
-                    "translation_ml": "Wherein (are) writings correct"
+                    "translation_ml": "അവയില്‍ (ഏടുകളില്‍) വക്രതയില്ലാത്ത രേഖകളാണുള്ളത്‌."
                 },
                 {
                     "number": 4,
@@ -19711,7 +19711,7 @@ const quranData = {
                             "translation_ml": "(of) the clear evidence"
                         }
                     ],
-                    "translation_ml": "And not became divided those who were given the Book until from after what came (to) them (of) the clear evidence"
+                    "translation_ml": "വേദം നല്‍കപ്പെട്ടവര്‍ അവര്‍ക്ക് വ്യക്തമായ തെളിവ് വന്നുകിട്ടിയതിന് ശേഷമല്ലാതെ ഭിന്നിക്കുകയുണ്ടായിട്ടില്ല."
                 },
                 {
                     "number": 5,
@@ -19849,7 +19849,7 @@ const quranData = {
                             "translation_ml": "the correct"
                         }
                     ],
-                    "translation_ml": "And not they were commanded except to worship Allah (being) sincere to Him (in) the religion upright and to establish the prayer and to give the zakah And that (is the) religion the correct"
+                    "translation_ml": "കീഴ്‌വണക്കം അല്ലാഹുവിന് മാത്രം ആക്കി കൊണ്ട് ഋജുമനസ്കരായ നിലയില്‍ അവനെ ആരാധിക്കുവാനും, നമസ്കാരം നിലനിര്‍ത്തുവാനും സകാത്ത് നല്‍കുവാനും അല്ലാതെ അവരോട് കല്‍പിക്കപ്പെട്ടിട്ടില്ല. അതത്രെ വക്രതയില്ലാത്ത മതം"
                 },
                 {
                     "number": 6,
@@ -19987,7 +19987,7 @@ const quranData = {
                             "translation_ml": "(of) the creatures"
                         }
                     ],
-                    "translation_ml": "Indeed those who disbelieve from (the) People (of) the Book and the polytheists (will be) in (the) Fire (of) Hell abiding eternally therein Those  they (are the) worst (of) the creatures"
+                    "translation_ml": "തീര്‍ച്ചയായും വേദക്കാരിലും ബഹുദൈവവിശ്വാസികളിലുംപെട്ട സത്യനിഷേധികള്‍ നരകാഗ്നിയിലാകുന്നു. അവരതില്‍ നിത്യവാസികളായിരിക്കും . അക്കൂട്ടര്‍ തന്നെയാകുന്നു സൃഷ്ടികളില്‍ മോശപ്പെട്ടവര്‍."
                 },
                 {
                     "number": 7,
@@ -20069,7 +20069,7 @@ const quranData = {
                             "translation_ml": "(of) the creatures"
                         }
                     ],
-                    "translation_ml": "Indeed those who believe and do righteous deeds those  they (are the) best (of) the creatures"
+                    "translation_ml": "തീര്‍ച്ചയായും വിശ്വസിക്കുകയും സല്‍കര്‍മ്മങ്ങള്‍ പ്രവര്‍ത്തിക്കുകയും ചെയ്തവരാരോ അവര്‍ തന്നെയാകുന്നു സൃഷ്ടികളില്‍ ഉത്തമര്‍."
                 },
                 {
                     "number": 8,
@@ -20247,7 +20247,7 @@ const quranData = {
                             "translation_ml": "his Lord"
                         }
                     ],
-                    "translation_ml": "Their reward (is) with their Lord  Gardens (of) Eternity flow from underneath them the rivers will abide therein forever (will be) pleased Allah with them and they (will be) pleased with Him That (is) for whoever feared his Lord"
+                    "translation_ml": "അവര്‍ക്ക് അവരുടെ രക്ഷിതാവിങ്കലുള്ള പ്രതിഫലം താഴ്ഭാഗത്തു കൂടി അരുവികള്‍ ഒഴുകുന്ന, സ്ഥിരവാസത്തിനുള്ള സ്വര്‍ഗത്തോപ്പുകളാകുന്നു. അവരതില്‍ നിത്യവാസികളായിരിക്കും; എന്നെന്നേക്കുമായിട്ട്‌. അല്ലാഹു അവരെ പറ്റി തൃപ്തിപ്പെട്ടിരിക്കുന്നു. അവര്‍ അവനെ പറ്റിയും തൃപ്തിപ്പെട്ടിരിക്കുന്നു. ഏതൊരുവന്‍ തന്‍റെ രക്ഷിതാവിനെ ഭയപ്പെട്ടുവോ അവന്നുള്ളതാകുന്നു അത്‌."
                 }
             ]
         },
@@ -20300,7 +20300,7 @@ const quranData = {
                             "translation_ml": "(with) its earthquake"
                         }
                     ],
-                    "translation_ml": "When is shaken the earth (with) its earthquake"
+                    "translation_ml": "ഭൂമി പ്രകമ്പനം കൊള്ളിക്കപ്പെട്ടാല്‍ - അതിന്‍റെ ഭയങ്കരമായ ആ പ്രകമ്പനം ."
                 },
                 {
                     "number": 2,
@@ -20334,7 +20334,7 @@ const quranData = {
                             "translation_ml": "its burdens"
                         }
                     ],
-                    "translation_ml": "And brings forth the earth its burdens"
+                    "translation_ml": "ഭൂമി അതിന്‍റെ ഭാരങ്ങള്‍ പുറം തള്ളുകയും,"
                 },
                 {
                     "number": 3,
@@ -20376,7 +20376,7 @@ const quranData = {
                             "translation_ml": "(is) with it"
                         }
                     ],
-                    "translation_ml": "And says man What (is) with it"
+                    "translation_ml": "അതിന് എന്തുപറ്റി എന്ന് മനുഷ്യന്‍ പറയുകയും ചെയ്താല്‍."
                 },
                 {
                     "number": 4,
@@ -20410,7 +20410,7 @@ const quranData = {
                             "translation_ml": "its news"
                         }
                     ],
-                    "translation_ml": "That Day it will report its news"
+                    "translation_ml": "അന്നേ ദിവസം അത് (ഭൂമി) അതിന്‍റെ വര്‍ത്തമാനങ്ങള്‍ പറഞ്ഞറിയിക്കുന്നതാണ്‌."
                 },
                 {
                     "number": 5,
@@ -20452,7 +20452,7 @@ const quranData = {
                             "translation_ml": "[to] it"
                         }
                     ],
-                    "translation_ml": "Because your Lord inspired [to] it"
+                    "translation_ml": "നിന്‍റെ രക്ഷിതാവ് അതിന് ബോധനം നല്‍കിയത് നിമിത്തം."
                 },
                 {
                     "number": 6,
@@ -20510,7 +20510,7 @@ const quranData = {
                             "translation_ml": "their deeds"
                         }
                     ],
-                    "translation_ml": "That Day will proceed the mankind (in) scattered groups to be shown their deeds"
+                    "translation_ml": "അന്നേ ദിവസം മനുഷ്യര്‍ പല സംഘങ്ങളായി പുറപ്പെടുന്നതാണ്‌. അവര്‍ക്ക് അവരുടെ കര്‍മ്മങ്ങള്‍ കാണിക്കപ്പെടേണ്ടതിനായിട്ട്‌."
                 },
                 {
                     "number": 7,
@@ -20568,7 +20568,7 @@ const quranData = {
                             "translation_ml": "will see it"
                         }
                     ],
-                    "translation_ml": "So whoever does (equal to the) weight (of) an atom good will see it"
+                    "translation_ml": "അപ്പോള്‍ ആര്‍ ഒരു അണുവിന്‍റെ തൂക്കം നന്‍മചെയ്തിരുന്നുവോ അവനത് കാണും."
                 },
                 {
                     "number": 8,
@@ -20626,7 +20626,7 @@ const quranData = {
                             "translation_ml": "will see it"
                         }
                     ],
-                    "translation_ml": "And whoever does (equal to the) weight (of) an atom evil will see it"
+                    "translation_ml": "ആര്‍ ഒരു അണുവിന്‍റെ തൂക്കം തിന്‍മ ചെയ്തിരുന്നുവോ അവന്‍ അതും കാണും."
                 }
             ]
         },
@@ -20663,7 +20663,7 @@ const quranData = {
                             "translation_ml": "panting"
                         }
                     ],
-                    "translation_ml": "By the racers panting"
+                    "translation_ml": "കിതച്ചു കൊണ്ട് ഓടുന്നവയും,"
                 },
                 {
                     "number": 2,
@@ -20689,7 +20689,7 @@ const quranData = {
                             "translation_ml": "striking"
                         }
                     ],
-                    "translation_ml": "And the producers of sparks striking"
+                    "translation_ml": "അങ്ങനെ (കുളമ്പ് കല്ലില്‍) ഉരസി തീപ്പൊരി പറപ്പിക്കുന്നവയും,"
                 },
                 {
                     "number": 3,
@@ -20715,7 +20715,7 @@ const quranData = {
                             "translation_ml": "(at) dawn"
                         }
                     ],
-                    "translation_ml": "And the chargers (at) dawn"
+                    "translation_ml": "എന്നിട്ട് പ്രഭാതത്തില്‍ ആക്രമണം നടത്തുന്നവയും ,"
                 },
                 {
                     "number": 4,
@@ -20749,7 +20749,7 @@ const quranData = {
                             "translation_ml": "dust"
                         }
                     ],
-                    "translation_ml": "Then raise thereby dust"
+                    "translation_ml": "അന്നേരത്ത് പൊടിപടലം ഇളക്കിവിട്ടവയും"
                 },
                 {
                     "number": 5,
@@ -20783,7 +20783,7 @@ const quranData = {
                             "translation_ml": "collectively"
                         }
                     ],
-                    "translation_ml": "Then penetrate (in the) center thereby collectively"
+                    "translation_ml": "അതിലൂടെ (ശത്രു) സംഘത്തിന്‍റെ നടുവില്‍ പ്രവേശിച്ചവയും (കുതിരകള്‍) തന്നെ സത്യം."
                 },
                 {
                     "number": 6,
@@ -20825,7 +20825,7 @@ const quranData = {
                             "translation_ml": "(is) surely ungrateful"
                         }
                     ],
-                    "translation_ml": "Indeed mankind to his Lord (is) surely ungrateful"
+                    "translation_ml": "തീര്‍ച്ചയായും മനുഷ്യന്‍ തന്‍റെ രക്ഷിതാവിനോട് നന്ദികെട്ടവന്‍ തന്നെ."
                 },
                 {
                     "number": 7,
@@ -20867,7 +20867,7 @@ const quranData = {
                             "translation_ml": "surely (is) a witness"
                         }
                     ],
-                    "translation_ml": "And indeed, he on that surely (is) a witness"
+                    "translation_ml": "തീര്‍ച്ചയായും അവന്‍ അതിന്ന് സാക്ഷ്യം വഹിക്കുന്നവനുമാകുന്നു."
                 },
                 {
                     "number": 8,
@@ -20909,7 +20909,7 @@ const quranData = {
                             "translation_ml": "(is) surely intense"
                         }
                     ],
-                    "translation_ml": "And indeed he in (the) love (of) wealth (is) surely intense"
+                    "translation_ml": "തീര്‍ച്ചയായും അവന്‍ ധനത്തോടുള്ള സ്നേഹം കഠിനമായവനാകുന്നു."
                 },
                 {
                     "number": 9,
@@ -20975,7 +20975,7 @@ const quranData = {
                             "translation_ml": "the graves"
                         }
                     ],
-                    "translation_ml": "But does not he know when will be scattered what (is) in the graves"
+                    "translation_ml": "എന്നാല്‍ അവന്‍ അറിയുന്നില്ലേ? ഖബ്‌റുകളിലുള്ളത് ഇളക്കിമറിച്ച് പുറത്ത് കൊണ്ട് വരപ്പെടുകയും ,"
                 },
                 {
                     "number": 10,
@@ -21017,7 +21017,7 @@ const quranData = {
                             "translation_ml": "the breasts"
                         }
                     ],
-                    "translation_ml": "And is made apparent what (is) in the breasts"
+                    "translation_ml": "ഹൃദയങ്ങളിലുള്ളത് വെളിക്ക് കൊണ്ടു വരപ്പെടുകയും ചെയ്താല്‍ ,"
                 },
                 {
                     "number": 11,
@@ -21067,7 +21067,7 @@ const quranData = {
                             "translation_ml": "(is) surely All-Aware"
                         }
                     ],
-                    "translation_ml": "Indeed their Lord about them that Day (is) surely All-Aware"
+                    "translation_ml": "തീര്‍ച്ചയായും അവരുടെ രക്ഷിതാവ് അന്നേ ദിവസം അവരെ പറ്റി സൂക്ഷ്മമായി അറിയുന്നവന്‍ തന്നെയാകുന്നു."
                 }
             ]
         },
@@ -21096,7 +21096,7 @@ const quranData = {
                             "translation_ml": "The Striking Calamity"
                         }
                     ],
-                    "translation_ml": "The Striking Calamity"
+                    "translation_ml": "ഭയങ്കരമായ ആ സംഭവം."
                 },
                 {
                     "number": 2,
@@ -21122,7 +21122,7 @@ const quranData = {
                             "translation_ml": "(is) the Striking Calamity"
                         }
                     ],
-                    "translation_ml": "What (is) the Striking Calamity"
+                    "translation_ml": "ഭയങ്കരമായ സംഭവം എന്നാല്‍ എന്താകുന്നു?"
                 },
                 {
                     "number": 3,
@@ -21164,7 +21164,7 @@ const quranData = {
                             "translation_ml": "(is) the Striking Calamity"
                         }
                     ],
-                    "translation_ml": "And what will make you know what (is) the Striking Calamity"
+                    "translation_ml": "ഭയങ്കരമായ സംഭവമെന്നാല്‍ എന്താണെന്ന് നിനക്കറിയുമോ?"
                 },
                 {
                     "number": 4,
@@ -21214,7 +21214,7 @@ const quranData = {
                             "translation_ml": "scattered"
                         }
                     ],
-                    "translation_ml": "(The) Day will be the mankind like moths scattered"
+                    "translation_ml": "മനുഷ്യന്‍മാര്‍ ചിന്നിച്ചിതറിയ പാറ്റയെപ്പോലെ ആകുന്ന ദിവസം!"
                 },
                 {
                     "number": 5,
@@ -21256,7 +21256,7 @@ const quranData = {
                             "translation_ml": "fluffed up"
                         }
                     ],
-                    "translation_ml": "And will be the mountains like wool fluffed up"
+                    "translation_ml": "പര്‍വ്വതങ്ങള്‍ കടഞ്ഞ ആട്ടിന്‍ രോമം പോലെയും"
                 },
                 {
                     "number": 6,
@@ -21298,7 +21298,7 @@ const quranData = {
                             "translation_ml": "his scales"
                         }
                     ],
-                    "translation_ml": "Then as for (him) whose (are) heavy his scales"
+                    "translation_ml": "അപ്പോള്‍ ഏതൊരാളുടെ തുലാസുകള്‍ ഘനം തൂങ്ങിയോ"
                 },
                 {
                     "number": 7,
@@ -21340,7 +21340,7 @@ const quranData = {
                             "translation_ml": "pleasant"
                         }
                     ],
-                    "translation_ml": "Then he (will be) in a life pleasant"
+                    "translation_ml": "അവന്‍ സംതൃപ്തമായ ജീവിതത്തിലായിരിക്കും."
                 },
                 {
                     "number": 8,
@@ -21382,7 +21382,7 @@ const quranData = {
                             "translation_ml": "his scales"
                         }
                     ],
-                    "translation_ml": "But as for (him) whose (are) light his scales"
+                    "translation_ml": "എന്നാല്‍ ഏതൊരാളുടെ തുലാസുകള്‍ തൂക്കം കുറഞ്ഞതായോ"
                 },
                 {
                     "number": 9,
@@ -21408,7 +21408,7 @@ const quranData = {
                             "translation_ml": "(will be the) Pit"
                         }
                     ],
-                    "translation_ml": "His abode (will be the) Pit"
+                    "translation_ml": "അവന്‍റെ സങ്കേതം ഹാവിയഃ ആയിരിക്കും."
                 },
                 {
                     "number": 10,
@@ -21450,7 +21450,7 @@ const quranData = {
                             "translation_ml": "it is"
                         }
                     ],
-                    "translation_ml": "And what will make you know what it is"
+                    "translation_ml": "ഹാവിയഃ എന്നാല്‍ എന്താണെന്ന് നിനക്കറിയുമോ?"
                 },
                 {
                     "number": 11,
@@ -21476,7 +21476,7 @@ const quranData = {
                             "translation_ml": "intensely hot"
                         }
                     ],
-                    "translation_ml": "A Fire intensely hot"
+                    "translation_ml": "ചൂടേറിയ നരകാഗ്നിയത്രെ അത്‌."
                 }
             ]
         },
@@ -21513,7 +21513,7 @@ const quranData = {
                             "translation_ml": "the competition to increase"
                         }
                     ],
-                    "translation_ml": "Diverts you the competition to increase"
+                    "translation_ml": "പരസ്പരം പെരുമനടിക്കുക എന്ന കാര്യം നിങ്ങളെ അശ്രദ്ധയിലാക്കിയിരിക്കുന്നു."
                 },
                 {
                     "number": 2,
@@ -21547,7 +21547,7 @@ const quranData = {
                             "translation_ml": "the graves"
                         }
                     ],
-                    "translation_ml": "Until you visit the graves"
+                    "translation_ml": "നിങ്ങള്‍ ശവകുടീരങ്ങള്‍ സന്ദര്‍ശിക്കുന്നത് വരേക്കും."
                 },
                 {
                     "number": 3,
@@ -21581,7 +21581,7 @@ const quranData = {
                             "translation_ml": "you will know"
                         }
                     ],
-                    "translation_ml": "Nay Soon you will know"
+                    "translation_ml": "നിസ്സംശയം, നിങ്ങള്‍ വഴിയെ അറിഞ്ഞ് കൊള്ളും."
                 },
                 {
                     "number": 4,
@@ -21623,7 +21623,7 @@ const quranData = {
                             "translation_ml": "you will know"
                         }
                     ],
-                    "translation_ml": "Then nay Soon you will know"
+                    "translation_ml": "പിന്നെയും നിസ്സംശയം നിങ്ങള്‍ വഴിയെ അറിഞ്ഞ് കൊള്ളും."
                 },
                 {
                     "number": 5,
@@ -21673,7 +21673,7 @@ const quranData = {
                             "translation_ml": "(of) certainty"
                         }
                     ],
-                    "translation_ml": "Nay If you know (with) a knowledge (of) certainty"
+                    "translation_ml": "നിസ്സംശയം, നിങ്ങള്‍ ദൃഢമായ അറിവ് അറിയുമായിരുന്നെങ്കില്‍"
                 },
                 {
                     "number": 6,
@@ -21699,7 +21699,7 @@ const quranData = {
                             "translation_ml": "the Hellfire"
                         }
                     ],
-                    "translation_ml": "Surely you will see the Hellfire"
+                    "translation_ml": "ജ്വലിക്കുന്ന നരകത്തെ നിങ്ങള്‍ കാണുക തന്നെ ചെയ്യും."
                 },
                 {
                     "number": 7,
@@ -21741,7 +21741,7 @@ const quranData = {
                             "translation_ml": "(of) certainty"
                         }
                     ],
-                    "translation_ml": "Then surely you will see it (with the) eye (of) certainty"
+                    "translation_ml": "പിന്നെ തീര്‍ച്ചയായും നിങ്ങള്‍ അതിനെ ദൃഢമായും കണ്ണാല്‍ കാണുക തന്നെ ചെയ്യും."
                 },
                 {
                     "number": 8,
@@ -21791,7 +21791,7 @@ const quranData = {
                             "translation_ml": "the pleasures"
                         }
                     ],
-                    "translation_ml": "Then surely you will be asked that Day about the pleasures"
+                    "translation_ml": "പിന്നീട് ആ ദിവസത്തില്‍ സുഖാനുഭവങ്ങളെ പറ്റി തീര്‍ച്ചയായും നിങ്ങള്‍ ചോദ്യം ചെയ്യപ്പെടുകതന്നെ ചെയ്യും."
                 }
             ]
         },
@@ -21820,7 +21820,7 @@ const quranData = {
                             "translation_ml": "By the time"
                         }
                     ],
-                    "translation_ml": "By the time"
+                    "translation_ml": "കാലം തന്നെയാണ് സത്യം,"
                 },
                 {
                     "number": 2,
@@ -21862,7 +21862,7 @@ const quranData = {
                             "translation_ml": "loss"
                         }
                     ],
-                    "translation_ml": "Indeed mankind (is) surely, in loss"
+                    "translation_ml": "തീര്‍ച്ചയായും മനുഷ്യന്‍ നഷ്ടത്തില്‍ തന്നെയാകുന്നു;"
                 },
                 {
                     "number": 3,
@@ -21944,7 +21944,7 @@ const quranData = {
                             "translation_ml": "to [the] patience"
                         }
                     ],
-                    "translation_ml": "Except those who believe and do righteous deeds and enjoin (each other) to the truth and enjoin (each other) to [the] patience"
+                    "translation_ml": "വിശ്വസിക്കുകയും സല്‍കര്‍മ്മങ്ങള്‍ പ്രവര്‍ത്തിക്കുകയും, സത്യം കൈക്കൊള്ളാന്‍ അന്യോന്യം ഉപദേശിക്കുകയും ക്ഷമ കൈക്കൊള്ളാന്‍ അന്യോന്യം ഉപദേശിക്കുകയും ചെയ്തവരൊഴികെ."
                 }
             ]
         },
@@ -21997,7 +21997,7 @@ const quranData = {
                             "translation_ml": "backbiter"
                         }
                     ],
-                    "translation_ml": "Woe to every slanderer backbiter"
+                    "translation_ml": "കുത്തുവാക്ക് പറയുന്നവനും അവഹേളിക്കുന്നവനുമായ ഏതൊരാള്‍ക്കും നാശം."
                 },
                 {
                     "number": 2,
@@ -22039,7 +22039,7 @@ const quranData = {
                             "translation_ml": "and counts it"
                         }
                     ],
-                    "translation_ml": "The one who collects wealth and counts it"
+                    "translation_ml": "അതായത് ധനം ശേഖരിക്കുകയും അത് എണ്ണിനോക്കിക്കൊണ്ടിരിക്കുകയും ചെയ്യുന്നവന്‌."
                 },
                 {
                     "number": 3,
@@ -22081,7 +22081,7 @@ const quranData = {
                             "translation_ml": "will make him immortal"
                         }
                     ],
-                    "translation_ml": "Thinking that his wealth will make him immortal"
+                    "translation_ml": "അവന്‍റെ ധനം അവന് ശാശ്വത ജീവിതം നല്‍കിയിരിക്കുന്നു എന്ന് അവന്‍ വിചാരിക്കുന്നു."
                 },
                 {
                     "number": 4,
@@ -22123,7 +22123,7 @@ const quranData = {
                             "translation_ml": "the Crusher"
                         }
                     ],
-                    "translation_ml": "Nay Surely he will be thrown in the Crusher"
+                    "translation_ml": "നിസ്സംശയം, അവന്‍ ഹുത്വമയില്‍ എറിയപ്പെടുക തന്നെ ചെയ്യും."
                 },
                 {
                     "number": 5,
@@ -22165,7 +22165,7 @@ const quranData = {
                             "translation_ml": "the Crusher (is)"
                         }
                     ],
-                    "translation_ml": "And what will make you know what the Crusher (is)"
+                    "translation_ml": "ഹുത്വമ എന്നാല്‍ എന്താണെന്ന് നിനക്കറിയാമോ?"
                 },
                 {
                     "number": 6,
@@ -22199,7 +22199,7 @@ const quranData = {
                             "translation_ml": "kindled"
                         }
                     ],
-                    "translation_ml": "A Fire Allah kindled"
+                    "translation_ml": "അത് അല്ലാഹുവിന്‍റെ ജ്വലിപ്പിക്കപ്പെട്ട അഗ്നിയാകുന്നു."
                 },
                 {
                     "number": 7,
@@ -22241,7 +22241,7 @@ const quranData = {
                             "translation_ml": "the hearts"
                         }
                     ],
-                    "translation_ml": "Which mounts up to the hearts"
+                    "translation_ml": "ഹൃദയങ്ങളിലേക്ക് കത്തിപ്പടരുന്നതായ"
                 },
                 {
                     "number": 8,
@@ -22275,7 +22275,7 @@ const quranData = {
                             "translation_ml": "closed over"
                         }
                     ],
-                    "translation_ml": "Indeed, it (will be) upon them closed over"
+                    "translation_ml": "തീര്‍ച്ചയായും അത് അവരുടെ മേല്‍ അടച്ചുമൂടപ്പെടുന്നതായിരിക്കും."
                 },
                 {
                     "number": 9,
@@ -22309,7 +22309,7 @@ const quranData = {
                             "translation_ml": "extended"
                         }
                     ],
-                    "translation_ml": "In columns extended"
+                    "translation_ml": "നീട്ടിയുണ്ടാക്കപ്പെട്ട സ്തംഭങ്ങളിലായിക്കൊണ്ട്‌."
                 }
             ]
         },
@@ -22386,7 +22386,7 @@ const quranData = {
                             "translation_ml": "(of the) Elephant"
                         }
                     ],
-                    "translation_ml": "Have not you seen how dealt your Lord with (the) Companions (of the) Elephant"
+                    "translation_ml": "ആനക്കാരെക്കൊണ്ട് നിന്‍റെ രക്ഷിതാവ് പ്രവര്‍ത്തിച്ചത് എങ്ങനെ എന്ന് നീ കണ്ടില്ലേ?"
                 },
                 {
                     "number": 2,
@@ -22436,7 +22436,7 @@ const quranData = {
                             "translation_ml": "astray"
                         }
                     ],
-                    "translation_ml": "Did not He make their plan go astray"
+                    "translation_ml": "അവരുടെ തന്ത്രം അവന്‍ പിഴവിലാക്കിയില്ലേ?"
                 },
                 {
                     "number": 3,
@@ -22478,7 +22478,7 @@ const quranData = {
                             "translation_ml": "(in) flocks"
                         }
                     ],
-                    "translation_ml": "And He sent against them birds (in) flocks"
+                    "translation_ml": "കൂട്ടംകൂട്ടമായിക്കൊണ്ടുള്ള പക്ഷികളെ അവരുടെ നേര്‍ക്ക് അവന്‍ അയക്കുകയും ചെയ്തു."
                 },
                 {
                     "number": 4,
@@ -22520,7 +22520,7 @@ const quranData = {
                             "translation_ml": "baked clay"
                         }
                     ],
-                    "translation_ml": "Striking them with stones of baked clay"
+                    "translation_ml": "ചുട്ടുപഴുപ്പിച്ച കളിമണ്‍കല്ലുകള്‍കൊണ്ട് അവരെ എറിയുന്നതായ."
                 },
                 {
                     "number": 5,
@@ -22554,7 +22554,7 @@ const quranData = {
                             "translation_ml": "eaten up"
                         }
                     ],
-                    "translation_ml": "Then He made them like straw eaten up"
+                    "translation_ml": "അങ്ങനെ അവന്‍ അവരെ തിന്നൊടുക്കപ്പെട്ട വൈക്കോല്‍ തുരുമ്പുപോലെയാക്കി."
                 }
             ]
         },
@@ -22591,7 +22591,7 @@ const quranData = {
                             "translation_ml": "(of the) Quraish"
                         }
                     ],
-                    "translation_ml": "For (the) familiarity (of the) Quraish"
+                    "translation_ml": "ഖുറൈശ് ഗോത്രത്തെ കൂട്ടിയിണക്കിയതിനാല്‍."
                 },
                 {
                     "number": 2,
@@ -22633,7 +22633,7 @@ const quranData = {
                             "translation_ml": "and summer"
                         }
                     ],
-                    "translation_ml": "Their familiarity (with the) journey (of) winter and summer"
+                    "translation_ml": "ശൈത്യകാലത്തെയും ഉഷ്ണകാലത്തെയും യാത്രയുമായി അവരെ കൂട്ടിയിണക്കിയതിനാല്‍,"
                 },
                 {
                     "number": 3,
@@ -22675,7 +22675,7 @@ const quranData = {
                             "translation_ml": "House"
                         }
                     ],
-                    "translation_ml": "So let them worship (the) Lord (of) this House"
+                    "translation_ml": "ഈ ഭവനത്തിന്‍റെ രക്ഷിതാവിനെ അവര്‍ ആരാധിച്ചുകൊള്ളട്ടെ."
                 },
                 {
                     "number": 4,
@@ -22741,7 +22741,7 @@ const quranData = {
                             "translation_ml": "fear"
                         }
                     ],
-                    "translation_ml": "The One Who feeds them [from] (against) hunger and gives them security from fear"
+                    "translation_ml": "അതായത് അവര്‍ക്ക് വിശപ്പിന്ന് ആഹാരം നല്‍കുകയും, ഭയത്തിന് പകരം സമാധാനം നല്‍കുകയും ചെയ്തവനെ."
                 }
             ]
         },
@@ -22794,7 +22794,7 @@ const quranData = {
                             "translation_ml": "the Judgment"
                         }
                     ],
-                    "translation_ml": "Have you seen the one who denies the Judgment"
+                    "translation_ml": "മതത്തെ വ്യാജമാക്കുന്നവന്‍ ആരെന്ന് നീ കണ്ടുവോ?"
                 },
                 {
                     "number": 2,
@@ -22836,7 +22836,7 @@ const quranData = {
                             "translation_ml": "the orphan"
                         }
                     ],
-                    "translation_ml": "Then that (is) the one who repulses the orphan"
+                    "translation_ml": "അനാഥക്കുട്ടിയെ തള്ളിക്കളയുന്നവനത്രെ അത്‌."
                 },
                 {
                     "number": 3,
@@ -22886,7 +22886,7 @@ const quranData = {
                             "translation_ml": "the poor"
                         }
                     ],
-                    "translation_ml": "And (does) not feel the urge to feed the poor"
+                    "translation_ml": "പാവപ്പെട്ടവന്‍റെ ഭക്ഷണത്തിന്‍റെ കാര്യത്തില്‍ പ്രോത്സാഹനം നടത്താതിരിക്കുകയും ചെയ്യുന്നവന്‍."
                 },
                 {
                     "number": 4,
@@ -22912,7 +22912,7 @@ const quranData = {
                             "translation_ml": "to those who pray"
                         }
                     ],
-                    "translation_ml": "So woe to those who pray"
+                    "translation_ml": "എന്നാല്‍ നമസ്കാരക്കാര്‍ക്കാകുന്നു നാശം."
                 },
                 {
                     "number": 5,
@@ -22962,7 +22962,7 @@ const quranData = {
                             "translation_ml": "(are) neglectful"
                         }
                     ],
-                    "translation_ml": "Those who [they] about their prayers (are) neglectful"
+                    "translation_ml": "തങ്ങളുടെ നമസ്കാരത്തെപ്പറ്റി ശ്രദ്ധയില്ലാത്തവരായ"
                 },
                 {
                     "number": 6,
@@ -22996,7 +22996,7 @@ const quranData = {
                             "translation_ml": "make show"
                         }
                     ],
-                    "translation_ml": "Those who [they] make show"
+                    "translation_ml": "ജനങ്ങളെ കാണിക്കാന്‍ വേണ്ടി പ്രവര്‍ത്തിക്കുന്നവരായ"
                 },
                 {
                     "number": 7,
@@ -23022,7 +23022,7 @@ const quranData = {
                             "translation_ml": "[the] small kindnesses"
                         }
                     ],
-                    "translation_ml": "And they deny [the] small kindnesses"
+                    "translation_ml": "പരോപകാര വസ്തുക്കള്‍ മുടക്കുന്നവരുമായ"
                 }
             ]
         },
@@ -23067,7 +23067,7 @@ const quranData = {
                             "translation_ml": "Al-Kauthar"
                         }
                     ],
-                    "translation_ml": "Indeed, We We have given you Al-Kauthar"
+                    "translation_ml": "തീര്‍ച്ചയായും നിനക്ക് നാം ധാരാളം നേട്ടം നല്‍കിയിരിക്കുന്നു."
                 },
                 {
                     "number": 2,
@@ -23101,7 +23101,7 @@ const quranData = {
                             "translation_ml": "and sacrifice"
                         }
                     ],
-                    "translation_ml": "So pray to your Lord and sacrifice"
+                    "translation_ml": "ആകയാല്‍ നീ നിന്‍റെ രക്ഷിതാവിന് വേണ്ടി നമസ്കരിക്കുകയും ബലിയര്‍പ്പിക്കുകയും ചെയ്യുക."
                 },
                 {
                     "number": 3,
@@ -23143,7 +23143,7 @@ const quranData = {
                             "translation_ml": "the one cut off"
                         }
                     ],
-                    "translation_ml": "Indeed your enemy  he (is) the one cut off"
+                    "translation_ml": "തീര്‍ച്ചയായും നിന്നോട് വിദ്വേഷം വെച്ച് പുലര്‍ത്തുന്നവന്‍ തന്നെയാകുന്നു വാലറ്റവന്‍ (ഭാവിയില്ലാത്തവന്‍)."
                 }
             ]
         },
@@ -23188,7 +23188,7 @@ const quranData = {
                             "translation_ml": "disbelievers"
                         }
                     ],
-                    "translation_ml": "Say O disbelievers"
+                    "translation_ml": "(നബിയേ,) പറയുക: അവിശ്വാസികളേ,"
                 },
                 {
                     "number": 2,
@@ -23230,7 +23230,7 @@ const quranData = {
                             "translation_ml": "you worship"
                         }
                     ],
-                    "translation_ml": "Not I worship what you worship"
+                    "translation_ml": "നിങ്ങള്‍ ആരാധിച്ചുവരുന്നതിനെ ഞാന്‍ ആരാധിക്കുന്നില്ല."
                 },
                 {
                     "number": 3,
@@ -23280,7 +23280,7 @@ const quranData = {
                             "translation_ml": "I worship"
                         }
                     ],
-                    "translation_ml": "And not you (are) worshippers (of) what I worship"
+                    "translation_ml": "ഞാന്‍ ആരാധിച്ചുവരുന്നതിനെ നിങ്ങളും ആരാധിക്കുന്നവരല്ല."
                 },
                 {
                     "number": 4,
@@ -23330,7 +23330,7 @@ const quranData = {
                             "translation_ml": "you worship"
                         }
                     ],
-                    "translation_ml": "And not I am a worshipper (of) what you worship"
+                    "translation_ml": "നിങ്ങള്‍ ആരാധിച്ചുവന്നതിനെ ഞാന്‍ ആരാധിക്കാന്‍ പോകുന്നവനുമല്ല."
                 },
                 {
                     "number": 5,
@@ -23380,7 +23380,7 @@ const quranData = {
                             "translation_ml": "I worship"
                         }
                     ],
-                    "translation_ml": "And not you (are) worshippers (of) what I worship"
+                    "translation_ml": "ഞാന്‍ ആരാധിച്ചു വരുന്നതിനെ നിങ്ങളും ആരാധിക്കാന്‍ പോകുന്നവരല്ല."
                 },
                 {
                     "number": 6,
@@ -23422,7 +23422,7 @@ const quranData = {
                             "translation_ml": "(is) my religion"
                         }
                     ],
-                    "translation_ml": "For you (is) your religion and for me (is) my religion"
+                    "translation_ml": "നിങ്ങള്‍ക്ക് നിങ്ങളുടെ മതം. എനിക്ക് എന്‍റെ മതവും."
                 }
             ]
         },
@@ -23483,7 +23483,7 @@ const quranData = {
                             "translation_ml": "and the Victory"
                         }
                     ],
-                    "translation_ml": "When comes (the) Help (of) Allah and the Victory"
+                    "translation_ml": "അല്ലാഹുവിന്റെ സഹായവും വിജയവും വന്നുകിട്ടിയാല്‍."
                 },
                 {
                     "number": 2,
@@ -23549,7 +23549,7 @@ const quranData = {
                             "translation_ml": "(in) multitudes"
                         }
                     ],
-                    "translation_ml": "And you see the people entering into (the) religion (of) Allah (in) multitudes"
+                    "translation_ml": "ജനങ്ങള്‍ അല്ലാഹുവിന്റെ മതത്തില്‍ കൂട്ടംകൂട്ടമായി പ്രവേശിക്കുന്നത് നീ കാണുകയും ചെയ്താല്‍"
                 },
                 {
                     "number": 3,
@@ -23615,7 +23615,7 @@ const quranData = {
                             "translation_ml": "Oft-Returning"
                         }
                     ],
-                    "translation_ml": "Then glorify with (the) praises (of) your Lord and ask His forgiveness Indeed, He is Oft-Returning"
+                    "translation_ml": "നിന്റെ രക്ഷിതാവിനെ സ്തുതിക്കുന്നതോടൊപ്പം നീ അവനെ പ്രകീര്‍ത്തിക്കുകയും, നീ അവനോട് പാപമോചനം തേടുകയും ചെയ്യുക. തീര്‍ച്ചയായും അവന്‍ പശ്ചാത്താപം സ്വീകരിക്കുന്നവനാകുന്നു."
                 }
             ]
         },
@@ -23676,7 +23676,7 @@ const quranData = {
                             "translation_ml": "and perish he"
                         }
                     ],
-                    "translation_ml": "Perish (the) hands (of) Abu Lahab and perish he"
+                    "translation_ml": "അബൂലഹബിന്‍റെ ഇരുകൈകളും നശിച്ചിരിക്കുന്നു. അവന്‍ നാശമടയുകയും ചെയ്തിരിക്കുന്നു."
                 },
                 {
                     "number": 2,
@@ -23734,7 +23734,7 @@ const quranData = {
                             "translation_ml": "he earned"
                         }
                     ],
-                    "translation_ml": "Not (will) avail him his wealth and what he earned"
+                    "translation_ml": "അവന്‍റെ ധനമോ അവന്‍ സമ്പാദിച്ചുവെച്ചതോ അവനു ഉപകാരപ്പെട്ടില്ല."
                 },
                 {
                     "number": 3,
@@ -23776,7 +23776,7 @@ const quranData = {
                             "translation_ml": "Blazing Flames"
                         }
                     ],
-                    "translation_ml": "He will be burnt (in) a Fire of Blazing Flames"
+                    "translation_ml": "തീജ്വാലകളുള്ള നരകാഗ്നിയില്‍ അവന്‍ പ്രവേശിക്കുന്നതാണ്‌."
                 },
                 {
                     "number": 4,
@@ -23810,7 +23810,7 @@ const quranData = {
                             "translation_ml": "(of) firewood"
                         }
                     ],
-                    "translation_ml": "And his wife (the) carrier (of) firewood"
+                    "translation_ml": "വിറകുചുമട്ടുകാരിയായ അവന്‍റെ ഭാര്യയും."
                 },
                 {
                     "number": 5,
@@ -23860,7 +23860,7 @@ const quranData = {
                             "translation_ml": "palm-fiber"
                         }
                     ],
-                    "translation_ml": "In her neck (will be) a rope of palm-fiber"
+                    "translation_ml": "അവളുടെ കഴുത്തില്‍ ഈന്തപ്പനനാരുകൊണ്ടുള്ള ഒരു കയറുണ്ടായിരിക്കും."
                 }
             ]
         },
@@ -23913,7 +23913,7 @@ const quranData = {
                             "translation_ml": "the One"
                         }
                     ],
-                    "translation_ml": "Say He (is) Allah the One"
+                    "translation_ml": "(നബിയേ,) പറയുക: കാര്യം അല്ലാഹു ഏകനാണ് എന്നതാകുന്നു."
                 },
                 {
                     "number": 2,
@@ -23939,7 +23939,7 @@ const quranData = {
                             "translation_ml": "the Eternal, the Absolute"
                         }
                     ],
-                    "translation_ml": "Allah the Eternal, the Absolute"
+                    "translation_ml": "അല്ലാഹു ഏവര്‍ക്കും ആശ്രയമായിട്ടുള്ളവനാകുന്നു."
                 },
                 {
                     "number": 3,
@@ -23981,7 +23981,7 @@ const quranData = {
                             "translation_ml": "He is begotten"
                         }
                     ],
-                    "translation_ml": "Not He begets and not He is begotten"
+                    "translation_ml": "അവന്‍ (ആര്‍ക്കും) ജന്‍മം നല്‍കിയിട്ടില്ല. (ആരുടെയും സന്തതിയായി) ജനിച്ചിട്ടുമില്ല."
                 },
                 {
                     "number": 4,
@@ -24031,7 +24031,7 @@ const quranData = {
                             "translation_ml": "any [one]"
                         }
                     ],
-                    "translation_ml": "And not is for Him equivalent any [one]"
+                    "translation_ml": "അവന്ന് തുല്യനായി ആരും ഇല്ലതാനും."
                 }
             ]
         },
@@ -24084,7 +24084,7 @@ const quranData = {
                             "translation_ml": "(of) the dawn"
                         }
                     ],
-                    "translation_ml": "Say I seek refuge in (the) Lord (of) the dawn"
+                    "translation_ml": "പറയുക: പുലരിയുടെ രക്ഷിതാവിനോട് ഞാന്‍ ശരണം തേടുന്നു."
                 },
                 {
                     "number": 2,
@@ -24126,7 +24126,7 @@ const quranData = {
                             "translation_ml": "He created"
                         }
                     ],
-                    "translation_ml": "From (the) evil (of) what He created"
+                    "translation_ml": "അവന്‍ സൃഷ്ടിച്ചുട്ടുള്ളവയുടെ കെടുതിയില്‍ നിന്ന്‌."
                 },
                 {
                     "number": 3,
@@ -24176,7 +24176,7 @@ const quranData = {
                             "translation_ml": "it spreads"
                         }
                     ],
-                    "translation_ml": "And from (the) evil (of) darkness when it spreads"
+                    "translation_ml": "ഇരുളടയുമ്പോഴുള്ള രാത്രിയുടെ കെടുതിയില്‍നിന്നും."
                 },
                 {
                     "number": 4,
@@ -24226,7 +24226,7 @@ const quranData = {
                             "translation_ml": "the knots"
                         }
                     ],
-                    "translation_ml": "And from (the) evil (of) the blowers in the knots"
+                    "translation_ml": "കെട്ടുകളില്‍ ഊതുന്ന സ്ത്രീകളുടെ കെടുതിയില്‍നിന്നും"
                 },
                 {
                     "number": 5,
@@ -24276,7 +24276,7 @@ const quranData = {
                             "translation_ml": "he envies"
                         }
                     ],
-                    "translation_ml": "And from (the) evil (of) an envier when he envies"
+                    "translation_ml": "അസൂയാലു അസൂയപ്പെടുമ്പോള്‍ അവന്‍റെ കെടുതിയില്‍നിന്നും."
                 }
             ]
         },
@@ -24329,7 +24329,7 @@ const quranData = {
                             "translation_ml": "(of) mankind"
                         }
                     ],
-                    "translation_ml": "Say I seek refuge in (the) Lord (of) mankind"
+                    "translation_ml": "പറയുക: മനുഷ്യരുടെ രക്ഷിതാവിനോട് ഞാന്‍ ശരണം തേടുന്നു."
                 },
                 {
                     "number": 2,
@@ -24355,7 +24355,7 @@ const quranData = {
                             "translation_ml": "(of) mankind"
                         }
                     ],
-                    "translation_ml": "(The) King (of) mankind"
+                    "translation_ml": "മനുഷ്യരുടെ രാജാവിനോട്‌."
                 },
                 {
                     "number": 3,
@@ -24381,7 +24381,7 @@ const quranData = {
                             "translation_ml": "(of) mankind"
                         }
                     ],
-                    "translation_ml": "(The) God (of) mankind"
+                    "translation_ml": "മനുഷ്യരുടെ ദൈവത്തോട്‌."
                 },
                 {
                     "number": 4,
@@ -24423,7 +24423,7 @@ const quranData = {
                             "translation_ml": "the one who withdraws"
                         }
                     ],
-                    "translation_ml": "From (the) evil (of) the whisperer the one who withdraws"
+                    "translation_ml": "ദുര്‍ബോധനം നടത്തി പിന്‍മാറിക്കളയുന്നവരെക്കൊണ്ടുള്ള കെടുതിയില്‍ നിന്ന്‌."
                 },
                 {
                     "number": 5,
@@ -24473,7 +24473,7 @@ const quranData = {
                             "translation_ml": "(of) mankind"
                         }
                     ],
-                    "translation_ml": "The one who whispers in (the) breasts (of) mankind"
+                    "translation_ml": "മനുഷ്യരുടെ ഹൃദയങ്ങളില്‍ ദുര്‍ബോധനം നടത്തുന്നവര്‍."
                 },
                 {
                     "number": 6,
@@ -24507,7 +24507,7 @@ const quranData = {
                             "translation_ml": "and men"
                         }
                     ],
-                    "translation_ml": "From the jinn and men"
+                    "translation_ml": "മനുഷ്യരിലും ജിന്നുകളിലും പെട്ടവര്‍."
                 }
             ]
         }
